@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Третьяков](https://up.htmlacademy.ru/adaptive/18/user/975479).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Половков`.
 
 ---
 
