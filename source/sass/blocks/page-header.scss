@@ -1,0 +1,36 @@
+.page-header {
+  padding-left: 25px;
+  padding-top: 27px;
+  padding-right: 25px;
+  min-height:478px;
+
+  background:#161c35;
+  background-image: url(/source/img/globe-back-mobile@1x.jpg), url(/source/img/traveller-illustration-mobile@1x.png);
+  color: white;
+}
+
+.page-header__logo--text {
+  margin: 0;
+  font-size: 22px;
+}
+
+.page-header__slogan {
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.main-nav__item--authorization {
+  font-size: 17px;
+  line-height: 1.76;
+  text-transform: uppercase;
+}
+
+.main-desc {
+  background: linear-gradient(to bottom, #161c35 70%, #192144 30%);
+  min-height: 564px;
+  color: #ffffff;
+}
+
+.main-desc__item {
+  color: #161c35;
+}
