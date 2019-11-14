@@ -41,43 +41,43 @@
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
         Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.</p>
-      <b class="about-service__text--bold">
+      <b class="about-service__text about-service__text--bold">
         А если найдете кого-то
         близкого по духу — скорее
         зовите в совместный трип!</b>
     </section>
     <section class="directions">
       <h2 class="directions__header">Направления</h2>
-      <p class="directions__text">
+      <p class="directions__text directions__text--desc">
         Мы не продаем туры
         и ничего не рекламируем.
         Люди сами пишут о странах, куда хотели бы отправиться
         и чем можно там заняться.
       </p>
-      <ul>
-        <li>
+      <ul class="directions__list">
+        <li class="directions__item">
           <img src="https://via.placeholder.com/270x110">
           <img src="https://via.placeholder.com/35x24">
-          <h3>Таиланд</h3>
-          <p>18321</p>
-          <p>Джунгли зовут!</p>
+          <h3 class="directions__h3">Таиланд</h3>
+          <p class="directions__number">18321</p>
+          <p class="directions__text">Джунгли зовут!</p>
         </li>
-        <li>
+        <li class="directions__item">
           <img src="https://via.placeholder.com/270x110">
           <img src="https://via.placeholder.com/35x24">
-          <h3>Франция</h3>
-          <p>12518</p>
-          <p>Трэ бьен, манифик!</p>
+          <h3 class="directions__h3">Франция</h3>
+          <p class="directions__number">12518</p>
+          <p class="directions__text">Трэ бьен, манифик!</p>
         </li>
-        <li>
+        <li class="directions__item">
           <img src="https://via.placeholder.com/270x110">
           <img src="https://via.placeholder.com/35x24">
-          <h3>Чехия</h3>
-          <p>5326</p>
-          <p>Закоулки старой Европы</p>
+          <h3 class="directions__h3">Чехия</h3>
+          <p class="directions__number">5326</p>
+          <p class="directions__text">Закоулки старой Европы</p>
         </li>
       </ul>
-      <a>Показать все</a>
+      <a class="directions__link" href="#">Показать все</a>
     </section>
     <section class="companions">
       <h2 class="companions__header">Попутчики</h2>
@@ -87,7 +87,7 @@
         нужен пляж и коктейль, а
         другому маршрут для хайкинга.
       </p>
-      <b class="companions__text--bold">
+      <b class="companions__text companions__text--bold">
         Теперь можно легко найти
         единомышленников!
       </b>
@@ -147,7 +147,7 @@
     </section>
     <section class="registration">
       <h2 class="visually-hidden">Регистрация</h2>
-      <b class="registration__text--bold">Заинтересовались?</b>
+      <b class="registration__text registration__text--bold">Заинтересовались?</b>
       <p class="registration__text">
         Зарегистрируйтесь,
         это быстро и бесплатно!
@@ -160,7 +160,7 @@
         Мы с радостью на них ответим!
       </p>
       <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
-      <a class="registration__email--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <a class="registration__email registration__email--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </section>
     <section class="address">
       <h2 class="visually-hidden">Где нас найти</h2>
@@ -169,6 +169,45 @@
         Конюшенная, 19/8
       </p>
       <a class="address__button">Проложить маршрут</a>
+    </section>
+    <section class="menu-popup visually-hidden">
+      <h2 class="visually-hidden">Меню</h2>
+      <p class="menu-popup__header">Погнали?</p>
+      <div class="menu-popup__links">
+        <a class="menu-popup__link">О сервисе</a>
+        <a class="menu-popup__link">Направления</a>
+        <a class="menu-popup__link">Попутчики</a>
+      </div>
+      <a class="menu-popup__link menu-popup__link--autorization">Авторизация</a>
+      <a class="menu-popup__tel" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="menu-popup__email menu-popup__email--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <ul class="menu-popup__list">
+        <li class="menu-popup__item"><a>Фейсбук</a></li>
+        <li class="menu-popup__item"><a>ВК</a></li>
+        <li class="menu-popup__item"><a>Инстаграм</a></li>
+      </ul>
+    </section>
+    <section class="tariffs-popup">
+      <h2 class="tariffs-popup__header">Бизнес-тарифы</h2>
+      <ul class="tariffs-popup__list">
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text">Реклама у блоггера</p>
+          <p class="tariffs-popup__text">300 000 руб./пост</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text">Накрутка подписчиков</p>
+          <p class="tariffs-popup__text">от 1 руб./шт.</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text">Лайки от ботов</p>
+          <p class="tariffs-popup__text">от 20 коп./лайк</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text">Ваш продакт-плейсмент</p>
+          <p class="tariffs-popup__text">Индивидуально</p>
+        </li>
+      </ul>
+      <button class="tariffs-popup__close">Закрыть окно</button>
     </section>
   </main>
 
