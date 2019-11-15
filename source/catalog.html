@@ -4,20 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="catalog-header">
-    <a class="catalog-header__logo">
-      <h1>Погнали?</h1>
-    </a>
-    <button class="catalog-header__toggle" type="button">Открыть меню</button>
-    <p class="catalog-header__companions">Попутчики</p>
+    <div class="catalog-header__wrapper">
+      <a class="form-header__logo">
+        <img src="img/logo-mobile-white@1x.png">
+      </a>
+      <button class="catalog-header__toggle" type="button">Открыть меню</button>
+      <p class="catalog-header__companions">Попутчики</p>
+    </div>
   </header>
   <main class="catalog-main">
     <section class="country-filter">
+      <div class="country-filter__wrapper">
       <h2 class="country-filter__header">Фильтрация по странам</h2>
       <button class="country-filter__toggle" type="button">Открыть меню</button>
+    </div>
     </section>
     <section class="filter">
       <form class="filter__form" method="GET" action="https://echo.htmlacademy.ru">
@@ -26,7 +31,7 @@
           <h3 class="hobby__header">Хобби</h3>
         </section>
         <section class="music">
-          <h3 class="mucic__header">Музыка</h3>
+          <h3 class="music__header">Музыка</h3>
           <ul class="music__list">
             <li class="music__item">
               <input type="checkbox" name="hard-rock" id="hard-rock">
@@ -252,7 +257,7 @@
           <button class="travel-companions__button">Позвать!</button>
         </li>
       </ul>
-      <button>Показать еще</button>
+      <button class="travel-companions__button-show">Показать еще</button>
       <div>
         <button>Перелистнуть назад</button>
         <button>Перелистнуть вперед</button>
@@ -326,16 +331,18 @@
       <button>Свернуть</button>
     </section>
   </main>
-  <footer class="catalog-footer">
-    <section class="catalog-socials">
+  <footer class="main-footer">
+    <section class="main-socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <p class="catalog-socials__logo">Погнали?</p>
-      <ul class="catalog-socials__list">
-        <li class="catalog-socials__item"><a>Фейсбук</a></li>
-        <li class="catalog-socials__item"><a>ВК</a></li>
-        <li class="catalog-socials__item"><a>Инстаграм</a></li>
+      <a class="main-header__logo">
+        <img src="img/logo-mobile-blue@1x.png">
+      </a>
+      <ul class="socials__list">
+        <li class="socials__item"><a>Фейсбук</a></li>
+        <li class="socials__item"><a>ВК</a></li>
+        <li class="socials__item"><a>Инстаграм</a></li>
       </ul>
-      <p class="catalog-socials__text">Разработано</p>
+      <p class="socials__text">Разработано</p>
     </section>
   </footer>
 </body>

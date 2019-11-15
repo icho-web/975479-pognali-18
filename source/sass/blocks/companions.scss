@@ -1,0 +1,45 @@
+.companions {
+  background: url(../../img/rogovaya-back-mobile@1x.png) no-repeat -10px 281px,
+              url(../../img/smolov-back-desktop@1x.png) no-repeat 152px 8px, #edeff6;
+}
+
+.companions__wrapper {
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  min-height: 1292px;
+}
+
+.companions__header {
+  font-size: 24px;
+  line-height: 1;
+  color: #ff8d30;
+}
+
+.companions__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.companions__text--bold {
+  font-weight: bold;
+}
+
+.companions__header {
+  font-size: 24px;
+  line-height: 1;
+  color: #ff8d30;
+}
+
+.companions__h3 {
+  font-size: 21px;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.companions__tag {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #444444;
+}

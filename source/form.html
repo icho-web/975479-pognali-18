@@ -4,15 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="form-header">
-    <a class="form-header__logo">
-      <h1>Погнали?</h1>
-    </a>
-    <button class="form-header__toggle" type="button">Открыть меню</button>
-    <p class="form-header__companions">Направления</p>
+    <div class="form-header__wrapper">
+      <a class="form-header__logo">
+        <img src="img/logo-mobile-white@1x.png">
+      </a>
+      <button class="form-header__toggle" type="button">Открыть меню</button>
+      <p class="form-header__companions">Направления</p>
+    </div>
+  </header>
   </header>
 
   <main class="form-main">
@@ -21,152 +25,153 @@
       <img src="https://via.placeholder.com/100x100">
       <img src="https://via.placeholder.com/100x100">
       <button>Сменить фото</button>
-      <textarea>
-                    тэги
-                    #бургер #бар #футбол #концерт #крафт
-            </textarea>
-      <fieldset>
-        <legend>транспорт:</legend>
-        <ul>
-          <li>
+      <p class="form-profile__legend">Тэги</p>
+      <textarea class="form-profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+      <fieldset class="form-profile__fieldset">
+        <legend class="form-profile__legend">транспорт:</legend>
+        <ul class="form-profile__list">
+          <li class="form-profile__item">
             <img src="https://via.placeholder.com/33x33">
           </li>
-          <li>
+          <li class="form-profile__item">
             <img src="https://via.placeholder.com/33x33">
           </li>
-          <li>
+          <li class="form-profile__item">
             <img src="https://via.placeholder.com/33x33">
           </li>
-          <li>
+          <li class="form-profile__item">
             <img src="https://via.placeholder.com/33x33">
           </li>
         </ul>
       </fieldset>
     </section>
     <section class="plan">
-      <h2>Мои планы:</h2>
-      <ol>
-        <li>
-          <h3>Франция, Италия</h3>
-          <p>3 попутчика</p>
-          <time datetime="2020-03-26">26 мар</time> — <time datetime="2020-03-29">29 мар</time>
-          <button>Изменить</button>
+      <h2 class="plan__header">Мои планы:</h2>
+      <ol class="plan__list">
+        <li class="plan__item">
+          <h3 class="plan__h3">Франция, Италия</h3>
+          <p class="plan__text">3 попутчика</p>
+          <time class="plan__time" datetime="2020-03-26">26 мар</time> — <time class="plan__time"
+            datetime="2020-03-29">29 мар</time>
+            <button>Изменить</button>
         </li>
-        <li>
-          <h3>Таиланд, Индонезия</h3>
-          <p>1 попутчик</p>
-          <time datetime="2020-07-01">26 июл</time> — <time datetime="2020-07-15">15 июл</time>
+        <li class="plan__item">
+          <h3 class="plan__h3">Таиланд, Индонезия</h3>
+          <p class="plan__text">1 попутчик</p>
+          <time class="plan__time" datetime="2020-07-01">26 июл</time> — <time class="plan__time"
+            datetime="2020-07-15">15 июл</time>
           <button>Изменить</button>
         </li>
       </ol>
     </section>
     <section class="add-plan">
-      <h2>Добавить план</h2>
+      <h2 class="add-plan__header">Добавить план</h2>
       <section class="dates-stay">
-        <p>Шаг 1.</p>
-        <h3>Даты пребывания</h3>
-        <p>
+        <p class="dates-stay__intro">Шаг 1.</p>
+        <h3 class="dates-stay__h3">Даты пребывания</h3>
+        <p class="dates-stay__text">
           Укажите предпочтительное количество попутчиков, которых
           вы хотели бы позвать в поездку и ее предполагаемую длительность.
         </p>
         <div>
-          <p>ищу попутчиков:</p>
-          <p>чел.</p>
+          <p class="dates-stay__filter">ищу попутчиков:</p>
+          <p class="dates-stay__filter">чел.</p>
         </div>
         <button>Уменьшить</button>
-        <input type="text" value="2">
+        <input class="dates-stay__range" type="text" value="2">
         <button>Увеличить</button>
         <label class="visually-hidden">Количество человек</label>
         <div>
-          <p>длительность:</p>
-          <p>дн.</p>
+          <p class="dates-stay__filter">длительность:</p>
+          <p class="dates-stay__filter">дн.</p>
         </div>
         <button>Уменьшить</button>
-        <input type="text" value="2">
+        <input class="dates-stay__range" type="text" value="2">
         <button>Увеличить</button>
         <label class="visually-hidden">Длительность (дней)</label>
         <input type="checkbox" id="date__checkbox">
-        <label>Можно с детьми</label>
+        <label class="dates-stay__label">Можно с детьми</label>
         <div>
           <button>Предыдущий месяц</button>
-          <p>Март 2019</p>
+          <p class="dates-stay__date">Март 2019</p>
           <button>Следующий месяц</button>
-          <table>
-            <tr>
-              <th>п</th>
-              <th>в</th>
-              <th>с</th>
-              <th>ч</th>
-              <th>п</th>
-              <th>с</th>
-              <th>в</th>
+          <table class="dates-stay__table">
+            <tr class="dates-stay__tr">
+              <th class="dates-stay__th">п</th>
+              <th class="dates-stay__th">в</th>
+              <th class="dates-stay__th">с</th>
+              <th class="dates-stay__th">ч</th>
+              <th class="dates-stay__th">п</th>
+              <th class="dates-stay__th">с</th>
+              <th class="dates-stay__th">в</th>
             </tr>
-            <tr>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>1</td>
-              <td>2</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">24</td>
+              <td class="dates-stay__td">25</td>
+              <td class="dates-stay__td">26</td>
+              <td class="dates-stay__td">27</td>
+              <td class="dates-stay__td">28</td>
+              <td class="dates-stay__td">1</td>
+              <td class="dates-stay__td">2</td>
             </tr>
-            <tr>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">3</td>
+              <td class="dates-stay__td">4</td>
+              <td class="dates-stay__td">5</td>
+              <td class="dates-stay__td">6</td>
+              <td class="dates-stay__td">7</td>
+              <td class="dates-stay__td">8</td>
+              <td class="dates-stay__td">9</td>
             </tr>
-            <tr>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">10</td>
+              <td class="dates-stay__td">11</td>
+              <td class="dates-stay__td">12</td>
+              <td class="dates-stay__td">13</td>
+              <td class="dates-stay__td">14</td>
+              <td class="dates-stay__td">15</td>
+              <td class="dates-stay__td">16</td>
             </tr>
-            <tr>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-              <td>21</td>
-              <td>22</td>
-              <td>23</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">17</td>
+              <td class="dates-stay__td">18</td>
+              <td class="dates-stay__td">19</td>
+              <td class="dates-stay__td">20</td>
+              <td class="dates-stay__td">21</td>
+              <td class="dates-stay__td">22</td>
+              <td class="dates-stay__td">23</td>
             </tr>
-            <tr>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>29</td>
-              <td>30</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">24</td>
+              <td class="dates-stay__td">25</td>
+              <td class="dates-stay__td">26</td>
+              <td class="dates-stay__td">27</td>
+              <td class="dates-stay__td">28</td>
+              <td class="dates-stay__td">29</td>
+              <td class="dates-stay__td">30</td>
             </tr>
-            <tr>
-              <td>31</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
+            <tr class="dates-stay__tr">
+              <td class="dates-stay__td">31</td>
+              <td class="dates-stay__td">1</td>
+              <td class="dates-stay__td">2</td>
+              <td class="dates-stay__td">3</td>
+              <td class="dates-stay__td">4</td>
+              <td class="dates-stay__td">5</td>
+              <td class="dates-stay__td">6</td>
             </tr>
           </table>
         </div>
         <button>Следующий шаг</button>
       </section>
-      <section>
-        <p>Шаг 2.</p>
-        <h3>Маршрут</h3>
-        <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+      <section class="route">
+        <p class="route__intro">Шаг 2.</p>
+        <h3 class="route__header">Маршрут</h3>
+        <p class="route__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+        </p>
         <div>
           <div>
             <select>
-              <option>Босния и Герцеговина</option>
+              <option class="route__option">Босния и Герцеговина</option>
             </select>
           </div>
           <div>
@@ -177,7 +182,7 @@
         <div>
           <div>
             <select>
-              <option>Чехия</option>
+              <option class="route__option">Чехия</option>
             </select>
           </div>
           <div>
@@ -186,42 +191,42 @@
           <img src="https://via.placeholder.com/20x20">
         </div>
         <div>
-          <p>Выберите страну</p>
+          <p class="route__choose">Выберите страну</p>
           <select>
             <option></option>
           </select>
           <img src="https://via.placeholder.com/20x20">
         </div>
         <div>
-          <p>Добавить страну</p>
-
+          <p class="route__add">Добавить страну</p>
           <a><img src="https://via.placeholder.com/20x20"></a>
         </div>
         <button>следующий шаг</button>
         <button>на шаг назад</button>
       </section>
       <section class="fun">
-        <p>Шаг 3.</p>
-        <h3>Развлечения</h3>
-        <p>
+        <p class="fun__intro">Шаг 3.</p>
+        <h3 class="fun__header">Развлечения</h3>
+        <p class="fun__text">
           Наконец, расскажите о своих планах времяпровождения.
           Можно писать в свободной форме и ставить тэги.
         </p>
         <div>
-          <p>Босния и Герцеговина</p>
+          <p class="fun__country">Босния и Герцеговина</p>
           <img src="https://via.placeholder.com/35x24">
-          <input type="text">
+          <input class="fun__action" type="text">
         </div>
         <div>
-          <p>Чехия</p>
+          <p class="fun__country">Чехия</p>
           <img src="https://via.placeholder.com/35x24">
-          <input type="text" value="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
+          <input class="fun__action" type="text"
+            value="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
         </div>
         <button>Отправить</button>
         <button>На шаг назад</button>
       </section>
     </section>
-    <section class="route-popup">
+    <section class="route-popup visually-hidden">
       <h2 class="route-popup__header">Выберите страну</h2>
       <button>Закрыть</button>
       <table class="route-popup__table">
@@ -275,16 +280,18 @@
     </section>
   </main>
 
-  <footer class="catalog-footer">
-    <section class="catalog-socials">
+  <footer class="main-footer">
+    <section class="main-socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <p class="catalog-socials__logo">Погнали?</p>
-      <ul class="catalog-socials__list">
-        <li class="catalog-socials__item"><a>Фейсбук</a></li>
-        <li class="catalog-socials__item"><a>ВК</a></li>
-        <li class="catalog-socials__item"><a>Инстаграм</a></li>
+      <a class="main-header__logo">
+        <img src="img/logo-mobile-blue@1x.png">
+      </a>
+      <ul class="socials__list">
+        <li class="socials__item"><a>Фейсбук</a></li>
+        <li class="socials__item"><a>ВК</a></li>
+        <li class="socials__item"><a>Инстаграм</a></li>
       </ul>
-      <p class="catalog-socials__text">Разработано</p>
+      <p class="socials__text">Разработано</p>
     </section>
   </footer>
 </body>

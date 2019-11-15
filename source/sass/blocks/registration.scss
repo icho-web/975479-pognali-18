@@ -1,0 +1,37 @@
+.registration {
+  background-color: #ffd74b;
+}
+
+.registration__wrapper {
+  background-color: #192144;
+  min-height: 503px;
+  border-radius: 0 0 30px 30px;
+}
+
+.registration__text {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.registration__text--bold {
+  font-size: 24px;
+  line-height: 1;
+  color: #ff8d30;
+}
+
+.registration__tel {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  color: #ffd74b;
+}
+
+.registration__email {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  color: #ffd74b;
+  text-transform: uppercase;
+}
+
