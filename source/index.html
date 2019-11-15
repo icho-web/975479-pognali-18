@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <h1 class="page-header__logo--text">Погнали?</h1>
+    </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a><span class="visually-hidden">Позвонить нам</span></a></li>
+        <li class="main-nav__item"><a><span class="visually-hidden">Написать нам</span></a></li>
+        <li class="main-nav__item main-nav__item--authorization"><a>Авторизация</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="main-desc">
+      <h2 class="visually-hidden">Описание</h2>
+      <q class="main-desc__quote">Лучшее приложение, что я видел в жизни!</q>
+      <cite class="main-desc__cite">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      <ol class="main-desc__list">
+        <li class="main-desc__item">Выберите направление</li>
+        <li class="main-desc__item">Изучите идеи путешественников</li>
+        <li class="main-desc__item">Находите тех, кто похож на вас</li>
+        <li class="main-desc__item">Путешествуйте вместе!</li>
+      </ol>
+    </section>
+    <section class="about-service">
+      <h2 class="about-service__header">О сервисе</h2>
+      <p class="about-service__text">
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+        Делитесь своими идеями путешествий и
+        черпайте вдохновение в чужих.</p>
+      <b class="about-service__text--bold">
+        А если найдете кого-то
+        близкого по духу — скорее
+        зовите в совместный трип!</b>
+    </section>
+    <section class="directions">
+      <h2 class="directions__header">Направления</h2>
+      <p class="directions__text">
+        Мы не продаем туры
+        и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться
+        и чем можно там заняться.
+      </p>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/270x110">
+          <img src="https://via.placeholder.com/35x24">
+          <h3>Таиланд</h3>
+          <p>18321</p>
+          <p>Джунгли зовут!</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/270x110">
+          <img src="https://via.placeholder.com/35x24">
+          <h3>Франция</h3>
+          <p>12518</p>
+          <p>Трэ бьен, манифик!</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/270x110">
+          <img src="https://via.placeholder.com/35x24">
+          <h3>Чехия</h3>
+          <p>5326</p>
+          <p>Закоулки старой Европы</p>
+        </li>
+      </ul>
+      <a>Показать все</a>
+    </section>
+    <section class="companions">
+      <h2 class="companions__header">Попутчики</h2>
+      <p class="companions__text">
+        Все мы индивидуальны и у
+        каждого свой взгляд на идеальный отдых. Одному
+        нужен пляж и коктейль, а
+        другому маршрут для хайкинга.
+      </p>
+      <b class="companions__text--bold">
+        Теперь можно легко найти
+        единомышленников!
+      </b>
+      <ul class="companions__list">
+        <li class="companions__item">
+          <img src="https://via.placeholder.com/270x270">
+          <img src="https://via.placeholder.com/60x60">
+          <img src="https://via.placeholder.com/35x24">
+          <img src="https://via.placeholder.com/35x24">
+          <img src="https://via.placeholder.com/35x24">
+          <h3 class="companions__header">Таня Фирсова</h3>
+          <p class="companions__tag">
+            #ЗОЖ #ПП #Фитнес #пляж
+            #авокадо #смузи
+          </p>
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+        </li>
+        <li class="companions__item">
+          <img src="https://via.placeholder.com/270x270">
+          <img src="https://via.placeholder.com/60x60">
+          <img src="https://via.placeholder.com/35x24">
+          <img src="https://via.placeholder.com/35x24">
+          <h3 class="companions__header">Петя Демин</h3>
+          <p class="companions__tag">
+            #бургер #бар #футбол
+            #концерт #крафт
+          </p>
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+          <img src="https://via.placeholder.com/20x20">
+        </li>
+      </ul>
+      <a class="companions__button">Показать всех</a>
+    </section>
+    <section class="profile">
+      <h2 class="profile__header">Добавьте свой профиль</h2>
+      <img src="https://via.placeholder.com/100x100">
+      <img src="https://via.placeholder.com/35x35">
+      <ol class="profile__list">
+        <li class="profile__item">Базовое размещение
+          Бесплатно
+        </li>
+        <li class="profile__item">
+          Вывод на первых позициях
+          99 руб./мес
+        </li>
+        <li class="profile__item">
+          Кастомный цвет карточки
+          59 руб./мес
+        </li>
+      </ol>
+      <a class="profile__button">Показать тарифы для бизнеса</a>
+    </section>
+    <section class="registration">
+      <h2 class="visually-hidden">Регистрация</h2>
+      <b class="registration__text--bold">Заинтересовались?</b>
+      <p class="registration__text">
+        Зарегистрируйтесь,
+        это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее авторизуйтесь.
+      </p>
+      <input class="registration__email" type="email">
+      <label class="visually-hidden">e-mail</label>
+      <p class="registration__text registration__text--questions">
+        Остались вопросы?
+        Мы с радостью на них ответим!
+      </p>
+      <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="registration__email--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </section>
+    <section class="address">
+      <h2 class="visually-hidden">Где нас найти</h2>
+      <p class="address__text">
+        ул. Большая
+        Конюшенная, 19/8
+      </p>
+      <a class="address__button">Проложить маршрут</a>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section class="socials">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <p class="socials__logo">Погнали?</p>
+      <ul class="socials__list">
+        <li class="socials__item"><a>Фейсбук</a></li>
+        <li class="socials__item"><a>ВК</a></li>
+        <li class="socials__item"><a>Инстаграм</a></li>
+      </ul>
+      <p class="socials__text">Разработано</p>
+    </section>
+  </footer>
+</body>
+
 </html>
