@@ -22,35 +22,31 @@
 @import "blocks/dates-stay.scss";
 @import "blocks/route.scss";
 @import "blocks/fun.scss";
-
+@import "blocks/main-nav.scss";
+@import "blocks/variables.scss";
 
 @font-face {
-  font-family: bloggersans;
-  src: url(../../fonts/bloggersans.woff) format('woff'),
-        url(../../fonts/bloggersans-bolditalic.woff) format('woff'),
-        url(../../fonts/bloggersans-italic.woff) format('woff'),
-        url(../../fonts/bloggersans-light.woff) format('woff'),
-        url(../../fonts/bloggersans-lightitalic.woff) format('woff'),
-        url(../../fonts/bloggersans-medium.woff) format('woff'),
-        url(../../fonts/bloggersans-mediumitalic.woff) format('woff');
+  font-family: "bloggersans";
+  src: url("../fonts/bloggersans.woff") format("woff"),
+    url("../fonts/bloggersans-bolditalic.woff") format("woff"),
+    url("../../fonts/bloggersans-italic.woff") format("woff"),
+    url("../../fonts/bloggersans-light.woff") format("woff");
 }
 
 .visually-hidden {
-	position: absolute;
+  position: absolute;
 
-	width: 1px;
-	height: 1px;
+  width: 1px;
+  height: 1px;
   margin: -1px;
 
-	font-size: 0;
+  font-size: 0;
 
-	clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "bloggersans", Arial, sans-serif;
+  font-family: $font;
   //временно для красоты
   width: 320px;
   margin-left: auto;

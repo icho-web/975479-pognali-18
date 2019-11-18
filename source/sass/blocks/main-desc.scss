@@ -1,6 +1,7 @@
 .main-desc {
   min-height: 564px;
-  background: linear-gradient(to bottom, #161c35 50%,#192144 50%);
+  background-color: #161c35;
+  margin-top: 50px;
 
   font-size: 16px;
   line-height: 1.38;
@@ -15,7 +16,7 @@
 }
 
 .main-desc__item {
-  color: #ffffff
+  color: #ffffff;
 }
 
 .main-desc__item--blue {

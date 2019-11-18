@@ -4,21 +4,67 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="form-header__logo">
-      <img src="img/logo-mobile-white@1x.png">
-    </a>
-    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile-white@1x.png">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+          <g>
+            <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z" />
+            <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
+          </g>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a><span class="visually-hidden">Позвонить нам</span></a></li>
-        <li class="main-nav__item"><a><span class="visually-hidden">Написать нам</span></a></li>
-        <li class="main-nav__item main-nav__item--authorization"><a>Авторизация</a></li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--phone">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18"
+              style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #231F20;
+                }
+              </style>
+              <g>
+                <g id="UrwUhy_1_">
+                  <g>
+                    <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z" />
+                  </g>
+                </g>
+                <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z" />
+                <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z" />
+                <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Позвонить нам</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--mail">
+            <span class="visually-hidden">Написать нам</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link">Авторизация</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -137,43 +183,44 @@
     </section>
     <section class="profile">
       <div class="profile__wrapper">
-      <h2 class="profile__header">Добавьте свой профиль</h2>
-      <img src="https://via.placeholder.com/100x100">
-      <img src="https://via.placeholder.com/35x35">
-      <ol class="profile__list">
-        <li class="profile__item">Базовое размещение
-          Бесплатно
-        </li>
-        <li class="profile__item">
-          Вывод на первых позициях
-          99 руб./мес
-        </li>
-        <li class="profile__item">
-          Кастомный цвет карточки
-          59 руб./мес
-        </li>
-      </ol>
-      <a class="profile__button">Показать тарифы для бизнеса</a>
-    </div>
+        <h2 class="profile__header">Добавьте свой профиль</h2>
+        <img src="https://via.placeholder.com/100x100">
+        <img src="https://via.placeholder.com/35x35">
+        <ol class="profile__list">
+          <li class="profile__item">Базовое размещение
+            Бесплатно
+          </li>
+          <li class="profile__item">
+            Вывод на первых позициях
+            99 руб./мес
+          </li>
+          <li class="profile__item">
+            Кастомный цвет карточки
+            59 руб./мес
+          </li>
+        </ol>
+        <a class="profile__button">Показать тарифы для бизнеса</a>
+      </div>
     </section>
     <section class="registration">
       <div class="registration__wrapper">
-      <h2 class="visually-hidden">Регистрация</h2>
-      <b class="registration__text registration__text--bold">Заинтересовались?</b>
-      <p class="registration__text">
-        Зарегистрируйтесь,
-        это быстро и бесплатно!
-        Уже зарегистрированы? Тогда скорее авторизуйтесь.
-      </p>
-      <input class="registration__email" type="email">
-      <label class="visually-hidden">e-mail</label>
-      <p class="registration__text registration__text--questions">
-        Остались вопросы?
-        Мы с радостью на них ответим!
-      </p>
-      <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
-      <a class="registration__email registration__email--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </div>
+        <h2 class="visually-hidden">Регистрация</h2>
+        <b class="registration__text registration__text--bold">Заинтересовались?</b>
+        <p class="registration__text">
+          Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее авторизуйтесь.
+        </p>
+        <input class="registration__email" type="email">
+        <label class="visually-hidden">e-mail</label>
+        <p class="registration__text registration__text--questions">
+          Остались вопросы?
+          Мы с радостью на них ответим!
+        </p>
+        <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
+        <a class="registration__email registration__email--link"
+          href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
     </section>
     <section class="address">
       <h2 class="visually-hidden">Где нас найти</h2>
