@@ -1,0 +1,53 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav__item {
+  display: flex;
+}
+
+.main-nav__item--link {
+  padding: 5px 40px 5px 37px;
+
+  font-size: 17px;
+  line-height: 1.76;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #ffd74b;
+  border-radius: 20px;
+  color: #161c35;
+}
+
+.main-nav__item--phone {
+  width: 40px;
+  height: 40px;
+
+  background-color: #ff8d30;
+  border-radius: 50%;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  path {
+    fill: #161c35;
+  }
+}
+
+.main-nav__item--mail {
+  width: 40px;
+  height: 40px;
+
+  background-color: #ffbd30;
+  border-radius: 50%;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  path {
+    fill: #161c35;
+  }
+}

@@ -1,0 +1,25 @@
+.about-service {
+  background: #edeff6;
+  margin: 0;
+  color: #ffffff;
+}
+
+.about-service__wrapper {
+  background: url("../../img/about-mobile@1x.png") no-repeat, #192144;
+  min-height: 352px;
+  border-radius: 0 0 30px 30px;
+}
+
+.about-service__header {
+  margin: 0;
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.about-service__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.38;
+}

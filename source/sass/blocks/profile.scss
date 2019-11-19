@@ -1,0 +1,28 @@
+.profile {
+  background-color: #192144;
+}
+
+.profile__wrapper {
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+  min-height: 431px;
+}
+
+.profile__header {
+  font-size: 24px;
+  line-height: 1;
+  color: #ff8d30;
+}
+
+.profile__item {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #444444;
+}
+
+.profile__button {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  color: #192144;
+}

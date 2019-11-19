@@ -2,35 +2,61 @@
   padding-left: 25px;
   padding-top: 27px;
   padding-right: 25px;
-  min-height:478px;
+  min-height: 451px;
 
-  background:#161c35;
-  background-image: url(/source/img/globe-back-mobile@1x.jpg), url(/source/img/traveller-illustration-mobile@1x.png);
+  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 79px 223px,
+    url("../../img/globe-back-mobile@1x.jpg") no-repeat,
+    #161c35;
   color: white;
 }
 
-.page-header__logo--text {
+.page-header__toggle {
+  border: none;
+  background-color: transparent;
+  svg {
+    width: 25px;
+    height: 11px;
+    fill: #ffffff;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.page-header__logo {
+  margin-right: 139px;
+}
+
+.page-header__logo--slogan {
   margin: 0;
-  font-size: 22px;
+
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .page-header__slogan {
+  width: 234px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 245px;
+
   font-size: 36px;
   line-height: 1.11;
+  font-weight: bold;
+  text-align: center;
 }
 
-.main-nav__item--authorization {
-  font-size: 17px;
-  line-height: 1.76;
-  text-transform: uppercase;
-}
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 403px;
+    width: 688px;
+    background-color: red;
+  }
 
-.main-desc {
-  background: linear-gradient(to bottom, #161c35 70%, #192144 30%);
-  min-height: 564px;
-  color: #ffffff;
-}
-
-.main-desc__item {
-  color: #161c35;
+  .page-header__slogan {
+    font-size: 60px;
+  }
 }

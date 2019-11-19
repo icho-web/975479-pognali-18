@@ -1,24 +1,55 @@
 @import "blocks/page-header.scss";
+@import "blocks/main-desc.scss";
+@import "blocks/about-service.scss";
+@import "blocks/directions.scss";
+@import "blocks/companions.scss";
+@import "blocks/profile.scss";
+@import "blocks/registration.scss";
+@import "blocks/address.scss";
+@import "blocks/catalog-header.scss";
+@import "blocks/country-filter.scss";
+@import "blocks/filter.scss";
+@import "blocks/food.scss";
+@import "blocks/level.scss";
+@import "blocks/music.scss";
+@import "blocks/transport.scss";
+@import "blocks/hobby.scss";
+@import "blocks/travel-companions.scss";
+@import "blocks/form-profile.scss";
+@import "blocks/form-header.scss";
+@import "blocks/plan.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/dates-stay.scss";
+@import "blocks/route.scss";
+@import "blocks/fun.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/variables.scss";
 
 @font-face {
-  font-family: bloggersans;
-  src: url(/source/fonts/bloggersans.woff) format('woff');
+  font-family: "bloggersans";
+  src: url("../fonts/bloggersans.woff") format("woff"),
+    url("../fonts/bloggersans-bolditalic.woff") format("woff"),
+    url("../../fonts/bloggersans-italic.woff") format("woff"),
+    url("../../fonts/bloggersans-light.woff") format("woff");
 }
 
 .visually-hidden {
-	position: absolute;
+  position: absolute;
 
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	font-size: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 
-	clip: rect(0 0 0 0);
+  font-size: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "bloggersans";
-  width: 320px; //временно для красоты
+  font-family: $font;
+  //временно для красоты
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
