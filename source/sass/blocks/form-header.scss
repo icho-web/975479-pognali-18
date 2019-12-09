@@ -18,3 +18,31 @@
   color: #ffffff;
   margin: 0;
 }
+
+.form-header__nav {
+  width: auto;
+  height: 568px;
+}
+
+@media (min-width: 768px) {
+  .form-header__nav {
+    margin-top: -364px;
+    height: 910px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .form-header__nav {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 0;
+  }
+
+  .page-header__nav-list--form {
+    position: absolute;
+    width: 550px;
+    bottom: 286px;
+    left: 355px;
+  }
+}

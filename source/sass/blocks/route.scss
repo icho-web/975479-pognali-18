@@ -1,12 +1,15 @@
 .route {
+  padding: 25px 25px 17px 25px;
   background-color: #ffffff;
   border-radius: 10px;
   width: 270px;
+  min-height: 517px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .route__intro {
+  margin: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
@@ -14,6 +17,7 @@
 }
 
 .route__header {
+  margin: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
@@ -26,26 +30,219 @@
   color: #444444;
 }
 
-.route__option {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: 1.4px;
-  color: #1d2e5b;
+.route__country-wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.route__country {
+  padding: 13px 0 13px 12px;
+  min-width: 168px;
+  height: 42px;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+    color: #1d2e5b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+.route__flag {
+  padding: 9px;
+  z-index: 1;
+  width: 54px;
+  height: 42px;
+  margin-left: -1px;
+  border: solid 1px #cbced9;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .route__choose {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: 1.4px;
-  color: #1d2e5b;
+  margin-bottom: 22px;
+  padding: 13px 0 13px 12px;
+  width: 220px;
+  height: 42px;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: 1.4px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
 }
 
 .route__add {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: 1.4px;
-  color: #1d2e5b;
+  margin-bottom: 25px;
+  padding: 13px 0 13px 12px;
+  width: 220px;
+  height: 42px;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+  background-color: #edeff6;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: 1.4px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
+}
+
+.route__button-next {
+  margin-bottom: 10px;
+  padding: 5px 41px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  color: #161c35;
+  background-color: #ffd74b;
+  border: 0;
+  border-radius: 20px;
+}
+
+.route__button-back {
+  text-transform: uppercase;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 41px;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .route {
+    padding: 49px 43px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .route__intro {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .route__header {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .route__text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .route__country-wrapper--top {
+    padding-top: 40px;
+    border-top: solid 1px #cbced9;
+  }
+
+  .route__country {
+    padding: 27px 24px;
+    margin-right: 54px;
+    width: 370px;
+    height: 70px;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .route__flag {
+    width: 70px;
+    height: 43px;
+    border: 0;
+  }
+
+  .route__choose {
+    padding: 27px 24px;
+    margin-right: 54px;
+    width: 370px;
+    height: 70px;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .route__add {
+    padding: 27px 24px;
+    margin-right: 54px;
+    width: 370px;
+    height: 70px;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .route__button-next {
+    padding: 30px 78px 28px 34px;
+    text-transform: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .route__button-back {
+    text-transform: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1439px) {
+  .route {
+    padding: 100px 160px;
+  }
+
+  .route__country {
+    width: 730px;
+  }
+
+  .route__choose {
+    width: 730px;
+  }
+
+  .route__add {
+    width: 730px;
+  }
+
+  .route__button-next {
+    margin-right: 367px;
+  }
+
+  .route__step-wrapper {
+    display: flex;
+  }
 }

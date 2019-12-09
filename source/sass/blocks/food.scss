@@ -1,6 +1,58 @@
 .food__header {
+  margin: 0;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
+
   color: #1d2e5b;
+  border-top: 1px solid #f3c72b;
+  text-transform: uppercase;
+}
+
+.food__list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.food__item {
+  color: #444444;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .food {
+    display: flex;
+    align-items: center;
+  }
+
+  .food__header {
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 88px;
+  }
+
+  .food__list {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .food__item {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .food {
+    display: block;
+  }
+
+  .food__list {
+    flex-direction: column;
+  }
 }

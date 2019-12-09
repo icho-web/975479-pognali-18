@@ -3,24 +3,61 @@
 }
 
 .registration__wrapper {
+  padding: 72px 25px 29px 25px;
   background-color: #192144;
-  min-height: 503px;
+  min-height: 400px;
   border-radius: 0 0 30px 30px;
 }
 
 .registration__text {
+  display: block;
+  text-align: center;
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
 }
 
 .registration__text--bold {
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 1;
   color: #ff8d30;
 }
 
+.registration__text--registration-1 {
+  margin: 0;
+}
+
+.registration__text--registration-2 {
+  margin: 0;
+}
+
+.registration__text--autorization {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0 15px;
+}
+
+.registration__text--questions-1 {
+  margin: 0;
+}
+
+.registration__text--questions-2 {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.registration__input {
+  width: 270px;
+  height: 60px;
+  margin-bottom: 28px;
+
+  border-radius: 10px;
+  border: none;
+}
+
 .registration__tel {
+  padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.38;
@@ -28,9 +65,98 @@
 }
 
 .registration__email {
+  padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.38;
   color: #ffd74b;
   text-transform: uppercase;
+}
+
+.registration__icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.registration__tel-wrapper {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .registration__wrapper {
+    min-height: 570px;
+    padding: 75px;
+  }
+
+  .registration__text {
+    font-size: 28px;
+  }
+
+  .registration__text--bold {
+    font-size: 45px;
+  }
+
+  .registration__text--registration {
+    margin: 0;
+  }
+
+  .registration__text--autorization {
+    width: 610px;
+  }
+
+  .registration__input {
+    width: 620px;
+  }
+
+  .registration__text-wrapper {
+    display: flex;
+  }
+
+  .registration__icon {
+    width: 67px;
+    height: 67px;
+  }
+
+  .registration__tel {
+    font-size: 28px;
+  }
+
+  .registration__email {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .registration__wrapper {
+    padding: 108px 133px 104px 132px;
+    min-height: 750px;
+  }
+
+  .registration__text--bold {
+    margin-bottom: 52px;
+  }
+
+  .registration__contacts-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .registration__text--autorization {
+    width: auto;
+    margin-bottom: 62px;
+  }
+
+  .registration__input {
+    width: 1174px;
+    margin-bottom: 75px;
+  }
+
+  .registration__text--questions-1 {
+    margin: 0 auto;
+  }
 }

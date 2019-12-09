@@ -1,17 +1,93 @@
 .country-filter {
+  position: relative;
   background-color: #edeff6;
 }
 
 .country-filter__wrapper {
+  padding: 15px 29px 10px 25px;
   background-color: #e2e5f2;
-  min-height: 50px;
   border-radius: 0 0 30px 30px;
+}
+
+.country-filter__country-wrapper {
+  display: none;
+}
+
+.country-filter__wrapper-2 {
+  display: flex;
 }
 
 .country-filter__header {
   margin: 0;
+  margin-right: 16px;
   font-size: 16px;
   line-height: 1.38;
   color: #192144;
   text-transform: uppercase;
+}
+
+.country-filter__toggle {
+  border: none;
+  background-color: transparent;
+
+  svg {
+    width: 17px;
+    height: 17px;
+
+    circle {
+      fill: #192144;
+    }
+  }
+}
+
+.country-filter__logo {
+  margin-right: 12px;
+
+  svg {
+    width: 15px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .country-filter__wrapper {
+    display: none;
+  }
+
+  .country-filter__country-wrapper {
+    padding: 59px 75px 53px 75px;
+    display: flex;
+    background-color: #e2e5f2;
+  }
+
+  .country-filter__list {
+    padding-left: 0;
+    display: flex;
+    width: 363px;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none;
+  }
+
+  .country-filter__item {
+    opacity: 0.3;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #192144;
+  }
+
+  .country-filter__item--active {
+    opacity: 1;
+  }
+
+  .country-filter__link {
+    margin-left: 78px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #192144;
+  }
 }

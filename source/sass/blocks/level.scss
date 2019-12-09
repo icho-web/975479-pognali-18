@@ -1,6 +1,51 @@
 .level__header {
+  margin: 0;
+  padding: 12px 0 8px 0;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
+  text-transform: uppercase;
   color: #1d2e5b;
+  border-top: 1px solid #f3c72b;
+}
+
+.level__input {
+  width: 111px;
+  height: 35px;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+  text-align: center;
+
+  &:last-child {
+    margin-left: -1px;
+  }
+}
+
+.level__input-wrapper {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .level {
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  .level__header {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 0;
+  }
+
+  .level__input {
+    width: 75px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
 }
