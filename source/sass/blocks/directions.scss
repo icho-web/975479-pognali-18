@@ -1,6 +1,12 @@
 .directions {
-  background-color: #192144;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 25px 30px 25px;
+  background-color: #edeff6;
   margin: 0;
+  margin-bottom: -25px;
+  border-radius: 0 0 25px 25px;
 }
 
 .directions__list {
@@ -19,12 +25,6 @@
   margin-right: auto;
 
   border-radius: 10px;
-}
-
-.directions__wrapper {
-  min-height: 990px;
-  background-color: #edeff6;
-  border-radius: 0 0 30px 30px;
 }
 
 .directions__header {
@@ -87,6 +87,7 @@
 }
 
 .directions__link {
+  order: 1;
   margin-left: auto;
   margin-right: auto;
   display: table;

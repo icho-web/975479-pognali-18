@@ -1,19 +1,11 @@
 .about-service {
-  position: relative;
-  background: #edeff6;
-  margin: 0;
-  display: flex;
-  color: #ffffff;
-}
-
-.about-service__wrapper {
+  z-index: 10;
   background: url("../../img/about-mobile@1x.png") no-repeat 18px 280px, #192144;
-  min-height: 631px;
-  border-radius: 0 0 30px 30px;
-}
-
-.about-service__text-wrapper {
-  padding: 72px 50px 30px 50px;
+  margin: 0;
+  margin-bottom: -25px;
+  padding: 33px 50px;
+  color: #ffffff;
+  border-radius: 0 0 25px 25px;
 }
 
 .about-service__header {
@@ -26,7 +18,6 @@
 }
 
 .about-service__text {
-  width: 210px;
   margin: 0;
   margin-bottom: 18px;
   font-size: 16px;
@@ -36,113 +27,20 @@
 .about-service__text--bold {
   display: block;
   margin: 0;
-  width: 204px;
 }
 
-.about-service__list {
-  width: 320px;
+.about-service__button {
+  display: table;
+  padding: 22px 150px 22px 24px;
   font-size: 18px;
-  line-height: 1;
   font-weight: bold;
-  margin: 0;
-  margin-top: -80px;
-  padding: 0;
-  list-style: none;
-}
-
-.about-service__item {
-  padding: 23px 96px 22px 25px;
-  min-height: 80px;
-  width: 270px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #ffffff;
-}
-
-.about-service__item--blue {
-  color: #161c35;
-}
-
-.about-service__item--1 {
-  border-radius: 10px 10px 0 0;
-  background-color: #ff8d30;
-}
-
-.about-service__item--2 {
-  margin-top: -10px;
-  border-radius: 10px 10px 0 0;
-  background-color: #ffa530;
-}
-
-.about-service__item--3 {
-  margin-top: -10px;
-  border-radius: 10px 10px 0 0;
-  background-color: #ffbd30;
-}
-
-.about-service__item--4 {
-  height: 75px;
-  border-radius: 0 0 10px 10px;
+  line-height: 1;
   background-color: #ffd74b;
+  color: #1d2e5b;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
-  .about-service {
-    min-height: 920px;
-  }
-
-  .about-service__wrapper {
-    width: 1439px;
-    background: url("../../img/about-tablet@1x.png") no-repeat 384px 284px, #192144;
-  }
-
-  .about-service__text-wrapper {
-    padding: 140px 20px 88px 75px;
-  }
-
-  .about-service__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 692px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -140px;
-  }
-
-  .about-service__item {
-    width: 344px;
-    min-height: 140px;
-
-    font-size: 24px;
-  }
-
-  .about-service__item--1 {
-    width: 368px;
-    background-color: #ff8d30;
-    border-radius: 20px 0 0 0;
-  }
-
-  .about-service__item--2 {
-    margin-left: -20px;
-    margin-top: 0;
-    background-color: #ffa530;
-    border-radius: 20px 20px 0 0;
-  }
-
-  .about-service__item--3 {
-    margin-top: 0;
-    width: 368px;
-    background-color: #ffbd30;
-    border-radius: 0 0 0 20px;
-  }
-
-  .about-service__item--4 {
-    margin-top: 0;
-    margin-left: -20px;
-    background-color: #ffd74b;
-    border-radius: 0 0 20px 20px;
-  }
-
   .about-service__header {
     margin: 0;
     margin-bottom: 38px;
@@ -174,14 +72,6 @@
     min-height: 750px;
   }
 
-  .about-service__wrapper {
-    background: url("../img/about-desktop@1x.png") no-repeat 751px 85px, #192144;
-  }
-
-  .about-service__text-wrapper {
-    padding: 255px 20px 88px 132px;
-  }
-
   .about-service__header {
     margin-bottom: 57px;
   }
@@ -193,44 +83,5 @@
 
   .about-service__text--bold {
     width: 412px;
-  }
-
-  .about-service__list {
-    width: 1320px;
-    min-height: 107px;
-    margin-top: -230px;
-    margin-left: 60px;
-  }
-
-  .about-service__item {
-    margin: 0;
-    padding: 30px 90px 30px 35px;
-    min-height: 107px;
-  }
-
-  .about-service__item--1 {
-    width: 345px;
-    border-radius: 20px 0 0 20px;
-  }
-
-  .about-service__item--2 {
-    padding-left: 30px;
-    width: 376px;
-    margin-left: -30px;
-    border-radius: 20px 0 0 20px;
-  }
-
-  .about-service__item--3 {
-    width: 374px;
-    padding-left: 30px;
-    padding-right: 160px;
-    margin-left: -30px;
-    border-radius: 20px 0 0 20px;
-  }
-
-  .about-service__item--4 {
-    margin-left: -30px;
-    width: 315px;
-    border-radius: 20px;
   }
 }

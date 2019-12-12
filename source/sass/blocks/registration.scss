@@ -1,9 +1,7 @@
 .registration {
-  background-color: #ffd74b;
-}
-
-.registration__wrapper {
+  z-index: 6;
   padding: 72px 25px 29px 25px;
+  margin-bottom: -25px;
   background-color: #192144;
   min-height: 400px;
   border-radius: 0 0 30px 30px;

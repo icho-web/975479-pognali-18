@@ -3,6 +3,8 @@
   padding-top: 27px;
   padding-right: 25px;
   min-height: 478px;
+  display: flex;
+  flex-direction: column;
 
   background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 79px 223px,
     url("../../img/globe-back-mobile@1x.jpg") no-repeat,
@@ -11,6 +13,7 @@
 }
 
 .page-header__toggle {
+  margin-left: auto;
   border: none;
   background-color: transparent;
 
@@ -26,13 +29,9 @@
   margin-bottom: 45px;
 }
 
-.page-header__logo {
-  margin-right: 139px;
-}
-
 .page-header__nav {
   position: relative;
-  margin-top: -458px;
+  margin-top: -460px;
   margin-left: -25px;
   padding: 27px 25px 40px 25px;
 
@@ -45,8 +44,9 @@
 }
 
 .page-header__nav--catalog {
-  margin-top: -145px;
-  margin-left: 0;
+  margin-top: -133px;
+  margin-bottom: -13px;
+  margin-left: -25px;
 }
 
 .page-header__nav-logo {
@@ -203,6 +203,10 @@
     background-color: #192144;
   }
 
+  .page-header__toggle {
+    margin-left: 146px;
+  }
+
   .page-header__menu-wrapper {
     margin-bottom: 116px;
   }
@@ -246,12 +250,12 @@
     width: 768px;
     height: 910px;
     margin-left: -40px;
-    margin-top: -362px;
+    margin-top: -385px;
   }
 
   .page-header__nav--catalog {
-    margin-top: -350px;
-    margin-left: 0;
+    margin-top: -251px;
+    margin-left: -25px;
   }
 
   .page-header__list {
@@ -320,6 +324,7 @@
 
 @media (min-width: 1439px) {
   .page-header {
+    padding: 47px 60px;
     background-color: #161c35;
   }
 
@@ -328,6 +333,7 @@
   }
 
   .page-header__slogan {
+    z-index: 1;
     text-align: left;
     width: 430px;
     margin-left: 88px;
@@ -337,7 +343,7 @@
 
   .page-header__nav {
     padding: 0;
-    margin-top: -357px;
+    margin-top: -395px;
     margin-left: 335px;
     width: 443px;
     height: 20px;

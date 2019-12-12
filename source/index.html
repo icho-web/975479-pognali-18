@@ -14,9 +14,14 @@
   <div class="container">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile-white@1x.png">
+        <a>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+            <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png">
+            <img src="img/logo-mobile-white@1x.png">
+          </picture>
         </a>
+
         <button class="page-header__toggle" type="button">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
@@ -183,199 +188,180 @@
         <q class="main-desc__quote">Лучшее приложение, что я видел в жизни!</q>
         <cite class="main-desc__cite">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</cite>
       </section>
+      <section class="description">
+        <ol class="description__list">
+          <li class="description__item description__item--1">
+            <span class="description__item--blue">Выберите направление</span>
+          </li>
+          <li class="description__item description__item--2">
+            <span class="description__item--blue">Изучите идеи путешественников</span>
+          </li>
+          <li class="description__item description__item--3">
+            <span class="description__item--blue">Находите тех, кто похож на вас</span>
+          </li>
+          <li class="description__item description__item--4">
+            <span class="description__item--blue">Путешествуйте вместе!</span>
+          </li>
+        </ol>
+      </section>
       <section class="about-service">
-        <div class="about-service__wrapper">
-          <ol class="about-service__list">
-            <li class="about-service__item about-service__item--1">
-              <span class="about-service__item--blue">Выберите направление</span>
-            </li>
-            <li class="about-service__item about-service__item--2">
-              <span class="about-service__item--blue">Изучите идеи путешественников</span>
-            </li>
-            <li class="about-service__item about-service__item--3">
-              <span class="about-service__item--blue">Находите тех, кто похож на вас</span>
-            </li>
-            <li class="about-service__item about-service__item--4">
-              <span class="about-service__item--blue">Путешествуйте вместе!</span>
-            </li>
-          </ol>
-          <div class="about-service__text-wrapper">
-            <h2 class="about-service__header">О сервисе</h2>
-            <p class="about-service__text">
-              Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
-              Делитесь своими идеями путешествий и
-              черпайте вдохновение в чужих.</p>
-            <b class="about-service__text about-service__text--bold">
-              А если найдете кого-то
-              близкого по духу — скорее
-              зовите его в совместный трип!</b>
-          </div>
-        </div>
+        <h2 class="about-service__header">О сервисе</h2>
+        <p class="about-service__text">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и
+          черпайте вдохновение в чужих.</p>
+        <b class="about-service__text about-service__text--bold">
+          А если найдете кого-то
+          близкого по духу — скорее
+          зовите в совместный трип!</b>
+        <a class="about-service__button">Подробнее</a>
       </section>
       <section class="directions">
-        <div class="directions__wrapper">
-          <div class="directions__text-wrapper">
-            <h2 class="directions__header">Направления</h2>
-            <p class="directions__text directions__text--desc">
-              Мы не продаем туры <br>
-              и ничего не рекламируем.
-              Люди сами пишут о странах, куда хотели бы отправиться
-              и чем можно там заняться.
-            </p>
-            <a class="directions__link" href="form.html">Показать все</a>
-          </div>
-          <ul class="directions__list">
-            <li class="directions__item">
-              <img class="directions__img" src="./img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24">
-              <div class="directions__card-wrapper">
-                <h3 class="directions__h3">Таиланд</h3>
-                <p class="directions__number">18321</p>
-                <p class="directions__text">Джунгли зовут!</p>
-              </div>
-            </li>
-            <li class="directions__item">
-              <img class="directions__img" src="./img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24">
-              <div class="directions__card-wrapper">
-                <h3 class="directions__h3">Франция</h3>
-                <p class="directions__number">12518</p>
-                <p class="directions__text">Трэ бьен, манифик!</p>
-              </div>
-            </li>
-            <li class="directions__item">
-              <img class="directions__img" src="./img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24">
-              <div class="directions__card-wrapper">
-                <h3 class="directions__h3">Чехия</h3>
-                <p class="directions__number">5326</p>
-                <p class="directions__text">Закоулки старой Европы</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <h2 class="directions__header">Направления</h2>
+        <p class="directions__text directions__text--desc">
+          Мы не продаем туры <br>
+          и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <a class="directions__link" href="form.html">Показать все</a>
+        <ul class="directions__list">
+          <li class="directions__item">
+            <img class="directions__img" src="./img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
+            <img class="directions__flag" src="https://via.placeholder.com/35x24">
+            <div class="directions__card-wrapper">
+              <h3 class="directions__h3">Таиланд</h3>
+              <p class="directions__number">18321</p>
+              <p class="directions__text">Джунгли зовут!</p>
+            </div>
+          </li>
+          <li class="directions__item">
+            <img class="directions__img" src="./img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+            <img class="directions__flag" src="https://via.placeholder.com/35x24">
+            <div class="directions__card-wrapper">
+              <h3 class="directions__h3">Франция</h3>
+              <p class="directions__number">12518</p>
+              <p class="directions__text">Трэ бьен, манифик!</p>
+            </div>
+          </li>
+          <li class="directions__item">
+            <img class="directions__img" src="./img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+            <img class="directions__flag" src="https://via.placeholder.com/35x24">
+            <div class="directions__card-wrapper">
+              <h3 class="directions__h3">Чехия</h3>
+              <p class="directions__number">5326</p>
+              <p class="directions__text">Закоулки старой Европы</p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="companions">
-        <div class="companions__wrapper">
-          <div class="companions__text-wrapper">
-            <h2 class="companions__header">Попутчики</h2>
-            <p class="companions__text">
-              Все мы индивидуальны и у
-              каждого свой взгляд на идеальный отдых. Одному
-              нужен пляж и коктейль,
-              а другому маршрут для хайкинга.
+        <h2 class="companions__header">Попутчики</h2>
+        <p class="companions__text">
+          Все мы индивидуальны и у
+          каждого свой взгляд на идеальный отдых. Одному
+          нужен пляж и коктейль,
+          а другому маршрут для хайкинга.
+        </p>
+        <b class="companions__text companions__text--bold">
+          Теперь можно легко найти
+          единомышленников!
+        </b>
+        <a href="catalog.html">Показать всех</a>
+        <ul class="companions__list">
+          <li class="companions__item">
+            <img class="companions__avatar" src="./img/firsova-desktop@1x.jpg" width="270" height="270">
+            <div class="companions__flags">
+              <img class="companions__flag" src="https://via.placeholder.com/35x24">
+              <img class="companions__flag" src="https://via.placeholder.com/35x24">
+              <img class="companions__flag" src="https://via.placeholder.com/35x24">
+            </div>
+            <h3 class="companions__h3">Таня Фирсова</h3>
+            <p class="companions__tag">
+              #ЗОЖ #ПП #Фитнес #пляж
+              #авокадо #смузи
             </p>
-            <b class="companions__text companions__text--bold">
-              Теперь можно легко найти
-              единомышленников!
-            </b>
-            <a href="catalog.html">Показать всех</a>
-          </div>
-          <ul class="companions__list">
-            <li class="companions__item">
-              <img class="companions__avatar" src="./img/firsova-desktop@1x.jpg" width="270" height="270">
-              <div class="companions__flags">
-                <img class="companions__flag" src="https://via.placeholder.com/35x24">
-                <img class="companions__flag" src="https://via.placeholder.com/35x24">
-                <img class="companions__flag" src="https://via.placeholder.com/35x24">
-              </div>
-              <h3 class="companions__h3">Таня Фирсова</h3>
-              <p class="companions__tag">
-                #ЗОЖ #ПП #Фитнес #пляж
-                #авокадо #смузи
-              </p>
-              <div class="companions__travel">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-              </div>
-            </li>
-            <li class="companions__item">
-              <img class="companions__avatar" src="./img/demin-desktop@1x.jpg" width="270" height="270">
-              <div class="companions__flags">
-                <img class="companions__flag" src="https://via.placeholder.com/35x24">
-                <img class="companions__flag" src="https://via.placeholder.com/35x24">
-              </div>
-              <h3 class="companions__h3">Петя Демин</h3>
-              <p class="companions__tag">
-                #бургер #бар #футбол
-                #концерт #крафт
-              </p>
-              <div class="companions__travel">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-                <img src="https://via.placeholder.com/20x20">
-              </div>
-            </li>
-          </ul>
-        </div>
+            <div class="companions__travel">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+            </div>
+          </li>
+          <li class="companions__item">
+            <img class="companions__avatar" src="./img/demin-desktop@1x.jpg" width="270" height="270">
+            <div class="companions__flags">
+              <img class="companions__flag" src="https://via.placeholder.com/35x24">
+              <img class="companions__flag" src="https://via.placeholder.com/35x24">
+            </div>
+            <h3 class="companions__h3">Петя Демин</h3>
+            <p class="companions__tag">
+              #бургер #бар #футбол
+              #концерт #крафт
+            </p>
+            <div class="companions__travel">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+              <img src="https://via.placeholder.com/20x20">
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="profile">
-        <div class="profile__wrapper">
-          <div class="profile__header-wrapper">
-            <h2 class="profile__header">Добавьте свой профиль</h2>
-            <img src="https://via.placeholder.com/100x100">
-            <img class="profile__icon" src="https://via.placeholder.com/35x35">
-          </div>
-          <ol class="profile__list">
-            <li class="profile__item">
-              <p class="profile__item--desc">Базовое размещение</p>
-              <p class="profile__item--price">Бесплатно</p>
-            </li>
-            <li class="profile__item">
-              <p class="profile__item--desc">Вывод на первых позициях</p>
-              <p class="profile__item--price">99 руб./мес</p>
-            </li>
-            <li class="profile__item">
-              <p class="profile__item--desc">Кастомный цвет карточки</p>
-              <p class="profile__item--price">59 руб./мес</p>
-            </li>
-          </ol>
-          <a class="profile__button">Показать тарифы для бизнеса</a>
+        <div class="profile__header-wrapper">
+          <h2 class="profile__header">Добавьте свой профиль</h2>
+          <img src="https://via.placeholder.com/100x100">
+          <img class="profile__icon" src="https://via.placeholder.com/35x35">
         </div>
+        <ol class="profile__list">
+          <li class="profile__item">
+            <p class="profile__item--desc">Базовое размещение</p>
+            <p class="profile__item--price">Бесплатно</p>
+          </li>
+          <li class="profile__item">
+            <p class="profile__item--desc">Вывод на первых позициях</p>
+            <p class="profile__item--price">99 руб./мес</p>
+          </li>
+          <li class="profile__item">
+            <p class="profile__item--desc">Кастомный цвет карточки</p>
+            <p class="profile__item--price">59 руб./мес</p>
+          </li>
+        </ol>
+        <a class="profile__button">Показать тарифы для бизнеса</a>
       </section>
       <section class="registration">
-        <div class="registration__wrapper">
-          <h2 class="visually-hidden">Регистрация</h2>
-          <b class="registration__text registration__text--bold">Заинтересовались?</b>
-          <p class="registration__text registration__text--registration">Зарегистрируйтесь, это быстро и бесплатно!</p>
-          <p class="registration__text registration__text--autorization">
-            Уже зарегистрированы? Тогда скорее авторизуйтесь.
-          </p>
-          <input class="registration__input" type="email" placeholder="E-mail">
-          <label class="visually-hidden">e-mail</label>
-          <div class="registration__text-wrapper">
-            <p class="registration__text registration__text--questions-1">
-              Остались вопросы? Мы с радостью на них ответим!
-            </p>
-          </div>
-          <div class="registration__contacts-wrapper">
-            <div class="registration__tel-wrapper">
-              <a class="registration__icon"></a>
-              <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
-            </div>
-            <div class="registration__tel-wrapper">
-              <a class="registration__icon"></a>
-              <a class="registration__email registration__email--link"
-                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-          </div>
+        <h2 class="visually-hidden">Регистрация</h2>
+        <b class="registration__text registration__text--bold">Заинтересовались?</b>
+        <p class="registration__text registration__text--registration">Зарегистрируйтесь, это быстро и бесплатно!</p>
+        <p class="registration__text registration__text--autorization">
+          Уже зарегистрированы? Тогда скорее авторизуйтесь.
+        </p>
+        <input class="registration__input" type="email" placeholder="E-mail">
+        <label class="visually-hidden">e-mail</label>
+        <p class="registration__text registration__text--questions-1">
+          Остались вопросы? Мы с радостью на них ответим!
+        </p>
+        <div class="registration__tel-wrapper">
+          <a class="registration__icon"></a>
+          <a class="registration__tel" href="tel:88005558628">8 800 555-86-28</a>
+        </div>
+        <div class="registration__tel-wrapper">
+          <a class="registration__icon"></a>
+          <a class="registration__email registration__email--link"
+            href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
       </section>
       <section class="address">
-        <div class="address__wrapper">
-          <h2 class="visually-hidden">Где нас найти</h2>
-          <div class="address__text-wrapper">
-            <a class="address__icon"></a>
-            <p class="address__text">
-              ул. Большая
-              Конюшенная, 19/8
-            </p>
-          </div>
-          <a class="address__button">Проложить маршрут</a>
+        <h2 class="visually-hidden">Где нас найти</h2>
+        <div class="address__text-wrapper">
+          <a class="address__icon"></a>
+          <p class="address__text">
+            ул. Большая
+            Конюшенная, 19/8
+          </p>
         </div>
+        <a class="address__button">Проложить маршрут</a>
       </section>
       <section class="map">
         <iframe class="map__iframe"
@@ -408,18 +394,16 @@
     </main>
 
     <footer class="main-footer">
-      <section class="socials">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="socials__logo">
-          <img src="img/logo-mobile-blue@1x.png">
-        </a>
-        <ul class="socials__list">
-          <li><a class="socials__item"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="socials__item"><span class="visually-hidden">VK</span></a></li>
-          <li><a class="socials__item"><span class="visually-hidden">Instagram</span></a></li>
-        </ul>
-        <p class="socials__text">Разработано</p>
-      </section>
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a class="main-footer__logo">
+        <img src="img/logo-mobile-blue@1x.png">
+      </a>
+      <ul class="main-footer__list">
+        <li><a class="main-footer__item"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="main-footer__item"><span class="visually-hidden">VK</span></a></li>
+        <li><a class="main-footer__item"><span class="visually-hidden">Instagram</span></a></li>
+      </ul>
+      <p class="main-footer__text">Разработано</p>
     </footer>
   </div>
 </body>

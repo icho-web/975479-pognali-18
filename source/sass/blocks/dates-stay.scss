@@ -1,4 +1,6 @@
 .dates-stay {
+  display: flex;
+  flex-direction: column;
   padding: 24px 25px 22px 25px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -7,6 +9,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+}
+
+.dates-stay__header-wrapper {
+  order: -3;
 }
 
 .dates-stay__intro {
@@ -163,6 +169,19 @@
   background-color: #ffd74b;
   border: 0;
   border-radius: 20px;
+}
+
+.dates-stay__div-1 {
+  order: -2;
+}
+
+.dates-stay__div-2 {
+  order: 0;
+}
+
+.dates-stay__form {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -333,9 +352,8 @@
   }
 
   .dates-stay__input-wrapper {
-    position: absolute;
-    left: 600px;
-    bottom: 100px;
+    order: -2;
+    margin-left: auto;
   }
 
   .dates-stay__td {
@@ -347,5 +365,23 @@
 
   .dates-stay__step-wrapper {
     display: flex;
+  }
+
+  .dates-stay__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dates-stay__div-1 {
+    margin-bottom: 14px;
+  }
+
+  .dates-stay__button--left {
+    left: -170px;
+    bottom: -11px;
+  }
+
+  .dates-stay__button--right {
+    bottom: -11px;
   }
 }

@@ -6,14 +6,13 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header class="catalog-header">
-      <div class="catalog-header__wrapper">
         <div class="catalog-header__logo-wrapper">
           <a href="index.html" class="catalog-header__logo">
             <img src="img/logo-mobile-white@1x.png">
@@ -71,7 +70,6 @@
           <p class="catalog-header__companions">Попутчики</p>
           <a class="catalog-header__main">На главную</a>
         </div>
-      </div>
       <nav class="page-header__nav page-header__nav--catalog">
         <div class="page-header__menu-wrapper">
           <a class="page-header__nav-logo" href="index.html">
@@ -228,7 +226,6 @@
       <div class="catalog-main__section-wrapper">
         <section class="filter">
           <form class="filter__form" method="GET" action="https://echo.htmlacademy.ru">
-            <div class="filter__wrapper">
               <h2 class="filter__header">Подберите идеального попутчика</h2>
               <section class="hobby">
                 <h3 class="hobby__header">Хобби</h3>
@@ -306,7 +303,6 @@
                 </div>
                 <div></div>
               </section>
-            </div>
             <button class="filter__button-submit" type="submit">Показать</button>
           </form>
         </section>
@@ -642,18 +638,16 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="socials__logo">
+        <a class="main-footer__logo">
           <img src="img/logo-mobile-blue@1x.png">
         </a>
-        <ul class="socials__list">
-          <li><a class="socials__item"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="socials__item"><span class="visually-hidden">VK</span></a></li>
-          <li><a class="socials__item"><span class="visually-hidden">Instagram</span></a></li>
+        <ul class="main-footer__list">
+          <li><a class="main-footer__item"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="main-footer__item"><span class="visually-hidden">VK</span></a></li>
+          <li><a class="main-footer__item"><span class="visually-hidden">Instagram</span></a></li>
         </ul>
         <p class="socials__text">Разработано</p>
-      </section>
     </footer>
   </div>
 </body>

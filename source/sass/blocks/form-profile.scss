@@ -176,9 +176,11 @@
 @media (min-width: 1439px) {
   .form-profile {
     min-height: auto;
+    padding-top: 76px;
   }
 
   .form-profile__avatar-wrapper {
+    z-index: 5;
     margin-top: -385px;
     margin-bottom: 148px;
     align-items: center;

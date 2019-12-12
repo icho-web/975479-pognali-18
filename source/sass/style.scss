@@ -1,5 +1,6 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-desc.scss";
+@import "blocks/description.scss";
 @import "blocks/about-service.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
@@ -24,7 +25,7 @@
 @import "blocks/fun.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/map.scss";
-@import "blocks/socials.scss";
+@import "blocks/main-footer.scss";
 @import "blocks/variables.scss";
 @import "blocks/catalog-main.scss";
 
@@ -87,6 +88,11 @@ a {
 .container {
   max-width: 320px;
   margin: 0 auto;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
 }
 
 .visually-hidden {

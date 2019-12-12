@@ -1,12 +1,10 @@
 .profile {
-  background-color: #192144;
-}
-
-.profile__wrapper {
+  z-index: 7;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
   min-height: 369px;
   padding: 36px 26px 38px 50px;
+  margin-bottom: -25px;
 
   img {
     border-radius: 50%;

@@ -1,6 +1,11 @@
 .catalog-header {
   position: relative;
-  background-color: #e2e5f2;
+  z-index: 5;
+  background-color: #161c35;
+  border-radius: 0 0 30px 30px;
+  padding: 20px 25px 12px 25px;
+  min-height: 112px;
+  margin-bottom: -25px;
 }
 
 .catalog-header__companions--active {
@@ -46,17 +51,6 @@
   margin: 0;
 }
 
-.catalog-header__logo {
-  margin-right: 139px;
-}
-
-.catalog-header__wrapper {
-  background-color: #161c35;
-  border-radius: 0 0 20px 20px;
-  padding: 20px 25px 12px 25px;
-  min-height: 112px;
-}
-
 .catalog-header__logo-wrapper {
   display: flex;
   margin-bottom: 50px;
@@ -82,10 +76,6 @@
   .catalog-header__wrapper {
     padding: 40px 40px 70px 77px;
     min-height: 350px;
-  }
-
-  .page-header__toggle {
-    margin-right: 144px;
   }
 
   .catalog-header__companions-wrapper {
@@ -132,6 +122,10 @@
 }
 
 @media (min-width: 1439px) {
+  .catalog-header {
+    padding: 45px 60px;
+  }
+
   .catalog-header__companions {
     margin-right: 760px;
   }

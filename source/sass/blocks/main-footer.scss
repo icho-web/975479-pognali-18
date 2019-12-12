@@ -1,16 +1,18 @@
-.socials {
+.main-footer {
   position: relative;
   z-index: 2;
   padding: 45px 25px 15px 25px;
   min-height: 180px;
   width: 320px;
+  display: flex;
+  flex-direction: column;
 
   background-color: #ffffff;
 
   border-radius: 30px 30px 0 0;
 }
 
-.socials__list {
+.main-footer__list {
   display: flex;
   justify-content: center;
   min-width: 135px;
@@ -22,7 +24,7 @@
   list-style: none;
 }
 
-.socials__item {
+.main-footer__item {
   display: block;
   width: 45px;
   height: 45px;
@@ -31,18 +33,18 @@
   border-radius: 50%;
 }
 
-.socials__logo {
+.main-footer__logo {
   display: table;
   margin: 0 auto;
   margin-bottom: 32px;
 }
 
-.socials__text {
+.main-footer__text {
   font-weight: normal;
 }
 
 @media (min-width: 768px) {
-  .socials {
+  .main-footer {
     display: flex;
     margin: 0;
     padding: 40px 45px 0 45px;
@@ -50,23 +52,23 @@
     min-height: 60px;
   }
 
-  .socials__list {
+  .main-footer__list {
     margin-right: 100px;
   }
 
-  .socials__item {
+  .main-footer__item {
     width: 60px;
     height: 60px;
   }
 
-  .socials__logo {
+  .main-footer__logo {
     margin: 0;
     margin-right: 100px;
   }
 }
 
 @media (min-width: 1439px) {
-  .socials {
+  .main-footer {
     min-height: 154px;
     width: 1439px;
     margin-top: -58px;

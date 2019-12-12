@@ -29,6 +29,9 @@
 }
 
 .main-nav__item--phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
 
@@ -90,7 +93,7 @@
   .main-nav__item--link {
     position: absolute;
     right: -688px;
-    top: -322px;
+    top: -346px;
 
     padding: 12px 34px 8px 34px;
     font-size: 20px;
@@ -120,8 +123,14 @@
 
   .main-nav__list {
     position: absolute;
-    left: 1050px;
-    bottom: 280px;
+    left: 1021px;
+    bottom: 352px;
+  }
+
+  .main-nav__list--form {
+    left: auto;
+    right: 60px;
+    bottom: 254px;
   }
 
   .main-nav__list--catalog {
@@ -137,7 +146,7 @@
   }
 
   .main-nav__item--phone {
-    display: block;
+    display: flex;
     width: 50px;
     height: 50px;
   }
