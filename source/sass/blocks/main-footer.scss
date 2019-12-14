@@ -46,6 +46,7 @@
 @media (min-width: 768px) {
   .main-footer {
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 40px 45px 0 45px;
     width: 768px;

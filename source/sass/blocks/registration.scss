@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 768px) {
-  .registration__wrapper {
+  .registration {
     min-height: 570px;
     padding: 75px;
   }
@@ -133,6 +133,11 @@
   .registration__wrapper {
     padding: 108px 133px 104px 132px;
     min-height: 750px;
+  }
+
+  .registration__tels-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .registration__text--bold {

@@ -2,7 +2,7 @@
   z-index: 9;
   display: flex;
   flex-direction: column;
-  padding: 55px 25px 30px 25px;
+  padding: 55px 25px 90px 25px;
   background-color: #edeff6;
   margin: 0;
   margin-bottom: -25px;
@@ -107,8 +107,9 @@
 }
 
 @media (min-width: 768px) {
-  .directions__wrapper {
-    min-height: 1090px;
+  .directions {
+    padding: 75px;
+    padding-bottom: 100px;
   }
 
   .directions__text-wrapper {
@@ -124,7 +125,8 @@
   .directions__text--desc {
     font-size: 28px;
     line-height: 1.18;
-    width: 340px;
+    width: 400px;
+    margin-bottom: 50px;
   }
 
   .directions__list {
@@ -157,15 +159,26 @@
   }
 
   .directions__link {
-    padding: 31px 446px 32px 34px;
+    padding: 31px 40px 32px 34px;
   }
 }
 
 @media (min-width: 1439px) {
-  .directions__wrapper {
+  .directions {
     padding: 161px 130px 60px 132px;
-    display: flex;
     min-height: 500px;
+  }
+
+  .directions__desktop-wrapper {
+    display: flex;
+  }
+
+  .directions__link {
+    margin: -81px 351px 81px auto;
+  }
+
+  .directions__list {
+    order: -1;
   }
 
   .directions__card-wrapper {
