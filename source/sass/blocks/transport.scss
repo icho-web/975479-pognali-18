@@ -1,6 +1,35 @@
 .transport__header {
+  margin: 0;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
+  padding: 12px 0 8px 0;
+  text-transform: uppercase;
   color: #1d2e5b;
+  border-top: 1px solid #f3c72b;
+}
+
+.transport__list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.transport__item {
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .transport {
+    display: flex;
+  }
+
+  .transport__header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 0;
+  }
 }

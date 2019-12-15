@@ -1,5 +1,6 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-desc.scss";
+@import "blocks/description.scss";
 @import "blocks/about-service.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
@@ -23,14 +24,75 @@
 @import "blocks/route.scss";
 @import "blocks/fun.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";
 @import "blocks/variables.scss";
+@import "blocks/catalog-main.scss";
 
 @font-face {
   font-family: "bloggersans";
-  src: url("../fonts/bloggersans.woff") format("woff"),
-    url("../fonts/bloggersans-bolditalic.woff") format("woff"),
-    url("../../fonts/bloggersans-italic.woff") format("woff"),
-    url("../../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/bloggersans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bloggersans";
+  font-weight: 700;
+  font-style: bold;
+  src: url("../fonts/bloggersans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bloggersans";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/bloggersans-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bloggersans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/bloggersans-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bloggersans";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/bloggersans-lightitalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bloggersans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/bloggersans-medium.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
 }
 
 .visually-hidden {
@@ -47,9 +109,28 @@
 
 body {
   font-family: $font;
-  //временно для красоты
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+.form-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer {
+  display: flex;
+  margin-top: -25px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1439px) {
+  .container {
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+}

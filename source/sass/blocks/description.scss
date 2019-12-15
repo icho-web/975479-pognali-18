@@ -1,0 +1,134 @@
+.description {
+  background-color: #192144;
+  padding: 0 25px;
+}
+
+.description__list {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: -72px;
+  padding: 0;
+  list-style: none;
+}
+
+.description__item {
+  padding: 23px 96px 22px 25px;
+  min-height: 80px;
+  width: 270px;
+  color: #ffffff;
+}
+
+.description__item--blue {
+  color: #161c35;
+}
+
+.description__item--1 {
+  border-radius: 10px 10px 0 0;
+  background-color: #ff8d30;
+}
+
+.description__item--2 {
+  margin-top: -10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ffa530;
+}
+
+.description__item--3 {
+  margin-top: -10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ffbd30;
+}
+
+.description__item--4 {
+  height: 75px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffd74b;
+}
+
+@media (min-width: 768px) {
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 692px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140px;
+  }
+
+  .description__item {
+    width: 344px;
+    min-height: 140px;
+
+    font-size: 24px;
+  }
+
+  .description__item--1 {
+    width: 368px;
+    background-color: #ff8d30;
+    border-radius: 20px 0 0 0;
+  }
+
+  .description__item--2 {
+    margin-left: -20px;
+    margin-top: 0;
+    background-color: #ffa530;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .description__item--3 {
+    margin-top: 0;
+    width: 368px;
+    background-color: #ffbd30;
+    border-radius: 0 0 0 20px;
+  }
+
+  .description__item--4 {
+    margin-top: 0;
+    margin-left: -20px;
+    background-color: #ffd74b;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .description__list {
+    width: 1320px;
+    min-height: 107px;
+    margin-top: -230px;
+    margin-left: 60px;
+  }
+
+  .description__item {
+    margin: 0;
+    padding: 30px 90px 30px 35px;
+    min-height: 107px;
+  }
+
+  .description__item--1 {
+    width: 345px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .description__item--2 {
+    padding-left: 30px;
+    width: 376px;
+    margin-left: -30px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .description__item--3 {
+    width: 374px;
+    padding-left: 30px;
+    padding-right: 160px;
+    margin-left: -30px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .description__item--4 {
+    margin-left: -30px;
+    width: 315px;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  height: 300px;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .map {
+    height: 481px;
+  }
+
+  .map__iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .map__iframe {
+    width: 1439px;
+  }
+}

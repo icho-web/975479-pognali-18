@@ -1,11 +1,250 @@
 .form-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px 33px 25px;
+  min-height: 450px;
   background-color: #edeff6;
 }
 
+.form-profile__avatar-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  padding-left: 18px;
+}
+
+.form-profile__photo {
+  margin: 0;
+}
+
+.form-profile__level-icon {
+  margin-right: 31px;
+
+  border-radius: 50%;
+}
+
+.form-profile__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.form-profile__change-photo {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 75px;
+  background-color: #dfe3f0;
+  color: #161c35;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 1.76;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-profile__textarea-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+}
+
 .form-profile__legend {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
   color: #1d2e5b;
+  background-color: #edeff6;
   text-transform: uppercase;
+  z-index: 1;
+}
+
+.form-profile__legend--tag {
+  width: 70px;
+}
+
+.form-profile__legend--transport {
+  width: 110px;
+}
+
+.form-profile__textarea {
+  padding: 26px 33px 25px 26px;
+  margin-top: -26px;
+  width: 270px;
+  resize: none;
+
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid 1px #cbced9;
+}
+
+.form-profile__transport-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-profile__list {
+  margin-top: -27px;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  list-style: none;
+  border: solid 1px #cbced9;
+  border-radius: 10px;
+}
+
+.form-profile__item {
+  width: 33px;
+  height: 33px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-profile {
+    padding: 50px 75px;
+  }
+
+  .form-profile__level-icon {
+    margin-right: 390px;
+  }
+
+  .form-profile__transport-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+  }
+
+  .form-profile__list {
+    margin-top: 0;
+    margin-bottom: -30px;
+    width: 308px;
+    height: 94px;
+    padding: 26px 15px;
+  }
+
+  .form-profile__avatar-wrapper {
+    margin-top: -113px;
+    margin-bottom: 50px;
+  }
+
+  .form-profile__legend--transport {
+    order: 1;
+    margin-bottom: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .form-profile__change-photo {
+    padding: 20px 229px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .form-profile__textarea {
+    display: flex;
+    padding: 30px 40px;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .form-profile__textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-profile__legend--tag {
+    order: 1;
+    margin-top: -8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .form-profile {
+    min-height: auto;
+    padding-top: 76px;
+  }
+
+  .form-profile__avatar-wrapper {
+    z-index: 5;
+    margin-top: -385px;
+    margin-bottom: 148px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .form-profile__level-icon {
+    position: relative;
+    order: 1;
+    margin-right: 50px;
+  }
+
+  .form-profile__avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .form-profile__photo {
+    padding-top: 15px;
+    margin-top: -5px;
+    height: 47px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    background-color: #dfe3f0;
+    border-radius: 0 0 10px 10px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
+
+  .form-profile__picture {
+    position: relative;
+    order: 1;
+  }
+
+  .form-profile__transport-wrapper {
+    margin: 0;
+    width: 384px;
+    margin-left: auto;
+  }
+
+  .form-profile__textarea-wrapper {
+    margin: 0;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 730px;
+    height: 94px;
+    order: -1;
+  }
+
+  .form-profile__list {
+    width: 384px;
+    height: 94px;
+    margin-top: -123px;
+  }
+
+  .form-profile__change-photo {
+    display: none;
+  }
+
+  .form-profile__legend--tag {
+    margin-left: 30px;
+  }
 }

@@ -1,5 +1,7 @@
 .fun {
+  padding: 25px 25px 17px 25px;
   width: 270px;
+  min-height: 839px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
@@ -27,8 +29,135 @@
 }
 
 .fun__country {
+  margin: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1;
   color: #1d2e5b;
+}
+
+.fun__country-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fun__flag {
+  width: 35px;
+  height: 24px;
+  margin-left: auto;
+}
+
+.fun__action {
+  padding: 10px;
+  width: 220px;
+  min-height: 220px;
+  resize: none;
+}
+
+.fun__action--bosnia {
+  margin-bottom: 28px;
+}
+
+.fun__action--czech {
+  margin-bottom: 22px;
+}
+
+.fun__button-send {
+  padding: 5px 70px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  color: #161c35;
+  background-color: #ffd74b;
+  border: 0;
+  border-radius: 20px;
+}
+
+.fun__button-back {
+  text-transform: uppercase;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 41px;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .fun {
+    width: auto;
+    padding: 50px 45px;
+  }
+
+  .fun__intro {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .fun__header {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .fun__text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .fun__country {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.6;
+  }
+
+  .fun__action--bosnia {
+    width: 527px;
+    min-height: auto;
+    height: 142px;
+  }
+
+  .fun__action--czech {
+    width: 527px;
+    min-height: auto;
+    height: 142px;
+  }
+
+  .fun__button-send {
+    padding: 30px 140px 28px 34px;
+    text-transform: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .fun__button-back {
+    text-transform: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1439px) {
+  .fun {
+    padding: 100px 160px;
+  }
+
+  .fun__step-wrapper {
+    display: flex;
+  }
+
+  .fun__action {
+    width: 730px;
+  }
+
+  .fun__button-send {
+    margin-right: 400px;
+  }
 }
