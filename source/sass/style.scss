@@ -85,10 +85,10 @@ a {
   text-decoration: none;
 }
 
-.container {
+ .container {
   max-width: 320px;
   margin: 0 auto;
-}
+ }
 
 .page-main {
   display: flex;
@@ -119,18 +119,4 @@ body {
 .main-footer {
   display: flex;
   margin-top: -25px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1439px) {
-  .container {
-    max-width: 1439px;
-    margin: 0 auto;
-  }
 }

@@ -1,12 +1,13 @@
 .page-header {
-  padding-left: 25px;
+  margin: 0 auto;
+  padding-left: 8%;
   padding-top: 27px;
-  padding-right: 25px;
+  padding-right: 8%;
   min-height: 478px;
   display: flex;
   flex-direction: column;
 
-  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 79px 223px,
+  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 50% 223px,
     url("../../img/globe-back-mobile@1x.jpg") no-repeat,
     #161c35;
   color: white;
@@ -181,10 +182,8 @@
 
 .page-header__slogan {
   width: 240px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 245px;
+  margin: 0 auto;
+  margin-bottom: auto;
 
   font-size: 36px;
   line-height: 1.11;

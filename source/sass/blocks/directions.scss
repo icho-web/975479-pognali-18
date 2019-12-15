@@ -2,7 +2,7 @@
   z-index: 9;
   display: flex;
   flex-direction: column;
-  padding: 55px 25px 90px 25px;
+  padding: 97px 8% 30px 8%;
   background-color: #edeff6;
   margin: 0;
   margin-bottom: -25px;
@@ -20,9 +20,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
 
   border-radius: 10px;
 }
@@ -52,18 +49,18 @@
 
 .directions__text--desc {
   margin: 0;
+  margin-bottom: 66px;
   opacity: 1;
-  width: 195px;
   line-height: 1.38;
   font-weight: 300;
 }
 
 .directions__text-wrapper {
-  padding: 72px 50px 59px 50px;
+  padding: 0 8%;
 }
 
 .directions__card-wrapper {
-  padding: 28px 24px 23px 24px;
+  padding: 28px 9.6% 23px 9.6%;
   margin-top: -11px;
   margin-bottom: 10px;
   background-color: #ffffff;
@@ -88,10 +85,8 @@
 
 .directions__link {
   order: 1;
-  margin-left: auto;
-  margin-right: auto;
   display: table;
-  padding: 22px 150px 22px 24px;
+  padding: 22px 52.4% 22px 8.9%;
 
   font-size: 18px;
   font-weight: bold;
@@ -103,6 +98,7 @@
 }
 
 .directions__img {
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 

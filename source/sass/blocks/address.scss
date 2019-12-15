@@ -1,7 +1,7 @@
 .address {
   position: relative;
   z-index: 2;
-  padding: 32px 25px 35px 25px;
+  padding: 57px 7.6% 35px 8%;
   background-color: #ffd74b;
   min-height: 130px;
   border-radius: 0 0 30px 30px;
@@ -20,6 +20,7 @@
 }
 
 .address__button {
+  display: block;
   padding: 20px 78px 20px 20px;
   font-size: 18px;
   line-height: 1;
@@ -32,7 +33,7 @@
 
 .address__text-wrapper {
   display: flex;
-  margin-bottom: 53px;
+  margin-bottom: 32px;
 }
 
 .address__icon {
