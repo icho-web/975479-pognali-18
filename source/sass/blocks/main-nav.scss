@@ -16,7 +16,7 @@
 }
 
 .main-nav__item--link {
-  padding: 7px 44px 3px 44px;
+  padding: 7px 45px 3px 34px;
 
   font-size: 17px;
   line-height: 1.76;
@@ -50,6 +50,9 @@
 }
 
 .main-nav__item--mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
 

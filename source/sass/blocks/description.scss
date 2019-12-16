@@ -9,18 +9,26 @@
   line-height: 1;
   font-weight: bold;
   margin: 0 auto;
-  margin-top: -72px;
+  margin-top: -82px;
   padding: 0;
   list-style: none;
 }
 
 .description__item {
-  padding: 23px 96px 22px 25px;
+  display: flex;
+  padding: 23px 20px 32px 25px;
   min-height: 80px;
   color: #ffffff;
 }
 
+.description__item-number {
+  margin: 0;
+  margin-left: auto;
+}
+
 .description__item--blue {
+  margin: 0;
+  padding-right: 30px;
   color: #161c35;
 }
 
@@ -42,6 +50,7 @@
 }
 
 .description__item--4 {
+  margin-top: -10px;
   height: 75px;
   border-radius: 0 0 10px 10px;
   background-color: #ffd74b;

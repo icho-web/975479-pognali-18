@@ -37,7 +37,9 @@
 }
 
 .address__icon {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   margin-right: 16px;
