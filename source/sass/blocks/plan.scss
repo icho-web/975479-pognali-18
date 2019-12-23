@@ -1,17 +1,19 @@
 .plan {
   margin-top: -25px;
-  padding: 30px 25px;
-  min-height: 456px;
-  background-color: #dfe3f0;
+  padding: 30px 7.8% 39px 7.8%;
+
+  background-color: hsl(226, 36%, 91%);
   border-radius: 30px 30px 0 0;
 }
 
 .plan__header {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
+
   font-size: 24px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
@@ -21,18 +23,18 @@
 
 .plan__list {
   padding: 0;
+
   list-style: none;
 }
 
 .plan__item {
-  padding: 25px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 270px;
-  min-height: 154px;
+  padding: 24px 9%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -42,9 +44,11 @@
 .plan__h3 {
   margin: 0;
   margin-bottom: 22px;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
@@ -54,8 +58,9 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: 1.4px;
-  color: #1d2e5b;
   text-transform: uppercase;
+
+  color: #1d2e5b;
 }
 
 .plan__time {
@@ -63,8 +68,9 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: 1.4px;
-  color: #1d2e5b;
   text-transform: uppercase;
+
+  color: #1d2e5b;
 }
 
 .plan__time-wrapper {
@@ -73,23 +79,29 @@
 
 .plan__button {
   padding-left: 1px;
-  background-color: transparent;
-  border: none;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: 1.4px;
-  opacity: 0.3;
   text-align: left;
   text-transform: uppercase;
+
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .plan {
-    padding: 60px 75px;
+    padding: 0 9.7%;
+    padding-top: 50px;
+    padding-bottom: 83px;
   }
 
   .plan__header {
+    margin-bottom: 41px;
+
     font-size: 36px;
     font-weight: bold;
     line-height: 1.39;
@@ -97,8 +109,7 @@
 
   .plan__item {
     width: auto;
-    padding-bottom: 5px;
-    padding-top: 40px;
+    padding: 40px 5% 14px 1.5%;
   }
 
   .plan__item-wrapper {
@@ -108,6 +119,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     border-top: 1px solid #dfe3f0;
   }
 
@@ -134,35 +146,74 @@
 
   .plan__time-wrapper {
     margin-bottom: 0;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
   }
 
   .plan__h3 {
+    margin-bottom: 34px;
+
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 34px;
   }
 }
 
 @media (min-width: 1439px) {
   .plan {
-    padding: 57px 60px 63px 124px;
+    padding: 49px 4% 63px 8.6%;
+  }
+
+  .plan__header {
+    padding-left: 7px;
   }
 
   .plan__item {
     padding: 37px 42px 37px 44px;
+    margin-bottom: 15px;
     min-height: 97px;
     display: flex;
     align-items: center;
   }
 
+  .plan__item-header-wrapper {
+    display: flex;
+    margin-right: auto;
+    align-items: baseline;
+  }
+
+  .plan__item-number {
+    margin: 0;
+    margin-right: 38px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    text-align: left;
+
+    color: #1d2e5b;
+  }
+
   .plan__h3 {
-    width: 480px;
     margin: 0;
   }
 
   .plan__item-wrapper {
+    width: 50.4%;
     margin: 0;
     padding: 0;
     border: 0;
+    justify-content: start;
+  }
+
+  .plan__text {
+    width: 30%;
+  }
+
+  .plan__button {
+    margin-left: auto;
   }
 }

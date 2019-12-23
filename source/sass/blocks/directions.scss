@@ -1,11 +1,30 @@
+@mixin text-padding-mobile {
+  padding-left: 15.6%;
+  padding-right: 15.6%
+}
+
+@mixin text-padding-tablet {
+  padding-right: 9.7%;
+  padding-left: 9.7%;
+}
+
+@mixin block-padding-mobile {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
 .directions {
   z-index: 9;
+
   display: flex;
   flex-direction: column;
-  padding: 97px 8% 30px 8%;
-  background-color: #edeff6;
+  @include block-padding-mobile();
+  padding-top: 97px;
+  padding-bottom: 30px;
   margin: 0;
   margin-bottom: -25px;
+
+  background-color: #edeff6;
   border-radius: 0 0 25px 25px;
 }
 
@@ -13,6 +32,7 @@
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -27,20 +47,24 @@
 .directions__header {
   margin: 0;
   margin-bottom: 19px;
+
   font-size: 24px;
   line-height: 1;
+
   color: #ff8d30;
 }
 
 .directions__h3 {
   margin: 0;
-  color: #161c35;
   font-size: 21px;
   line-height: 1;
+
+  color: #161c35;
 }
 
 .directions__text {
   margin: 0;
+
   font-weight: 500;
   line-height: 1.13;
   font-size: 16px;
@@ -50,19 +74,21 @@
 .directions__text--desc {
   margin: 0;
   margin-bottom: 60px;
+
   opacity: 1;
   line-height: 1.38;
   font-weight: 300;
 }
 
 .directions__text-wrapper {
-  padding: 0 8%;
+  @include block-padding-mobile();
 }
 
 .directions__card-wrapper {
   padding: 28px 9.6% 23px 9.6%;
   margin-top: -11px;
   margin-bottom: 10px;
+
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -71,7 +97,9 @@
   position: absolute;
   right: 25px;
   bottom: 46px;
+
   margin: 0;
+
   font-size: 16px;
   line-height: 1.88;
   opacity: 0.3;
@@ -99,40 +127,74 @@
 
 .directions__img {
   width: 100%;
+
   border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 768px) {
   .directions {
-    padding: 75px;
-    padding-bottom: 100px;
+    @include text-padding-tablet();
+    padding-bottom: 80px;
+    padding-top: 100px;
+
+    background: url(../img/flags-back@1x.png) no-repeat 92% 104px,
+    #edeff6;
+  }
+
+  .directions__h3 {
+    font-size: 24px;
+
+    margin-bottom: 6px;
+  }
+
+  .directions__flag {
+    left: 67%;
+    top: 62px;
+  }
+
+  .directions__picture {
+    width: 30%;
+  }
+
+  .directions__text--slogan {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.88;
+  }
+
+  .directions__number {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
   }
 
   .directions__text-wrapper {
-    padding: 75px;
+    padding: 0;
   }
 
   .directions__header {
+    margin-bottom: 55px;
+
     font-size: 45px;
     line-height: 1;
-    margin-bottom: 55px;
   }
 
   .directions__text--desc {
+    padding-right: 275px;
+    margin-bottom: 105px;
+
     font-size: 28px;
     line-height: 1.18;
-    width: 400px;
-    margin-bottom: 50px;
   }
 
   .directions__list {
-    margin-bottom: 0;
+    margin-bottom: 48px;
   }
 
   .directions__item {
     margin-bottom: 10px;
+
     flex-direction: row;
-    width: 616px;
     min-height: 140px;
 
     &:last-child {
@@ -140,29 +202,37 @@
     }
   }
 
+  .directions__picture {
+    margin: 0;
+    padding: 0;
+    height: 140px;
+  }
+
   .directions__img {
-    order: 2;
+    margin-bottom: -5px;
     border-radius: 0 20px 20px 0;
-    width: 186px;
     height: 140px;
   }
 
   .directions__card-wrapper {
-    width: 432px;
+    order: -1;
+    flex-grow: 1;
     margin: 0;
+    padding: 31px 87px 21px 30px;
 
     border-radius: 20px 0 0 20px;
   }
 
   .directions__link {
-    padding: 31px 40px 32px 34px;
+    font-size: 24px;
+    padding: 29px 35px 27px 34px;
   }
 }
 
 @media (min-width: 1439px) {
   .directions {
-    padding: 161px 130px 60px 132px;
-    min-height: 500px;
+    padding: 187px 130px 60px 132px;
+    background: url(../img/flags-back@1x.png) no-repeat 95% 114px, #edeff6;
   }
 
   .directions__desktop-wrapper {
@@ -170,18 +240,32 @@
   }
 
   .directions__link {
-    margin: -81px 351px 81px auto;
+    margin: -118px 14.5% 79px auto;
+    padding: 29px 102px 27px 32px;
   }
 
   .directions__list {
+    width: 47.5%;
     order: -1;
+    margin-right: 14.5%;
   }
 
   .directions__card-wrapper {
-    width: 373px;
+    padding: 24px 6.3% 24px 5.5%;
+    flex-grow: 1;
+  }
+
+  .directions__header {
+    margin-bottom: 58px;
   }
 
   .directions__text-wrapper {
+    padding-top: 5px;
     order: 2;
+    width: 29%;
+  }
+
+  .directions__text--desc {
+    padding: 0;
   }
 }

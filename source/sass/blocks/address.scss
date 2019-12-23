@@ -1,32 +1,48 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-padding-tablet {
+  padding-right: 9.7%;
+  padding-left: 9.7%;
+}
+
 .address {
   position: relative;
   z-index: 2;
+
   padding: 57px 7.6% 35px 8%;
-  background-color: #ffd74b;
-  min-height: 130px;
-  border-radius: 0 0 30px 30px;
   margin-bottom: -25px;
+  min-height: 130px;
+
+  border-radius: 0 0 30px 30px;
+  background-color: #ffd74b;
 }
 
 .address__text {
   display: block;
   width: 143px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.38;
   font-weight: bold;
-  color: #192144;
   text-transform: uppercase;
-  margin: 0;
+
+  color: #192144;
 }
 
 .address__button {
   display: block;
   padding: 20px 78px 20px 20px;
+
   font-size: 18px;
   line-height: 1;
-  color: #1d2e5b;
   font-weight: bold;
 
+  color: #1d2e5b;
   border: 3px solid #192144;
   border-radius: 10px;
 }
@@ -37,9 +53,7 @@
 }
 
 .address__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centering();
   width: 45px;
   height: 45px;
   margin-right: 16px;
@@ -51,40 +65,54 @@
 @media (min-width: 768px) {
   .address {
     min-height: 190px;
-    padding: 47px 75px 85px 75px;
+    padding-right: 9.7%;
+    padding-left: 9.7%;
+    padding-top: 73px;
+    padding-bottom: 85px;
   }
 
   .address__button {
+    padding: 27px 34px 24px 33px;
+
     font-size: 24px;
-    padding: 31px 353px 28px 37px;
   }
 
   .address__icon {
+    margin-right: 26px;
     width: 67px;
     height: 67px;
   }
 
   .address__text {
-    width: 430px;
+    width: auto;
+
     font-size: 28px;
+    font-weight: bold;
+  }
+
+  .address__text-wrapper {
+    align-items: center;
+    margin-bottom: 44px;
   }
 }
 
 @media (min-width: 1439px) {
   .address {
     display: flex;
-    padding: 54px 133px 56px 284px;
+    padding: 80px 9.2% 56px 19.7%;
     min-height: 200px;
   }
 
   .address__wrapper {
     display: flex;
     min-height: 50px;
+
     align-items: flex-end;
   }
 
   .address__text-wrapper {
     margin-bottom: 0;
+    margin-right: 14.3%;
     display: flex;
     align-items: center;
   }
@@ -92,9 +120,23 @@
   .address__icon {
     width: 90px;
     height: 90px;
+    margin-right: 32px;
+
+    svg {
+      width: 28px;
+      height: 43px;
+    }
   }
 
   .address__button {
-    padding: 31px 67px 28px 37px;
+    @include centering();
+    padding: 27px 33px 25px 34px;
+
+    align-self: center;
+
+    p {
+      margin: 0;
+      margin-right: 21px;
+    }
   }
 }

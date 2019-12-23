@@ -1,60 +1,91 @@
 .hobby__header {
   margin: 0;
   padding: 10px 0 10px 0;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
-  color: #1d2e5b;
-
   text-transform: uppercase;
 
+  color: #1d2e5b;
   border-top: 1px solid #f3c72b;
 }
 
 .hobby__list {
   padding-left: 0;
   margin: 0;
+
   list-style: none;
 }
 
 .hobby__item {
-  color: #444444;
   margin-bottom: 12px;
+
+  color: #444444;
 }
 
 @media (min-width: 768px) {
   .hobby {
+    padding-top: 23px;
     display: flex;
+
     align-items: center;
     border-top: 1px solid #f3c72b;
   }
 
   .hobby__header {
-    border: 0;
+    width: 20.4%;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
-    margin-right: 66px;
+
+    border: 0;
   }
 
   .hobby__list {
     display: flex;
-    width: 430px;
-    justify-content: space-between;
+    flex-grow: 1;
     padding-top: 10px;
   }
 
   .hobby__item {
+    display: flex;
     font-size: 20px;
+    align-items: center;
+
+    input {
+      margin: 0;
+      margin-right: 11px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .hobby__item--1 {
+    width: 34.4%;
+  }
+
+  .hobby__item--2 {
+    width: 35%;
+  }
+
+  .hobby__item--3 {
+    width: 28%;
   }
 }
 
 @media (min-width: 1439px) {
   .hobby {
+    padding: 0;
     display: block;
   }
 
   .hobby__list {
     flex-direction: column;
+  }
+
+  .hobby__item {
+    width: auto;
   }
 }

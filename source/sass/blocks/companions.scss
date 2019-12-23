@@ -1,7 +1,14 @@
+@mixin text-padding-tablet {
+  padding-right: 9.7%;
+  padding-left: 9.7%;
+}
+
 .companions {
   z-index: 8;
+
   margin-bottom: -25px;
   padding: 98px 8% 30px 7.6%;
+
   background: url("../img/rogovaya-back-mobile@1x.png") no-repeat -4% 337px,
   url("../img/smolov-back-desktop@1x.png") no-repeat 86% 63px,
   url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
@@ -12,9 +19,10 @@
 .companions__list {
   margin-bottom: 10px;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
+
+  list-style: none;
 }
 
 .companions__item {
@@ -29,6 +37,7 @@
 .companions__avatar {
   width: 100%;
   height: 100%;
+
   border-radius: 10px 10px 0 0;
 }
 
@@ -55,16 +64,20 @@
 .companions__header {
   margin: 0;
   margin-bottom: 18px;
+
   font-size: 24px;
   line-height: 1;
+
   color: #ff8d30;
 }
 
 .companions__text {
   margin-bottom: 20px;
+
   font-size: 16px;
   font-weight: 300;
   line-height: 1.38;
+
   color: #ffffff;
 }
 
@@ -75,18 +88,22 @@
 .companions__h3 {
   margin-top: 10px;
   margin-bottom: 15px;
+
+  text-align: center;
   font-size: 21px;
   line-height: 1;
+
   color: #1d2e5b;
-  text-align: center;
 }
 
 .companions__tag {
   margin: 0 auto;
   margin-bottom: 13px;
   width: 175px;
+
   font-size: 16px;
   line-height: 1.13;
+
   color: #444444;
 
   text-align: center;
@@ -122,7 +139,9 @@
 
 @media (min-width: 768px) {
   .companions {
-    padding: 75px;
+    @include text-padding-tablet();
+    padding-top: 167px;
+    padding-bottom: 88px;
     display: flex;
     flex-direction: column;
   }
@@ -131,37 +150,43 @@
     min-height: 1260px;
   }
 
-  .companions__text-wrapper {
-    padding: 143px 75px 50px 75px;
-  }
-
   .companions__header {
+    margin-bottom: 56px;
+
     font-size: 45px;
     line-height: 1;
   }
 
   .companions__text {
+    padding-right: 170px;
+    margin-bottom: 41px;
+
     font-size: 28px;
     line-height: 1.18;
-    width: 430px;
+  }
+
+  .companions__text-wrapper {
+    padding: 0;
   }
 
   .companions__text--bold {
     display: block;
-    width: 260px;
+
     font-size: 21px;
     line-height: 1.19;
   }
 
   .companions__list {
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .companions__item {
+    padding-bottom: 29px;
     margin: 0;
     margin-right: 48px;
+    width: 46%;
 
     &:last-child {
       margin-right: 0;
@@ -169,39 +194,91 @@
   }
 
   .companions__button {
+    padding: 30px 36px 27px 33px;
     order: 1;
+    margin: 0;
+
+    font-size: 24px;
+  }
+
+  .companions__avatar {
+    height: 286px;
+  }
+
+  .companions__h3 {
+    margin-top: 0;
+    margin-bottom: 21px;
+
+    font-size: 24px;
+  }
+
+  .companions__tag {
+    padding: 0 30px;
+    margin-bottom: 24px;
+    width: auto;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .companions__flags {
+    margin-bottom: 15px;
+  }
+
+  .companions__travel {
+    padding: 0 82px;
   }
 }
 
 @media (min-width: 1439px) {
+  .companions {
+    padding-right: 4%;
+    padding-left: 9.1%;
+    padding-top: 155px;
+    padding-bottom: 63px;
+
+    background: url(../img/rogovaya-back-desktop@1x.png) no-repeat 16.6% 410px,
+    url(../img/smolov-back-desktop@1x.png) no-repeat 42.3% 158px,
+    url(../img/blue-back-mobile@1x.png) no-repeat -10% 63px,
+    #192144;
+  }
+
   .companions__desktop-wrapper {
     display: flex;
   }
 
   .companions__text-wrapper {
-    padding: 131px 0 134px 131px;
-    margin-right: 190px;
+    margin-right: auto;
+  }
+
+  .companions__text {
+    padding-right: 195px;
   }
 
   .companions__list {
+    padding-top: 4px;
     margin: 0;
   }
 
   .companions__item {
     width: 285px;
-    border-radius: 21px;
     margin-right: 60px;
+
+    border-radius: 21px;
   }
 
   .companions__avatar {
     width: 285px;
     height: 285px;
+
     border-radius: 20px 20px 0 0;
   }
 
   .companions__button {
+    align-self: flex-start;
     margin-left: 0;
-    margin-top: -70px;
+    margin-top: -81px;
     margin-bottom: 70px;
+    padding-right: 95px;
   }
 }
