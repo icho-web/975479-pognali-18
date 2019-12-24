@@ -1,24 +1,41 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-padding-tablet {
+  padding-right: 9.7%;
+  padding-left: 9.7%;
+}
+
 .registration {
   z-index: 6;
-  padding: 72px 25px 29px 25px;
+
+  padding: 97px 8% 26px 8%;
   margin-bottom: -25px;
-  background-color: #192144;
   min-height: 400px;
+
+  background-color: #192144;
   border-radius: 0 0 30px 30px;
 }
 
 .registration__text {
   display: block;
+
   text-align: center;
   font-size: 16px;
   line-height: 1.38;
+
   color: #ffffff;
 }
 
 .registration__text--bold {
   margin-bottom: 20px;
+
   font-size: 24px;
   line-height: 1;
+
   color: #ff8d30;
 }
 
@@ -33,11 +50,12 @@
 .registration__text--autorization {
   margin: 0;
   margin-bottom: 28px;
-  padding: 0 15px;
+  padding: 0 35px;
 }
 
 .registration__text--questions-1 {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .registration__text--questions-2 {
@@ -46,33 +64,63 @@
 }
 
 .registration__input {
-  width: 270px;
-  height: 60px;
+  padding: 0 15% 0 8%;
+  width: 100%;
+  height: 63px;
   margin-bottom: 28px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
 
   border-radius: 10px;
   border: none;
 }
 
+.registration__input-send {
+  @include centering();
+  width: 28%;
+  height: 63px;
+  margin-left: -7%;
+
+  background-color: #ffd74b;
+  border-radius: 10px;
+
+  p {
+    display: none;
+  }
+}
+
+.registration__input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .registration__tel {
   padding: 10px 0;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 1.38;
+
   color: #ffd74b;
 }
 
 .registration__email {
+  @include centering();
   padding: 10px 0;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 1.38;
-  color: #ffd74b;
   text-transform: uppercase;
+
+  color: #ffd74b;
+
 }
 
 .registration__icon {
-  display: block;
+  @include centering();
   width: 45px;
   height: 45px;
   margin-right: 16px;
@@ -88,7 +136,9 @@
 @media (min-width: 768px) {
   .registration {
     min-height: 570px;
-    padding: 75px;
+    @include text-padding-tablet();
+    padding-top: 101px;
+    padding-bottom: 58px;
   }
 
   .registration__text {
@@ -96,6 +146,8 @@
   }
 
   .registration__text--bold {
+    margin-bottom: 57px;
+
     font-size: 45px;
   }
 
@@ -104,11 +156,32 @@
   }
 
   .registration__text--autorization {
-    width: 610px;
+    padding: 0;
+    margin-bottom: 63px;
+
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+  }
+
+  .registration__text--questions-1 {
+    margin-bottom: 40px;
   }
 
   .registration__input {
-    width: 620px;
+    padding: 2px 13% 0 5.4%;;
+    width: 100%;
+    height: 81px;
+    margin-bottom: 56px;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: inherit;
+  }
+
+  .registration__input-send {
+    width: 14.5%;
+    height: 81px;
   }
 
   .registration__text-wrapper {
@@ -118,10 +191,20 @@
   .registration__icon {
     width: 67px;
     height: 67px;
+    margin-right: 24px;
+
+    svg {
+      width: 27px;
+      height: 27px;
+    }
   }
 
   .registration__tel {
     font-size: 28px;
+  }
+
+  .registration__tel-wrapper {
+    align-items: center;
   }
 
   .registration__email {
@@ -130,18 +213,18 @@
 }
 
 @media (min-width: 1439px) {
-  .registration__wrapper {
-    padding: 108px 133px 104px 132px;
-    min-height: 750px;
+  .registration {
+    padding: 133px 9.2% 101px 9.2%;
   }
 
   .registration__tels-wrapper {
+    padding: 0 153px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .registration__text--bold {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
   .registration__contacts-wrapper {
@@ -151,15 +234,44 @@
 
   .registration__text--autorization {
     width: auto;
-    margin-bottom: 62px;
+    padding: 0 160px;
+    margin-bottom: 57px;
   }
 
   .registration__input {
-    width: 1174px;
-    margin-bottom: 75px;
+    margin-bottom: 66px;
   }
 
   .registration__text--questions-1 {
     margin: 0 auto;
+    margin-bottom: 42px;
+  }
+
+  .registration__input-send {
+    width: 34.8%;
+    padding-left: 36px;
+    padding-right: 36px;
+    justify-content: flex-start;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #192144;
+
+    p {
+      display: block;
+      margin-right: auto;
+    }
+  }
+
+  .registration__icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
   }
 }

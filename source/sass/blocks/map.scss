@@ -1,6 +1,7 @@
 .map {
   position: relative;
-  height: 300px;
+  height: 330px;
+  margin-bottom: -9px;
 }
 
 .map__iframe {
@@ -10,16 +11,18 @@
 
 @media (min-width: 768px) {
   .map {
-    height: 481px;
+    height: 532px;
+    margin-bottom: -20px;
   }
 
   .map__iframe {
-    width: 768px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1439px) {
-  .map__iframe {
-    width: 1439px;
+
+  .map {
+    margin-bottom: -87px;
   }
 }

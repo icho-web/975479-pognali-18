@@ -1,15 +1,20 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-footer {
   position: relative;
   z-index: 2;
-  padding: 45px 25px 15px 25px;
+  padding: 38px 8% 17px 8%;
   min-height: 180px;
-  width: 320px;
   display: flex;
   flex-direction: column;
 
   background-color: #ffffff;
 
-  border-radius: 30px 30px 0 0;
+  border-radius: 38px 30px 0 0;
 }
 
 .main-footer__list {
@@ -18,14 +23,13 @@
   min-width: 135px;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
-
+  margin-bottom: 52px;
 
   list-style: none;
 }
 
 .main-footer__item {
-  display: block;
+  @include centering();
   width: 45px;
   height: 45px;
 
@@ -40,21 +44,43 @@
 }
 
 .main-footer__text {
+  margin: 0;
+  margin-right: auto;
+
   font-weight: normal;
+}
+
+.main-footer__develop-wrapper {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 27px;
+    height: 34px;
+  }
 }
 
 @media (min-width: 768px) {
   .main-footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
-    padding: 40px 45px 0 45px;
-    width: 768px;
-    min-height: 60px;
+    padding-left: 5.3%;
+    padding-right: 5.3%;
+    padding-top: 19px;
+    margin-top: -25px;
+    min-height: 154px;
+  }
+
+  .main-footer__develop-wrapper {
+    height: 34px;
   }
 
   .main-footer__list {
-    margin-right: 100px;
+    margin-bottom: 0;
+    margin-left: -11px;
   }
 
   .main-footer__item {
@@ -62,16 +88,43 @@
     height: 60px;
   }
 
+  .main-footer__text {
+    margin-right: 24px;
+
+    font-size: 20px;
+
+    color: #444444;
+  }
+
+  .main-footer__item--facebook {
+    svg {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  .main-footer__item--vk {
+    svg {
+      width: 31px;
+      height: 16px;
+    }
+  }
+
+  .main-footer__item--instagram {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .main-footer__logo {
     margin: 0;
-    margin-right: 100px;
   }
 }
 
 @media (min-width: 1439px) {
   .main-footer {
     min-height: 154px;
-    width: 1439px;
     margin-top: -58px;
   }
 }

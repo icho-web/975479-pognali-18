@@ -1,11 +1,13 @@
 .catalog-header {
   position: relative;
   z-index: 5;
-  background-color: #161c35;
-  border-radius: 0 0 30px 30px;
-  padding: 20px 25px 12px 25px;
+
+  padding: 20px 7.7% 12px 7.8%;
   min-height: 112px;
   margin-bottom: -25px;
+
+  background-color: #161c35;
+  border-radius: 0 0 30px 30px;
 }
 
 .catalog-header__companions--active {
@@ -14,8 +16,10 @@
     position: absolute;
     left: 25px;
     bottom: -3px;
+
     width: 214px;
     height: 5px;
+
     background-color: #ff8d30;
     border-radius: 2.4px;
   }
@@ -23,9 +27,9 @@
 
 .catalog-header__nav {
   position: relative;
+
   margin-top: -145px;
   padding: 27px 25px 40px 25px;
-
   width: 320px;
   height: 568px;
 
@@ -38,13 +42,16 @@
   position: relative;
   margin-top: -145px;
   padding: 27px 25px 40px 25px;
-
   width: 270px;
   height: 500px;
 
   font-size: 20px;
 
   background-color: #ffffff;
+}
+
+.catalog-header__logo {
+  margin-right: auto;
 }
 
 .catalog-header__logo--slogan {
@@ -57,11 +64,13 @@
 }
 
 .catalog-header__companions {
+  margin: 0;
+
   font-size: 36px;
   line-height: 1.11;
   font-weight: bold;
+
   color: #ffffff;
-  margin: 0;
 }
 
 .catalog-header__autorization {
@@ -73,9 +82,8 @@
 }
 
 @media (min-width: 768px) {
-  .catalog-header__wrapper {
-    padding: 40px 40px 70px 77px;
-    min-height: 350px;
+  .catalog-header {
+    padding: 44px 5.3% 63px 5.3%;
   }
 
   .catalog-header__companions-wrapper {
@@ -84,16 +92,18 @@
   }
 
   .catalog-header__logo-wrapper {
-    margin-bottom: 137px;
+    margin-bottom: 128px;
   }
 
   .catalog-header__autorization {
     padding: 10px 30px;
     display: block;
+
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
     text-transform: uppercase;
+
     color: #161c35;
     border-radius: 25px;
     background-color: #ffd74b;
@@ -101,10 +111,12 @@
 
   .catalog-header__main {
     display: block;
+
     font-size: 20px;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
+
     color: #ffffff;
   }
 
@@ -115,7 +127,9 @@
   }
 
   .catalog-header__companions {
-    margin-right: 160px;
+    padding-left: 33px;
+    margin-right: auto;
+
     font-size: 60px;
     line-height: 1.17;
   }
@@ -123,10 +137,15 @@
 
 @media (min-width: 1439px) {
   .catalog-header {
-    padding: 45px 60px;
+    padding: 49px 4% 62px 4.2%;
+  }
+
+  .catalog-header__logo-wrapper {
+    margin-bottom: 113px;
   }
 
   .catalog-header__companions {
-    margin-right: 760px;
+    padding-left: 65px;
   }
+
 }

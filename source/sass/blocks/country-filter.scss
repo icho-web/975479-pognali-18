@@ -4,7 +4,7 @@
 }
 
 .country-filter__wrapper {
-  padding: 40px 29px 10px 25px;
+  padding: 40px 9% 10px 7.8%;
   background-color: #e2e5f2;
   border-radius: 0 0 30px 30px;
 }
@@ -19,14 +19,18 @@
 
 .country-filter__header {
   margin: 0;
-  margin-right: 16px;
+  margin-right: auto;
+
   font-size: 16px;
   line-height: 1.38;
-  color: #192144;
   text-transform: uppercase;
+
+  color: #192144;
 }
 
 .country-filter__toggle {
+  padding: 0;
+
   border: none;
   background-color: transparent;
 
@@ -55,26 +59,29 @@
   }
 
   .country-filter__country-wrapper {
-    padding: 59px 75px 53px 75px;
+    padding: 83px 9.7% 53px 9.6%;
     display: flex;
+
     background-color: #e2e5f2;
   }
 
   .country-filter__list {
     padding-left: 0;
     display: flex;
-    width: 363px;
+    width: 59%;
     justify-content: space-between;
     margin: 0;
+
     list-style: none;
   }
 
   .country-filter__item {
-    opacity: 0.3;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
+
+    opacity: 0.3;
     color: #192144;
   }
 
@@ -83,11 +90,42 @@
   }
 
   .country-filter__link {
-    margin-left: 78px;
+    margin-left: auto;
+
     font-size: 20px;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
+
     color: #192144;
+  }
+}
+
+@media (min-width: 1439px) {
+  .country-filter__country-wrapper {
+    padding: 84px 8.5% 53px 5.6%;
+    display: flex;
+  }
+
+  .country-filter__list {
+    width: 29.5%;
+  }
+
+  .country-filter__item-icon {
+    margin-right: 6.3%;
+    width: 23px;
+    height: 15px;
+    display: block;
+  }
+
+  .country-filter__item-filter {
+    display: block;
+  }
+
+  .country-filter__list-1 {
+    display: flex;
+    width: 26.2%;
+    padding: 0;
+    margin: 0;
   }
 }

@@ -1,25 +1,42 @@
+@mixin text-padding-mobile {
+  padding-left: 15.6%;
+  padding-right: 15.6%;
+}
+
+@mixin text-padding-tablet {
+  padding-right: 9.7%;
+  padding-left: 9.7%;
+}
+
 .about-service {
   z-index: 10;
-  background: url("../../img/about-mobile@1x.png") no-repeat 18px 280px, #192144;
+
   margin: 0;
   margin-bottom: -25px;
-  padding: 33px 50px;
+  padding: 33px 0;
+  padding-bottom: 84px;
+  @include text-padding-mobile();
+
   color: #ffffff;
+  background: url("../img/about-mobile@1x.png") no-repeat 60% 0px, #192144;
   border-radius: 0 0 25px 25px;
 }
 
 .about-service__header {
   margin: 0;
-  margin-bottom: 20px;
-  color: #ff8d30;
+  margin-bottom: 15px;
+
   font-size: 24px;
   font-weight: bold;
   line-height: 1;
+
+  color: #ff8d30;
 }
 
 .about-service__text {
   margin: 0;
   margin-bottom: 18px;
+
   font-size: 16px;
   line-height: 1.38;
 }
@@ -30,11 +47,13 @@
 }
 
 .about-service__button {
-  display: table;
+  display: none;
   padding: 22px 150px 22px 24px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
+
   background-color: #ffd74b;
   color: #1d2e5b;
   border-radius: 10px;
@@ -42,37 +61,58 @@
 
 @media (min-width: 768px) {
   .about-service {
-    padding: 75px;
+    padding-top: 101px;
+    padding-bottom: 88px;
+    @include text-padding-tablet();
+
+    background: url(../img/about-tablet@1x.png) no-repeat 107% 105px,
+    #192144;
   }
+
   .about-service__header {
     margin: 0;
     margin-bottom: 38px;
-    color: #ff8d30;
+
     font-size: 45px;
     font-weight: bold;
     line-height: 1;
+
+    color: #ff8d30;
   }
 
   .about-service__text {
-    width: 300px;
+    padding-right: 317px;
     margin: 0;
     margin-bottom: 32px;
+
     font-size: 28px;
     line-height: 1.18;
   }
 
   .about-service__text--bold {
     display: block;
+    margin: 0;
+
     font-size: 21px;
     line-height: 1.19;
-    margin: 0;
-    width: 280px;
+  }
+
+  .about-service__button {
+    display: block;
+    width: 44.3%;
+    padding: 29px 34px 27px 33px;
+    margin-top: 54px;
+
+    font-size: 24px;
   }
 }
 
 @media (min-width: 1439px) {
   .about-service {
-    min-height: 750px;
+    padding: 92px 9.1% 163px 9.1%;
+
+    background: url(../img/about-desktop@1x.png) no-repeat 93% 45px,
+    #192144;
   }
 
   .about-service__header {
@@ -80,11 +120,16 @@
   }
 
   .about-service__text {
-    width: 612px;
+    padding-right: 535px;
     margin-bottom: 39px;
   }
 
   .about-service__text--bold {
-    width: 412px;
+    padding-right: 700px;
+    margin-bottom: 86px;
+  }
+
+  .about-service__button {
+    width: 23.3%;
   }
 }

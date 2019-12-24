@@ -1,66 +1,79 @@
 .route {
-  padding: 25px 25px 17px 25px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 270px;
-  min-height: 517px;
+  padding: 25px 9% 17px 9%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .route__intro {
   margin: 0;
+
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
 .route__header {
   margin: 0;
+
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
 .route__text {
+  margin-bottom: 22px;
+
   font-size: 16px;
   line-height: 1.38;
+
   color: #444444;
 }
 
 .route__country-wrapper {
-  display: flex;
   position: relative;
+
+  display: flex;
   margin-bottom: 22px;
 }
 
 .route__country {
-  padding: 13px 0 13px 12px;
-  min-width: 168px;
+  padding: 13px 0 13px 4.7%;
+  flex-grow: 1;
   height: 42px;
+
   border: solid 1px #cbced9;
   border-radius: 4px;
 
   p {
     margin: 0;
-    color: #1d2e5b;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     white-space: nowrap;
+
+    color: #1d2e5b;
   }
 }
 
 .route__flag {
-  padding: 9px;
   z-index: 1;
+
+  padding: 9px;
   width: 54px;
   height: 42px;
   margin-left: -1px;
+
   border: solid 1px #cbced9;
   background-color: #ffffff;
   border-radius: 4px;
@@ -68,50 +81,62 @@
 
 .route__choose {
   margin-bottom: 22px;
-  padding: 13px 0 13px 12px;
-  width: 220px;
+  padding: 13px 0 13px 4.7%;
   height: 42px;
+
   border: solid 1px #cbced9;
   border-radius: 4px;
 
   p {
     margin: 0;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: 1.4px;
-    color: #1d2e5b;
     text-transform: uppercase;
+
+    color: #1d2e5b;
+
   }
 }
 
 .route__add {
   margin-bottom: 25px;
-  padding: 13px 0 13px 12px;
-  width: 220px;
+  padding: 13px 0 13px 4.7%;
   height: 42px;
+
   border: solid 1px #cbced9;
   border-radius: 4px;
   background-color: #edeff6;
 
   p {
     margin: 0;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: 1.4px;
-    color: #1d2e5b;
     text-transform: uppercase;
+
+    color: #1d2e5b;
+
   }
 }
 
 .route__button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-bottom: 10px;
-  padding: 5px 41px;
+  padding: 5px 0;
+
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
   text-transform: uppercase;
+
   color: #161c35;
   background-color: #ffd74b;
   border: 0;
@@ -119,20 +144,30 @@
 }
 
 .route__button-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+
   text-transform: uppercase;
-  color: #161c35;
   font-size: 17px;
   font-weight: bold;
-  padding: 5px 41px;
+
+  color: #161c35;
   background-color: transparent;
   border: 0;
 }
 
 @media (min-width: 768px) {
   .route {
-    padding: 49px 43px;
+    padding: 48px 7.3% 42px 7%;
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 51px;
+  }
+
+  .route__step-wrapper {
+    margin-bottom: 34px;
   }
 
   .route__intro {
@@ -148,19 +183,26 @@
   }
 
   .route__text {
+    margin-bottom: 34px;
+
     font-size: 20px;
     line-height: 1.2;
   }
 
   .route__country-wrapper--top {
     padding-top: 40px;
+    margin-bottom: 15px;
+
     border-top: solid 1px #cbced9;
+  }
+
+  .route__country-wrapper {
+    margin-bottom: 15px;
   }
 
   .route__country {
     padding: 27px 24px;
     margin-right: 54px;
-    width: 370px;
     height: 70px;
 
     p {
@@ -180,7 +222,7 @@
   .route__choose {
     padding: 27px 24px;
     margin-right: 54px;
-    width: 370px;
+    margin-bottom: 14px;
     height: 70px;
 
     p {
@@ -194,7 +236,7 @@
   .route__add {
     padding: 27px 24px;
     margin-right: 54px;
-    width: 370px;
+    margin-bottom: 49px;
     height: 70px;
 
     p {
@@ -205,8 +247,13 @@
     }
   }
 
+  .route__button-wrapper {
+    display: flex;
+  }
+
   .route__button-next {
     padding: 30px 78px 28px 34px;
+
     text-transform: none;
     font-size: 24px;
     font-weight: bold;
@@ -223,7 +270,12 @@
 
 @media (min-width: 1439px) {
   .route {
-    padding: 100px 160px;
+    padding: 100px 12.1%;
+    margin-bottom: 46px;
+  }
+
+  .route__text {
+    margin-bottom: 99px;
   }
 
   .route__country {

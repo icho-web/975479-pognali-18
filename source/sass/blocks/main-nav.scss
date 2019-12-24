@@ -1,13 +1,25 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-nav {
-  position: relative;
+  width: auto;
   display: flex;
 }
 
 .main-nav__list {
-  position: absolute;
-  margin: 0;
+  z-index: 1;
+
+  margin: 0 auto;
+  margin-bottom: -20px;
   padding: 0;
   display: flex;
+}
+
+.main-nav__list--catalog {
+  display: none;
 }
 
 .main-nav__item {
@@ -15,7 +27,7 @@
 }
 
 .main-nav__item--link {
-  padding: 7px 44px 3px 44px;
+  padding: 7px 45px 3px 34px;
 
   font-size: 17px;
   line-height: 1.76;
@@ -29,9 +41,7 @@
 }
 
 .main-nav__item--phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centering();
   width: 40px;
   height: 40px;
 
@@ -49,6 +59,7 @@
 }
 
 .main-nav__item--mail {
+  @include centering();
   width: 40px;
   height: 40px;
 
@@ -79,11 +90,16 @@
 
 .main-nav__list--form {
   display: none;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .main-nav__item--mail {
     display: none;
+  }
+
+  .main-nav__list--catalog {
+    display: block;
   }
 
   .main-nav__item--phone {
@@ -92,55 +108,57 @@
 
   .main-nav__item--link {
     position: absolute;
-    right: -688px;
-    top: -346px;
+    right: 5.4%;
+    top: 5%;
 
-    padding: 12px 34px 8px 34px;
+    padding: 11px 29px 8px 27px;
+
     font-size: 20px;
     line-height: 1.5;
     border-radius: 25px;
   }
 
+  .main-nav__item--form-link {
+    top: 41px;
+  }
+
   .main-nav__item--catalog-link {
     display: block;
-    top: 0;
+    top: 41px;
   }
 
   .main-nav__list--form {
     display: flex;
   }
-
-  .main-nav__item--form-link {
-    right: -665px;
-    top: -172px;
-  }
 }
 
 @media (min-width: 1439px) {
   .main-nav {
-    position: relative;
-  }
-
-  .main-nav__list {
     position: absolute;
-    left: 1021px;
-    bottom: 352px;
+    left: 76%;
   }
 
   .main-nav__list--form {
     left: auto;
-    right: 60px;
-    bottom: 254px;
+    right: 0;
+    top: 0;
+    bottom: auto;
+
+    padding-right: 4.2%;
+    padding-top: 49px;
+    position: absolute;
   }
 
   .main-nav__list--catalog {
     position: absolute;
-    left: 1000px;
+    right: 4.2%;
     bottom: auto;
+
+    display: flex;
   }
 
   .main-nav__item--mail {
-    display: block;
+    display: flex;
     width: 50px;
     height: 50px;
   }

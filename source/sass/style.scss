@@ -85,9 +85,19 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 320px;
-  margin: 0 auto;
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .page-main {
@@ -108,6 +118,7 @@ a {
 }
 
 body {
+  margin: 0;
   font-family: $font;
 }
 
@@ -119,18 +130,4 @@ body {
 .main-footer {
   display: flex;
   margin-top: -25px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1439px) {
-  .container {
-    max-width: 1439px;
-    margin: 0 auto;
-  }
 }

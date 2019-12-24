@@ -1,38 +1,54 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .fun {
-  padding: 25px 25px 17px 25px;
-  width: 270px;
+  padding: 25px 9% 17px 9%;
   min-height: 839px;
   margin-left: auto;
   margin-right: auto;
+
   background-color: #ffffff;
   border-radius: 10px;
 }
 
 .fun__intro {
+  margin: 0;
+
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
 .fun__header {
+  margin: 0;
+
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
 .fun__text {
   font-size: 16px;
   line-height: 1.38;
+
   color: #444444;
 }
 
 .fun__country {
   margin: 0;
+
   font-size: 18px;
   font-weight: 500;
   line-height: 1;
+
   color: #1d2e5b;
 }
 
@@ -50,7 +66,7 @@
 
 .fun__action {
   padding: 10px;
-  width: 220px;
+  width: 100%;
   min-height: 220px;
   resize: none;
 }
@@ -64,11 +80,14 @@
 }
 
 .fun__button-send {
-  padding: 5px 70px;
+  @include centering();
+  padding: 5px 0;
+
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
   text-transform: uppercase;
+
   color: #161c35;
   background-color: #ffd74b;
   border: 0;
@@ -76,11 +95,14 @@
 }
 
 .fun__button-back {
+  @include centering();
+  padding: 5px 0;
+
   text-transform: uppercase;
-  color: #161c35;
   font-size: 17px;
   font-weight: bold;
-  padding: 5px 41px;
+
+  color: #161c35;
   background-color: transparent;
   border: 0;
 }
@@ -88,11 +110,16 @@
 @media (min-width: 768px) {
   .fun {
     width: auto;
-    padding: 50px 45px;
+    padding: 48px 7.9% 51px 7%;
+  }
+
+  .fun__step-wrapper {
+    margin-bottom: 34px;
   }
 
   .fun__intro {
     margin: 0;
+
     font-size: 36px;
     font-weight: bold;
     line-height: 1;
@@ -100,12 +127,15 @@
 
   .fun__header {
     margin: 0;
+
     font-size: 36px;
     font-weight: bold;
     line-height: 1;
   }
 
   .fun__text {
+    margin-bottom: 73px;
+
     font-size: 20px;
     line-height: 1.2;
   }
@@ -116,24 +146,39 @@
     line-height: 0.6;
   }
 
+  .fun__country-wrapper {
+    margin-bottom: 39px;
+  }
+
+  .fun__action {
+    font-size: 20px;
+    width: 100%;
+  }
+
   .fun__action--bosnia {
-    width: 527px;
+    margin-bottom: 51px;
+
     min-height: auto;
     height: 142px;
   }
 
   .fun__action--czech {
-    width: 527px;
+    margin-bottom: 43px;
     min-height: auto;
     height: 142px;
   }
 
   .fun__button-send {
     padding: 30px 140px 28px 34px;
+
     text-transform: none;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
+  }
+
+  .fun__button-wrapper {
+    display: flex;
   }
 
   .fun__button-back {
@@ -146,7 +191,12 @@
 
 @media (min-width: 1439px) {
   .fun {
-    padding: 100px 160px;
+    padding: 100px 12.1%;
+  }
+
+  .fun__text {
+    padding-right: 47%;
+    margin-bottom: 137px;
   }
 
   .fun__step-wrapper {
@@ -155,6 +205,10 @@
 
   .fun__action {
     width: 730px;
+  }
+
+  .fun__action--czech {
+    margin-bottom: 52px;
   }
 
   .fun__button-send {
