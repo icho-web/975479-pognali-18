@@ -14,6 +14,15 @@
   url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
   #192144;
   border-radius: 0 0 30px 30px;
+
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/rogovaya-back-mobile@2x.png") no-repeat -4% 337px,
+    url("../img/smolov-back-desktop@2x.png") no-repeat 86% 63px,
+    url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+    #192144;
+
+    background-size: 71px 71px, 143px 143px , 132px 132px;
+  }
 }
 
 .companions__list {
@@ -144,6 +153,21 @@
     padding-bottom: 88px;
     display: flex;
     flex-direction: column;
+
+    background: url(../img/rogovaya-back-desktop@1x.png) no-repeat 85.6% 80px,
+    url(../img/smolov-back-desktop@1x.png) no-repeat 5.3% 472px,
+    url(../img/blue-back-mobile@1x.png) no-repeat 9% 105px,
+    #192144;
+
+    background-size: 285px 285px, 143px 143px, 200px 200px;
+
+    @media (min-resolution: 1.5dppx) {
+      background: url(../img/rogovaya-back-desktop@2x.png) no-repeat 85.6% 80px,
+      url(../img/smolov-back-desktop@2x.png) no-repeat 5.3% 472px,
+      url(../img/blue-back-mobile@1x.png) no-repeat 9% 105px,
+      #192144;
+      background-size: 285px 285px, 143px 143px, 200px 200px;
+    }
   }
 
   .companions__wrapper {
@@ -241,6 +265,17 @@
     url(../img/smolov-back-desktop@1x.png) no-repeat 42.3% 158px,
     url(../img/blue-back-mobile@1x.png) no-repeat -10% 63px,
     #192144;
+
+    background-size: 285px 285px, 143px 143px, 200px 200px;
+
+    @media (min-resolution: 1.5dppx) {
+      background: url(../img/rogovaya-back-desktop@2x.png) no-repeat 16.6% 410px,
+      url(../img/smolov-back-desktop@2x.png) no-repeat 42.3% 158px,
+      url(../img/blue-back-mobile@1x.png) no-repeat -10% 63px,
+      #192144;
+
+      background-size: 285px 285px, 143px 143px, 200px 200px;
+    }
   }
 
   .companions__desktop-wrapper {

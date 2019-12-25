@@ -38,18 +38,6 @@
   background-color: #ffffff;
 }
 
-.form-header__nav {
-  position: relative;
-  margin-top: -145px;
-  padding: 27px 25px 40px 25px;
-  width: 270px;
-  height: 500px;
-
-  font-size: 20px;
-
-  background-color: #ffffff;
-}
-
 .catalog-header__logo {
   margin-right: auto;
 }
@@ -93,6 +81,7 @@
 
   .catalog-header__logo-wrapper {
     margin-bottom: 128px;
+    padding-right: 50%;
   }
 
   .catalog-header__autorization {

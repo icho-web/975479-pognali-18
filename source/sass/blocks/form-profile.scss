@@ -283,6 +283,13 @@
       width: auto;
       height: auto;
     }
+
+    .form-profile__avatar {
+      width: 190px;
+      height: 190px;
+
+      border-radius: 10px 10px 0 0;
+    }
   }
 
   .form-profile__level-icon {
@@ -291,13 +298,6 @@
 
     margin-top: 40px;
     margin-right: 43px;
-  }
-
-  .form-profile__avatar {
-    width: 190px;
-    height: 190px;
-
-    border-radius: 10px 10px 0 0;
   }
 
   .form-profile__photo {

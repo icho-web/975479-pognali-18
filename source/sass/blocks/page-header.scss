@@ -20,16 +20,23 @@
   min-height: 478px;
   display: flex;
   flex-direction: column;
-
-  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 62% 223px,
-    url("../img/globe-back-mobile@1x.jpg") no-repeat,
-    #161c35;
   color: white;
+
+  background: url("/img/traveller-illustration-mobile@1x.png") no-repeat 62% 223px,
+    url("/img/globe-back-mobile@1x.jpg") no-repeat,
+    #161c35;
+
+    @media (min-resolution: 1.5dppx) {
+      background: url("/img/traveller-illustration-mobile@2x.png") no-repeat 62% 223px,
+    url("/img/globe-back-mobile@2x.jpg") no-repeat,
+    #161c35;
+    background-size: 192px 255px, 320px 569px;
+    }
 }
 
 .page-header__toggle {
-  margin-left: auto;
   padding: 0;
+  margin: 0;
 
   border: none;
   background-color: transparent;
@@ -44,7 +51,11 @@
 
 .page-header__wrapper {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
+}
+
+.page-header__logo-link {
+  margin-right: auto;
 }
 
 .page-header__nav {
@@ -53,7 +64,7 @@
 
   margin-top: -233px;
   margin-left: -9.5%;
-  padding: 27px 25px 40px 25px;
+  padding: 28px 9.4% 39px 9.4%;
   width: 119.1%;
   height: 568px;
 
@@ -74,7 +85,7 @@
 
 .page-header__menu-wrapper {
   display: flex;
-  margin-bottom: 62px;
+  margin-bottom: 64px;
 }
 
 .page-header__close-menu {
@@ -182,7 +193,7 @@
 .page-header__nav-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -228,11 +239,6 @@
     background-color: #192144;
   }
 
-  .page-header__toggle {
-    margin: 0 auto;
-    padding-right: 12.4%;
-  }
-
   .page-header__menu-wrapper {
     margin-bottom: 116px;
   }
@@ -270,6 +276,7 @@
   }
 
   .page-header__wrapper {
+    padding-right: 50%;
     margin-bottom: 72px;
   }
 
