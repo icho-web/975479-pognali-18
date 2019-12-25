@@ -22,13 +22,13 @@
   flex-direction: column;
   color: white;
 
-  background: url("/img/traveller-illustration-mobile@1x.png") no-repeat 62% 223px,
-    url("/img/globe-back-mobile@1x.jpg") no-repeat,
+  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 62% 223px,
+    url("../img/globe-back-mobile@1x.jpg") no-repeat,
     #161c35;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("/img/traveller-illustration-mobile@2x.png") no-repeat 62% 223px,
-    url("/img/globe-back-mobile@2x.jpg") no-repeat,
+      background: url("../img/traveller-illustration-mobile@2x.png") no-repeat 62% 223px,
+    url("../img/globe-back-mobile@2x.jpg") no-repeat,
     #161c35;
     background-size: 192px 255px, 320px 569px;
     }

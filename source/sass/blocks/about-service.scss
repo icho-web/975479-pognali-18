@@ -22,7 +22,7 @@
   border-radius: 0 0 25px 25px;
 
   @media (min-resolution: 1.5dppx) {
-    background: url(/img/about-mobile@2x.png) no-repeat 93% 45px,
+    background: url("../img/about-mobile@2x.png") no-repeat 93% 45px,
   #192144;
     background-size: contain;
   }
@@ -71,11 +71,11 @@
     padding-bottom: 88px;
     @include text-padding-tablet();
 
-    background: url(../img/about-tablet@1x.png) no-repeat 107% 105px,
+    background: url("../img/about-tablet@1x.png") no-repeat 107% 105px,
     #192144;
 
     @media (min-resolution: 1.5dppx) {
-      background: url(/img/about-tablet@2x.png) no-repeat 107% 105px,
+      background: url("../img/about-tablet@2x.png") no-repeat 107% 105px,
     #192144;
       background-size: contain;
     }
@@ -123,11 +123,11 @@
   .about-service {
     padding: 92px 9.1% 163px 9.1%;
 
-    background: url(/img/about-desktop@1x.png) no-repeat 93% 45px,
+    background: url("../img/about-desktop@1x.png") no-repeat 93% 45px,
     #192144;
 
     @media (min-resolution: 1.5dppx) {
-      background: url(/img/about-desktop@2x.png) no-repeat 93% 45px,
+      background: url("../img/about-desktop@2x.png") no-repeat 93% 45px,
     #192144;
       background-size: contain;
     }

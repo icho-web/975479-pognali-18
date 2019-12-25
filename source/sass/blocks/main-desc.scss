@@ -40,13 +40,13 @@
     @include text-padding-tablet();
     min-height: 591px;
 
-    background: url("/img/traveller-illustration-tablet@1x.png") no-repeat 72% 0,
-      url("/img/globe-back-tablet@1x.jpg") no-repeat 50% -34px,
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 72% 0,
+      url("../img/globe-back-tablet@1x.jpg") no-repeat 50% -34px,
       #192144;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("/img/traveller-illustration-tablet@2x.png") no-repeat 72% 0,
-      url("/img/globe-back-tablet@2x.jpg") no-repeat 50% -34px,
+      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 72% 0,
+      url("../img/globe-back-tablet@2x.jpg") no-repeat 50% -34px,
       #192144;
       background-size: 372px 451px, 1479px 612px;
     }
