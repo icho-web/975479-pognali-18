@@ -20,7 +20,6 @@
           <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x">
         </picture>
       </a>
-
       <button class="page-header__toggle" type="button">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
@@ -99,7 +98,12 @@
     <nav class="page-header__nav">
       <div class="page-header__menu-wrapper">
         <a class="page-header__nav-logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+          <picture>
+            <source media="(min-width: 1439px)"
+              srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+          </picture>
         </a>
         <button class="page-header__close-menu">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -319,8 +323,8 @@
           <li class="directions__item">
             <picture>
               <source media="(min-width:768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-              <img class="directions__img" src="img/czech-desktop@1x.jpg" srcset="img/czech-desktop@2x.jpg 2x"
-                width="270" height="110" alt="Чехия">
+              <img class="directions__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270"
+                height="110" alt="Чехия">
             </picture>
             <img class="directions__flag" src="img/flag-czech.svg" width="35" height="24">
             <div class="directions__card-wrapper">
@@ -438,6 +442,28 @@
         Показать тарифы для бизнеса
       </a>
     </section>
+    <section class="tariffs-popup">
+      <h2 class="tariffs-popup__header">Бизнес-тарифы</h2>
+      <ul class="tariffs-popup__list">
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text tariffs-popup__text--1">Реклама у блоггера</p>
+          <p class="tariffs-popup__text">300 000 руб./пост</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text tariffs-popup__text--1">Накрутка подписчиков</p>
+          <p class="tariffs-popup__text">от 1 руб./шт.</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text tariffs-popup__text--1">Лайки от ботов</p>
+          <p class="tariffs-popup__text">от 20 коп./лайк</p>
+        </li>
+        <li class="tariffs-popup__item">
+          <p class="tariffs-popup__text tariffs-popup__text--1">Ваш продакт-плейсмент</p>
+          <p class="tariffs-popup__text">Индивидуально</p>
+        </li>
+      </ul>
+      <button class="tariffs-popup__close">Закрыть окно</button>
+    </section>
     <section class="registration">
       <h2 class="visually-hidden">Регистрация</h2>
       <b class="registration__text registration__text--bold">Заинтересовались?</b>
@@ -546,27 +572,50 @@
         frameborder="0" style="border:0;" allowfullscreen="">
       </iframe>
     </section>
-    <section class="tariffs-popup visually-hidden">
-      <h2 class="tariffs-popup__header">Бизнес-тарифы</h2>
-      <ul class="tariffs-popup__list">
-        <li class="tariffs-popup__item">
-          <p class="tariffs-popup__text">Реклама у блоггера</p>
-          <p class="tariffs-popup__text">300 000 руб./пост</p>
+    <section class="page-header__scroll-menu">
+      <picture>
+        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+      </picture>
+      <ul class="page-header__scroll-nav-list">
+        <li class="page-header__scroll-nav-item">
+          <a>О сервисе</a>
         </li>
-        <li class="tariffs-popup__item">
-          <p class="tariffs-popup__text">Накрутка подписчиков</p>
-          <p class="tariffs-popup__text">от 1 руб./шт.</p>
+        <li class="page-header__scroll-nav-item">
+          <a>Направления</a>
         </li>
-        <li class="tariffs-popup__item">
-          <p class="tariffs-popup__text">Лайки от ботов</p>
-          <p class="tariffs-popup__text">от 20 коп./лайк</p>
-        </li>
-        <li class="tariffs-popup__item">
-          <p class="tariffs-popup__text">Ваш продакт-плейсмент</p>
-          <p class="tariffs-popup__text">Индивидуально</p>
+        <li class="page-header__scroll-nav-item">
+          <a>Попутчики</a>
         </li>
       </ul>
-      <button class="tariffs-popup__close">Закрыть окно</button>
+      <button class="page-header__toggle page-header__toggle--grey" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+          <g>
+            <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z" />
+            <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
+          </g>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__scroll-list">
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--tel">
+
+          </a>
+        </li>
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--mail">
+
+          </a>
+        </li>
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--autorization">
+            Авторизация
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 
@@ -657,7 +706,9 @@ L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z" />
       </svg>
     </div>
   </footer>
-
+  <script src="js/open-index-popup.js"></script>
+  <script src="js/scroll-menu.js"></script>
+  <script src="js/profile-popup.js"></script>
 </body>
 
 </html>

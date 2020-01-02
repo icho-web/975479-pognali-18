@@ -39,6 +39,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "headhesive": "^1.2.4",
     "normalize.css": "^8.0.1"
   }
 }

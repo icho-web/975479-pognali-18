@@ -477,7 +477,78 @@
           </div>
         </div>
         <div class="route__choose">
-          <p>Выберите страну</p>
+          <div class="route__link-wrapper">
+            <a class="route__choose-link">Выберите страну</a>
+            <button class="route__choose-close">Закрыть</button>
+          </div>
+          <div class="route__table-wrapper">
+            <table class="route__table">
+              <tr class="route__tr">
+                <td class="route__td">А</td>
+                <td class="route__td">Б</td>
+                <td class="route__td">В</td>
+                <td class="route__td">Г</td>
+                <td class="route__td">Д</td>
+              </tr>
+              <tr class="route__tr">
+                <td class="route__td">Е</td>
+                <td class="route__td">З</td>
+                <td class="route__td">И</td>
+                <td class="route__td">К</td>
+                <td class="route__td">Л</td>
+              </tr>
+              <tr class="route__tr">
+                <td class="route__td">М</td>
+                <td class="route__td">Н</td>
+                <td class="route__td">О</td>
+                <td class="route__td">П</td>
+                <td class="route__td">Р</td>
+              </tr>
+              <tr class="route__tr">
+                <td class="route__td">С</td>
+                <td class="route__td">Т</td>
+                <td class="route__td">У</td>
+                <td class="route__td">Ф</td>
+                <td class="route__td">Х</td>
+              </tr>
+              <tr class="route__tr">
+                <td class="route__td">Ч</td>
+                <td class="route__td">Ш</td>
+                <td class="route__td">Э</td>
+                <td class="route__td">Ю</td>
+                <td class="route__td">Я</td>
+              </tr>
+            </table>
+            <ul class="route__choose-list">
+              <li class="route__choose-item">
+                <a>Афганистан</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Албания</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Алжир</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Андорра</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Аргентина</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Армения</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Австралия</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Австрия</a>
+              </li>
+              <li class="route__choose-item">
+                <a>Азербайджан</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="route__add">
           <p>Добавить страну</p>
@@ -563,6 +634,51 @@
         <li class="route-popup__country">Австралия</li>
         <li class="route-popup__country">Австрия</li>
         <li class="route-popup__country">Азербайджан</li>
+      </ul>
+    </section>
+    <section class="page-header__scroll-menu">
+      <picture>
+        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+      </picture>
+      <ul class="page-header__scroll-nav-list">
+        <li class="page-header__scroll-nav-item">
+          <a>О сервисе</a>
+        </li>
+        <li class="page-header__scroll-nav-item">
+          <a>Направления</a>
+        </li>
+        <li class="page-header__scroll-nav-item">
+          <a>Попутчики</a>
+        </li>
+      </ul>
+      <button class="page-header__toggle page-header__toggle--grey" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+          <g>
+            <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z" />
+            <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
+          </g>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__scroll-list">
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--tel">
+
+          </a>
+        </li>
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--mail">
+
+          </a>
+        </li>
+        <li class="page-header__scroll-item">
+          <a class="page-header__scroll-item--autorization">
+            Авторизация
+          </a>
+        </li>
       </ul>
     </section>
   </main>
@@ -654,7 +770,9 @@
       </svg>
     </div>
   </footer>
-
+  <script src="js/open-form-popup.js"></script>
+  <script src="js/scroll-menu.js"></script>
+  <script src="js/route-popup.js"></script>
 </body>
 
 </html>
