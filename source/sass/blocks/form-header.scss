@@ -48,9 +48,14 @@
 
 @media (min-width: 1439px) {
   .form-header__nav {
-    position: relative;
+    position: absolute;
+    left: 28.2%;
+    top: 60px;
+    display: block;
     padding: 0;
     margin: 0;
-    height: 0;
+    width: 29.4%;
+    height: auto;
+    background-color: transparent;
   }
 }

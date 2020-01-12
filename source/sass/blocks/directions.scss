@@ -25,7 +25,7 @@
   margin-bottom: -25px;
 
   background-color: #edeff6;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
 }
 
 .directions__list {
@@ -40,8 +40,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  border-radius: 10px;
 }
 
 .directions__header {
@@ -58,6 +56,7 @@
   margin: 0;
   font-size: 21px;
   line-height: 1;
+  margin-bottom: 2px;
 
   color: #161c35;
 }
@@ -81,24 +80,36 @@
 }
 
 .directions__text-wrapper {
-  @include block-padding-mobile();
+  padding-left: 9%;
+  padding-right: 11%;
 }
 
 .directions__card-wrapper {
-  padding: 28px 9.6% 23px 9.6%;
-  margin-top: -11px;
-  margin-bottom: 10px;
+  position: relative;
+  padding: 25px 9.6% 25px 8.6%;
+  margin-top: -15px;
+  margin-bottom: 9px;
 
   background-color: #ffffff;
   border-radius: 10px;
 }
 
-.directions__number {
-  position: absolute;
-  right: 25px;
-  bottom: 46px;
+.directions__card-wrapper--shadow {
+  box-shadow: inset -8px -45px 25px -8px rgba($color: #edeff6, $alpha: 1);
+}
 
+.directions__number-wrapper {
+  position: absolute;
+  right: 9%;
+  bottom: 38px;
+
+  display: flex;
+  align-items: center;
+}
+
+.directions__number {
   margin: 0;
+  margin-left: 7px;
 
   font-size: 16px;
   line-height: 1.88;
@@ -107,14 +118,15 @@
 
 .directions__flag {
   position: absolute;
-  left: 25px;
-  top: 87px;
+  left: 9%;
+  top: -12px;
 }
 
 .directions__link {
   order: 1;
-  display: table;
-  padding: 22px 52.4% 22px 8.9%;
+  display: flex;
+  align-items: center;
+  padding: 23px 8.3% 22px 8.4%;
 
   font-size: 18px;
   font-weight: bold;
@@ -123,6 +135,23 @@
   background-color: #ffd74b;
   color: #1d2e5b;
   border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
+  span {
+    margin-right: auto;
+  }
 }
 
 .directions__img {
@@ -136,7 +165,10 @@
   .directions {
     @include text-padding-tablet();
     padding-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 130px;
+    margin-bottom: -60px;
+
+    border-radius: 0 0 60px 60px;
 
     background: url(../img/flags-back@1x.png) no-repeat 92% 104px,
     #edeff6;
@@ -155,8 +187,11 @@
   }
 
   .directions__flag {
-    left: 67%;
-    top: 62px;
+    width: 70px;
+    height: 47px;
+    right: -35px;
+    left: auto;
+    top: 16px;
   }
 
   .directions__picture {
@@ -180,7 +215,7 @@
   }
 
   .directions__header {
-    margin-bottom: 55px;
+    margin-bottom: 59px;
 
     font-size: 45px;
     line-height: 1;
@@ -188,7 +223,7 @@
 
   .directions__text--desc {
     padding-right: 275px;
-    margin-bottom: 105px;
+    margin-bottom: 107px;
 
     font-size: 28px;
     line-height: 1.18;
@@ -225,20 +260,38 @@
     order: -1;
     flex-grow: 1;
     margin: 0;
-    padding: 31px 87px 21px 30px;
+    padding: 29px 6.5% 45px 5%;
 
     border-radius: 20px 0 0 20px;
   }
 
   .directions__link {
+    padding: 27px 35px 29px 34px;
+
     font-size: 24px;
-    padding: 29px 35px 27px 34px;
+
+    border-radius: 20px;
+  }
+
+  .directions__number-wrapper {
+    right: auto;
+    left: 7.1%;
+    bottom: 18px;
+
+    svg {
+      width: 21px;
+      height: 20px;
+    }
+  }
+
+  .directions__card-wrapper--shadow {
+    box-shadow: none;
   }
 }
 
 @media (min-width: 1439px) {
   .directions {
-    padding: 187px 130px 60px 132px;
+    padding: 221px 8.2vw 61px 9.2vw;
     background: url(../img/flags-back@1x.png) no-repeat 95% 114px, #edeff6;
 
     @media (min-resolution: 1.5dppx) {
@@ -252,18 +305,19 @@
   }
 
   .directions__link {
-    margin: -118px 14.5% 79px auto;
-    padding: 29px 102px 27px 32px;
+    margin: -119px 0 79px 51vw;
+    padding: 29px 35px 27px 32px;
+    width: 18.9vw;
   }
 
   .directions__list {
-    width: 47.5%;
+    width: 38.8vw;
     order: -1;
-    margin-right: 14.5%;
+    margin-right: 11.9vw;
   }
 
   .directions__card-wrapper {
-    padding: 24px 6.3% 24px 5.5%;
+    padding: 22px 8.3% 24px 5.4%;
     flex-grow: 1;
   }
 
@@ -272,12 +326,21 @@
   }
 
   .directions__text-wrapper {
-    padding-top: 5px;
+    padding-top: 2px;
     order: 2;
-    width: 29%;
+    width: 24vw;
   }
 
   .directions__text--desc {
     padding: 0;
+  }
+
+  .directions__flag {
+    right: -34px;
+    top: 23px;
+  }
+
+  .directions__number-wrapper {
+    left: 8.2%;
   }
 }

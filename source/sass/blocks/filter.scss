@@ -1,5 +1,5 @@
 .filter {
-  padding: 25px 7.5% 0 7.5%;
+  padding: 24px 7.5% 0 7.5%;
   background-color: #edeff6;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .filter__form {
-  padding: 26px;
+  padding: 25px 9.7% 22px 9.3%;
 
   background-color: #ffd74b;
   border-radius: 20px;
@@ -24,6 +24,7 @@
 
 .filter__button-submit {
   margin: 0 auto;
+  margin-top: 18px;
   display: table;
   padding: 10px 76px;
 
@@ -37,13 +38,75 @@
   color: #161c35;
 }
 
+.filter__input {
+  visibility: hidden;
+}
+
+.filter__label {
+  padding-left: 27px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    left: 1px;
+    top: -3px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url(../img/tick.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -3px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+}
+
+.filter__label-transport {
+  opacity: 0.15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__input {
+  &:checked {
+    &+.filter__label::after {
+      visibility: visible;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .filter {
     padding: 46px 5.1% 0 5.2%;
   }
 
   .filter__form {
-    padding: 36px 5.1% 36px 5%;
+    padding: 34px 5.1% 38px 4.8%;
   }
 
   .filter__wrapper {
@@ -52,13 +115,14 @@
 
   .filter__header {
     font-size: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   .filter__button-submit {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 0;
 
     font-size: 20px;
     line-height: 1.5;
@@ -73,10 +137,14 @@
   }
 
   .filter__form {
-    padding: 47px 16.4% 36px 16.2%;
+    padding: 45px 16.4% 47px 16.2%;
   }
 
   .filter__header {
     margin-bottom: 19px;
+  }
+
+  .filter__button-submit {
+    padding: 10px 48px 10px 51px;
   }
 }

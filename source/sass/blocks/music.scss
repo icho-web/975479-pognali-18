@@ -1,29 +1,40 @@
 .music__header {
   margin: 0;
-  margin-bottom: 8px;
-  padding: 12px 0 8px 0;
+  padding-left: 2px;
 
   font-size: 16px;
   font-weight: bold;
   line-height: 1.13;
   text-transform: uppercase;
 
-  border-top: 1px solid #f3c72b;
   color: #1d2e5b;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .music__list {
-  display: flex;
   flex-direction: column;
-  margin: 0;
-  margin-bottom: 10px;
   padding: 0;
+  margin: 0;
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
 
   list-style: none;
 }
 
 .music__item {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
 
   font-size: 15px;
   line-height: 1;
@@ -31,7 +42,45 @@
   color: #444444;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 19px;
+  }
+
+  input {
+    margin: 0;
+    margin-right: 9px;
+    width: 18px;
+    height: 18px;
+
+    border-radius: 4px;
+  }
+}
+
+.music__header-wrapper {
+  display: flex;
+  height: 40px;
+  align-items: center;
+
+  border-top: 1px solid #f3c72b;
+}
+
+.music__header-dropdown {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: -10px;
+
+  transform: rotate(0);
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -42,7 +91,6 @@
   }
 
   .music__header {
-    width: 20.4%;
     border: 0;
     margin: 0;
     padding: 0;
@@ -52,8 +100,19 @@
     line-height: 1.5;
   }
 
+  .music__header-dropdown {
+    display: none;
+  }
+
+  .music__header-wrapper {
+    border: 0;
+    width: 20.4%;
+  }
+
   .music__list {
     display: flex;
+    overflow: visible;
+    max-height: none;
     margin-top: 2px;
     flex-grow: 1;
     flex-direction: row;
@@ -63,6 +122,7 @@
     display: flex;
     font-size: 20px;
     align-items: center;
+    margin: 0;
 
     input {
       margin: 0;
@@ -72,7 +132,7 @@
     }
 
     &:last-child {
-      margin-bottom: auto;
+      margin-bottom: 0;
     }
   }
 
@@ -92,15 +152,35 @@
 
 @media (min-width: 1439px) {
   .music {
+    padding: 0;
+    padding-top: 2px;
     display: block;
+  }
+
+  .music__header {
+    padding-left: 0;
+  }
+
+  .music__header-wrapper {
+    width: auto;
   }
 
   .music__list {
     flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
   }
-
 
   .music__item {
     width: auto;
+    margin: 14px 0 2px 2px;
+
+    &:last-child {
+      margin-bottom: 21px;
+    }
+  }
+
+  .music__header-dropdown {
+    display: flex;
   }
 }

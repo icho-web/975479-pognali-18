@@ -1,7 +1,7 @@
 .dates-stay {
   display: flex;
   flex-direction: column;
-  padding: 24px 9% 22px 9%;
+  padding: 22px 9% 22px 9%;
   background-color: #ffffff;
   border-radius: 10px;
   margin-left: auto;
@@ -31,7 +31,7 @@
 
 .dates-stay__filter-wrapper {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .dates-stay__text {
@@ -57,15 +57,83 @@
 }
 
 .dates-stay__label {
+  position: relative;
   font-size: 15px;
   line-height: 1;
   color: #444444;
+  padding-left: 39px;
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      border: solid 1px #959bb2;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #e2e5f1;
+      border: solid 1px #e2e5f1;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    left: 1px;
+    top: -6px;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url(../img/tick.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -6px;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 4px;
+    border: solid 1px #cbced9;
+  }
+}
+
+
+.dates-stay__input--temporarily {
+  &:checked {
+    &+.dates-stay__label::after {
+      visibility: visible;
+    }
+  }
 }
 
 .dates-stay__button {
   position: absolute;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   svg {
     margin: auto;
@@ -77,7 +145,7 @@
 
 .dates-stay__button--left {
   left: 4%;
-  bottom: 8px;
+  bottom: 14px;
 }
 
 .dates-stay__button--right {
@@ -91,8 +159,10 @@
 }
 
 .dates-stay__date {
-  padding-top: 13px;
+  padding-top: 10px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   height: 44px;
   text-align: center;
@@ -100,8 +170,6 @@
   font-weight: bold;
   line-height: 1;
   color: #1d2e5b;
-  border-top: solid 1px #cbced9;
-  border-bottom: solid 1px #cbced9;
 }
 
 .dates-stay__range {
@@ -112,34 +180,51 @@
 
   border-radius: 4px;
   border: solid 1px #cbced9;
+
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+
+  &:focus {
+    border: solid 1px #161c35;
+  }
 }
 
 .dates-stay__input-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
-}
-
-.dates-stay__input--temporarily {
-  width: 26px;
-  height: 26px;
-  margin: 0;
-  margin-right: 13px;
+  margin-bottom: 26px;
 }
 
 .dates-stay__date-wrapper {
   position: relative;
-  margin-bottom: 4px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 20px;
+
+  border-top: solid 1px #cbced9;
+  border-bottom: solid 1px #cbced9;
 }
 
 .dates-stay__date-button {
-  background-color: transparent;
-  border: 0;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .dates-stay__table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border-collapse: collapse;
 }
 
@@ -159,6 +244,68 @@
   line-height: 1.29;
   text-align: center;
   border: solid 1px #cbced9;
+  color: rgba(68, 68, 68, 0.3);
+
+  p {
+    margin: 0;
+  }
+}
+
+.dates-stay__td-day {
+  position: relative;
+  background-color: #edeff6;
+  color: #444444;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1d2e5b;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: -2px;
+      top: -2px;
+
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+
+      border: solid 2px #ff5c23;
+      border-radius: 2px;
+    }
+  }
+
+  &:focus {
+    background-color: #101d41;
+    color: #ffffff;
+  }
+}
+
+.dates-stay__td-chosen {
+  position: relative;
+  background-color: #101d41;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1d2e5b;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: -2px;
+      top: -2px;
+
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+
+      border: solid 2px #ff5c23;
+      border-radius: 2px;
+    }
+  }
 }
 
 .dates-stay__tr--first {
@@ -182,6 +329,23 @@
   background-color: #ffd74b;
   border: 0;
   border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
+  svg {
+    display: none;
+  }
 }
 
 .dates-stay__div-1 {
@@ -190,6 +354,7 @@
 
 .dates-stay__div-2 {
   order: 0;
+  margin-bottom: 6px;
 }
 
 .dates-stay__form {
@@ -200,8 +365,9 @@
 @media (min-width: 768px) {
   .dates-stay {
     width: auto;
-    padding: 48px 7.3% 55px 7%;
+    padding: 45px 7.3% 55px 7%;
     margin-bottom: 40px;
+    border-radius: 30px;
   }
 
   .dates-stay__table {
@@ -209,7 +375,7 @@
   }
 
   .dates-stay__form {
-    margin-bottom: 22px;
+    margin-bottom: 37px;
   }
 
   .dates-stay__intro {
@@ -228,13 +394,13 @@
   .dates-stay__text {
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
   }
 
   .dates-stay__filter-wrapper {
     border-top: 1px solid #d6d9e6;
-    padding-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 23px;
+    margin-bottom: 26px;
   }
 
   .dates-stay__filter {
@@ -257,7 +423,7 @@
   }
 
   .dates-stay__button {
-    svg {
+    img {
       width: 20px;
       height: 40px;
     }
@@ -273,12 +439,8 @@
     margin-bottom: 27px;
   }
 
-  .dates-stay__input--temporarily {
-    width: 36px;
-    height: 36px;
-  }
-
   .dates-stay__label {
+    position: relative;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
@@ -288,12 +450,13 @@
   }
 
   .dates-stay__date-wrapper {
-    margin-bottom: 11px;
+    margin-bottom: 30px;
   }
 
   .dates-stay__date {
-    padding-top: 27px;
-    height: 85px;
+    padding-top: 24px;
+    height: 87px;
+
     font-size: 36px;
     font-weight: bold;
   }
@@ -304,42 +467,80 @@
     letter-spacing: 1.8px;
   }
 
+  .dates-stay__tr--first {
+    .dates-stay__th {
+      padding-bottom: 4px;
+    }
+  }
+
   .dates-stay__td {
     width: 77px;
     height: 69px;
+    padding-top: 0;
+    padding-left: 5px;
     font-size: 20px;
     font-weight: 500;
     line-height: 0.9;
     letter-spacing: 2px;
     color: rgba(29, 46, 91, 0.3);
+
+    &:hover {
+      &::after {
+        left: -2px;
+        top: -2px;
+
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+
+        border: solid 4px #ff5c23;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .dates-stay__td-day {
+    color: #1d2e5b;
+  }
+
+  .dates-stay__td-chosen {
+    background-color: #101d41;
+    color: #ffffff;
+
+    &:hover {
+      &::after {
+        left: -2px;
+        top: -2px;
+
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+
+        border: solid 4px #ff5c23;
+        border-radius: 2px;
+      }
+    }
   }
 
   .dates-stay__table-button {
+    display: flex;
+    align-items: center;
     width: 54%;
-    padding: 30px 78px 28px 34px;
+    padding: 30px 37px 28px 34px;
+
     text-transform: none;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
-  }
-}
 
-@media (min-width: 1439px) {
-  .dates-stay {
-    padding: 100px 12.1% 115px 12.1%;
-    margin-bottom: 44px;
-  }
+    svg {
+      display: flex;
+    }
 
-  .dates-stay__h3 {
-    margin-bottom: 0;
+    span {
+      margin-right: auto;
+    }
   }
 
-  .dates-stay__text {
-    padding-right: 280px;
-  }
-
-  .dates-stay__step-wrapper {
-    margin-bottom: 34px;
+  .dates-stay__header-wrapper {
     display: flex;
   }
 
@@ -347,9 +548,71 @@
     display: block;
   }
 
-  .dates-stay__header-wrapper {
+  .dates-stay__item--span {
+    visibility: hidden;
+  }
+
+  .dates-stay__list {
+    list-style: none;
     display: flex;
-    margin-bottom: 46px;
+  }
+
+  .dates-stay__item {
+    width: 20px;
+  }
+
+  .dates-stay__link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 5px;
+      height: 5px;
+
+      background-color: #1d2e5b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+@media (min-width: 1439px) {
+  .dates-stay {
+    padding: 96px 12.1% 105px 12.1%;
+    margin-bottom: 44px;
+    border-radius: 60px;
+  }
+
+  .dates-stay__intro {
+    margin-right: 0.8%;
+  }
+
+  .dates-stay__intro-wrapper {
+    width: 81.5%;
+  }
+
+  .dates-stay__list-wrapper {
+    padding-top: 12px;
+  }
+
+  .dates-stay__h3 {
+    margin-bottom: 0;
+  }
+
+  .dates-stay__text {
+    padding-right: 230px;
+  }
+
+  .dates-stay__step-wrapper {
+    margin-bottom: 34px;
+    display: flex;
+  }
+
+  .dates-stay__header-wrapper {
+    margin-bottom: 16px;
   }
 
   .dates-stay__list {
@@ -365,7 +628,7 @@
   }
 
   .dates-stay__item {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     a {
       font-size: 20px;
@@ -379,14 +642,36 @@
     position: relative;
 
     width: 47.7%;
-    padding-top: 27px;
+    padding-top: 25px;
 
     border: 0;
   }
 
   .dates-stay__form {
-    margin-bottom: 16px;
+    padding-top: 30px;
+    margin-bottom: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+
   }
+
+  .dates-stay__tr--first {
+    .dates-stay__th {
+      text-align: left;
+      padding-left: 16px;
+      padding-bottom: 15px;
+    }
+
+  }
+    .dates-stay__td {
+      p {
+        margin: 0;
+        padding-left: 9.2%;
+        margin-top: -23px;
+      }
+    }
 
   .dates-stay__companion-wrapper {
     padding-top: 50px;
@@ -397,9 +682,22 @@
 
   .dates-stay__filter--number {
     position: absolute;
-    left: 194%;
+    left: 198.7%;
 
     opacity: 1;
+  }
+
+  .dates-stay__table-button {
+    padding: 28px 37px 29px 34px;
+    width: 28.6%;
+  }
+
+  .dates-stay__table {
+    margin-bottom: 55px;
+  }
+
+  .dates-stay__input--temporarily {
+    margin-right: 20px;
   }
 
   .dates-stay__range {
@@ -416,10 +714,11 @@
   .dates-stay__input-wrapper {
     order: -2;
     margin-left: auto;
+    margin-bottom: 16px;
   }
 
   .dates-stay__date-wrapper {
-    margin-bottom: 1px;
+    margin-bottom: 9px;
   }
 
   .dates-stay__td {
@@ -427,11 +726,11 @@
     width: 143px;
     height: 71px;
     text-align: justify;
-  }
 
-  .dates-stay__form {
-    flex-direction: row;
-    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
   }
 
   .dates-stay__div-1 {
@@ -444,5 +743,49 @@
 
   .dates-stay__button--right {
     bottom: -61px;
+  }
+
+  .dates-stay__list {
+    display: block;
+  }
+
+  .dates-stay__item {
+    width: auto;
+  }
+
+  .dates-stay__item--span {
+    visibility: visible;
+    color: #000000;
+  }
+
+  .dates-stay__link {
+    &::before {
+      left: -42px;
+      top: 11px;
+    }
+  }
+
+  .dates-stay__td-chosen--in {
+    &::before {
+      content: "Заезд";
+      position: absolute;
+      left: 9.2%;
+      top: 32px;
+
+      width: 50px;
+      height: 20px;
+    }
+  }
+
+  .dates-stay__td-chosen--out {
+    &::before {
+      content: "Выезд";
+      position: absolute;
+      left: 9.2%;
+      top: 32px;
+
+      width: 50px;
+      height: 20px;
+    }
   }
 }

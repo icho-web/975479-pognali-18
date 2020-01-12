@@ -14,7 +14,7 @@
 
   background-color: #ffffff;
 
-  border-radius: 38px 30px 0 0;
+  border-radius: 30px 30px 0 0;
 }
 
 .main-footer__list {
@@ -23,7 +23,7 @@
   min-width: 135px;
   padding: 0;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 38px;
 
   list-style: none;
 }
@@ -35,6 +35,19 @@
 
   background-color: #ffd74b;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-footer__logo {
@@ -53,6 +66,9 @@
 .main-footer__develop-wrapper {
   display: flex;
   align-items: center;
+  padding-top: 12px;
+
+  border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
 
   svg {
     width: 27px;
@@ -70,12 +86,15 @@
     padding-left: 5.3%;
     padding-right: 5.3%;
     padding-top: 19px;
-    margin-top: -25px;
+    margin-top: 10px;
     min-height: 154px;
+
+    border-radius: 60px 60px 0 0;
   }
 
   .main-footer__develop-wrapper {
     height: 34px;
+    padding-top: 0;
   }
 
   .main-footer__list {
@@ -126,5 +145,12 @@
   .main-footer {
     min-height: 154px;
     margin-top: -58px;
+    padding-left: 4.2%;
+    padding-right: 4%;
+    padding-top: 19px;
+  }
+
+  .main-footer__list {
+    margin-left: -48px;
   }
 }

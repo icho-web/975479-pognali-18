@@ -27,7 +27,7 @@
 }
 
 .main-nav__item--link {
-  padding: 7px 45px 3px 34px;
+  padding: 6px 40px 3px 39px;
 
   font-size: 17px;
   line-height: 1.76;
@@ -38,6 +38,17 @@
   background-color: #ffd74b;
   border-radius: 20px;
   color: #161c35;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-nav__item--phone {
@@ -47,6 +58,17 @@
 
   background-color: #ff8d30;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 
   svg {
     width: 18px;
@@ -62,9 +84,20 @@
   @include centering();
   width: 40px;
   height: 40px;
+  cursor: pointer;
 
   background-color: #ffbd30;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 
   svg {
     width: 18px;
@@ -134,8 +167,13 @@
 
 @media (min-width: 1439px) {
   .main-nav {
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    padding-right: 4.2%;
+    padding-top: 49px;
     position: absolute;
-    left: 76%;
   }
 
   .main-nav__list--form {

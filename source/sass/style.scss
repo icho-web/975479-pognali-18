@@ -126,11 +126,8 @@ body {
 .form-main {
   display: flex;
   flex-direction: column;
-}
 
-.main-footer {
-  display: flex;
-  margin-top: -25px;
+  margin-bottom: -25px;
 }
 
 .modal-show {
@@ -147,6 +144,20 @@ body {
 
 .modal-close {
   display: none;
+}
+
+.filter__open {
+  max-height: 1000px;
+  transition: 2s;
+}
+
+.dropdown__rotate {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
+.textarea-error {
+  border: solid 1px #f47e7e;
 }
 
 @media (min-width : 1439px) {

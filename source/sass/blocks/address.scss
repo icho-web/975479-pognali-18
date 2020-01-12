@@ -35,8 +35,9 @@
 }
 
 .address__button {
-  display: block;
-  padding: 20px 78px 20px 20px;
+  display: flex;
+  padding: 19px 8% 19px 7%;
+  align-items: center;
 
   font-size: 18px;
   line-height: 1;
@@ -45,6 +46,10 @@
   color: #1d2e5b;
   border: 3px solid #192144;
   border-radius: 10px;
+
+  span {
+    margin-right: auto;
+  }
 }
 
 .address__text-wrapper {
@@ -67,20 +72,30 @@
     min-height: 190px;
     padding-right: 9.7%;
     padding-left: 9.7%;
-    padding-top: 73px;
+    padding-top: 107px;
     padding-bottom: 85px;
+    margin-bottom: -60px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   .address__button {
     padding: 27px 34px 24px 33px;
 
     font-size: 24px;
+
+    border-radius: 20px;
   }
 
   .address__icon {
     margin-right: 26px;
     width: 67px;
     height: 67px;
+
+    svg {
+      width: 21px;
+      height: 31px;
+    }
   }
 
   .address__text {
@@ -99,7 +114,7 @@
 @media (min-width: 1439px) {
   .address {
     display: flex;
-    padding: 80px 9.2% 56px 19.7%;
+    padding: 114px 9.2% 56px 19.7%;
     min-height: 200px;
   }
 
@@ -129,8 +144,8 @@
   }
 
   .address__button {
-    @include centering();
-    padding: 27px 33px 25px 34px;
+    width: 31.7%;
+    padding: 27px 32px 25px 34px;
 
     align-self: center;
 

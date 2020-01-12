@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   min-height: 369px;
-  padding: 62px 8% 42px 15.6%;
+  padding: 60px 8% 39px 15.3%;
   margin-bottom: -25px;
 
   background-color: #edeff6;
@@ -31,7 +31,7 @@
 .profile__header {
   margin: 0;
   margin-top: 15px;
-  padding-right: 108px;
+  padding-right: 60%;
 
   font-size: 24px;
   line-height: 1;
@@ -49,8 +49,8 @@
 .profile__item {
   display: flex;
   align-items: baseline;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 11px;
   min-height: 35px;
 
   font-size: 16px;
@@ -106,22 +106,31 @@
   color: #192144;
 }
 
+.profile__button-img {
+  display: none;
+}
+
 .profile__img {
-  margin-top: -88px;
-  margin-left: 144px;
+  margin-top: -86px;
+  margin-left: auto;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .profile {
     @include block-padding-tablet();
-    padding-top: 100px;
-    padding-bottom: 47px;
+    padding-top: 130px;
+    padding-bottom: 33px;
+
+    margin-bottom: -60px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   .profile__header {
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 59px;
 
     font-size: 45px;
     line-height: 1;
@@ -203,12 +212,12 @@
 
 @media (min-width: 1439px) {
   .profile {
-    padding: 132px 9.1% 65px 9%;
+    padding: 163px 9.2% 65px 9.2%;
   }
 
   .profile__header {
     padding: 0;
-    margin-bottom: 119px;
+    margin-bottom: 121px;
   }
 
   .profile__item--desc {
@@ -227,7 +236,7 @@
 
   .profile__img {
     zoom: 2;
-    margin-top: -151px;
+    margin-top: -150px;
     margin-bottom: 100px;
     margin-right: 0;
   }
