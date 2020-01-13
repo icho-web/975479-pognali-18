@@ -152,7 +152,7 @@ L6.9,6z" />
 		</g>
 	</symbol>
 	<!-- FLAG-SRI-LANKA -->
-	<symbol id="flag-sri-lanka">
+	<symbol id="flag-sri-lanka" viewBox="0 0 34 24">
 		<g fill-rule="nonzero" fill="none">
 			<rect fill="#FFCE54" x=".25" y=".52" width="70" height="47" rx="6.36" />
 			<path fill="#57A863" d="M5.25 42.52v-37h8.11v37z" />

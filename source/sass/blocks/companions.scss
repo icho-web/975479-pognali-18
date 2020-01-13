@@ -52,18 +52,49 @@
 }
 
 .companions__flags {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+
+  list-style: none;
   margin-top: -14px;
+  margin-bottom: 11px;
 }
 
 .companions__flag {
+  z-index: 1;
+  width: 34px;
+  height: 24px;
   margin-right: 17px;
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.companions__flag--sri-lanka {
+  background-image: url(../img/flag-sri-lanka.svg);
+}
+
+.companions__flag--thailand {
+  background-image: url(../img/flag-thailand.svg);
+}
+
+.companions__flag--seychelles {
+  background-image: url(../img/flag-seychelles.svg);
+}
+
+.companions__flag--belgium {
+  background-image: url(../img/flag-belgium.svg);
+}
+
+.companions__flag--czech {
+  background-image: url(../img/flag-czech.svg);
 }
 
 .companions__text-wrapper {
@@ -360,6 +391,7 @@
 
   .companions__text-wrapper {
     margin-right: auto;
+    width: 61%;
   }
 
   .companions__text {
@@ -369,6 +401,7 @@
   .companions__list {
     padding-top: 8px;
     margin: 0;
+    width: 62%;
   }
 
   .companions__item {

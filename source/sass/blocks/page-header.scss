@@ -80,10 +80,10 @@
 }
 
 .page-header__nav {
-  z-index: 2;
+  z-index: 12;
   position: relative;
 
-  margin-top: -233px;
+  margin-top: -478px;
   margin-left: -9.5%;
   padding: 28px 9.4% 39px 9.4%;
   width: 119.1%;
@@ -96,8 +96,7 @@
 
 .page-header__nav--catalog {
   margin-top: -133px;
-  margin-bottom: -13px;
-  margin-left: -25px;
+  margin-bottom: -14px;
 }
 
 .page-header__nav-logo {
@@ -216,14 +215,6 @@
   margin: 0;
   margin-bottom: 52px;
   padding: 0;
-
-  a {
-    color: #ffffff;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 1.5;
-  }
 }
 
 .page-header__nav-item {
@@ -231,13 +222,11 @@
 }
 
 .page-header__nav-link {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    color: #192144;
+  color: #192144;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .page-header__logo--slogan {
@@ -250,7 +239,7 @@
 .page-header__slogan {
   width: 240px;
   margin: 0 auto;
-  margin-bottom: auto;
+  margin-bottom: 249px;
 
   font-size: 36px;
   line-height: 1.11;
@@ -286,6 +275,14 @@
 }
 
 .page-header__scroll-nav-list {
+  display: none;
+}
+
+.page-header__scroll-item--mail {
+  display: none;
+}
+
+.page-header__scroll-item--tel {
   display: none;
 }
 
@@ -358,8 +355,9 @@
   }
 
   .page-header__nav--catalog {
-    margin-top: -275px;
-    margin-left: -25px;
+    margin-top: -285px;
+    margin-left: -5.9%;
+    margin-bottom: -66px;
   }
 
   .page-header__list {
@@ -493,7 +491,7 @@
 
   .page-header__nav {
     position: absolute;
-    left: 28.2%;
+    left: 27.9%;
     top: 60px;
 
     display: block;
@@ -520,6 +518,19 @@
     justify-content: space-between;
     margin-bottom: 0;
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      left: -100px;
+      top: 14px;
+
+      width: 60px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
   }
 
   .page-header__menu-wrapper {
@@ -544,7 +555,7 @@
 
   .page-header__scroll-menu {
     height: 90px;
-    padding: 0 4.2%;
+    padding: 2px 4.2% 2px 4.2%;
   }
 
   .page-header__scroll-item--tel {
@@ -570,12 +581,14 @@
   }
 
   .page-header__scroll-nav-list {
+    position: absolute;
+    left: 27.8%;
+    top: 11px;
+
     display: flex;
-    justify-content: space-between;
-    width: 29%;
     padding: 0;
-    margin: 0;
-    margin-left: 10%;
+    justify-content: space-between;
+    width: 29.4%;
 
     font-size: 20px;
     font-weight: 500;
@@ -584,11 +597,37 @@
 
     color: #192144;
     list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      left: -86px;
+      top: 14px;
+
+      width: 45px;
+      height: 2px;
+
+      background-color: #192144;
+    }
+  }
+
+  .page-header__scroll-nav-item {
+    flex-grow: 1;
+    a {
+      text-align: left;
+      padding: 0 4px;
+    }
   }
 
   .page-header__nav-link {
     padding: 0 4px;
     height: 1em;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: #ffffff;
 
     &:hover {
       span {
