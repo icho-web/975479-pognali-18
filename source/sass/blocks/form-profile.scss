@@ -48,6 +48,7 @@
 .form-profile__change-photo {
   margin-bottom: 10px;
   padding: 5px 0;
+
   @include centering();
 
   font-size: 17px;
@@ -157,7 +158,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
     img {
       opacity: 0.3;
@@ -179,7 +180,8 @@
   }
 
   &:hover {
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+
     img {
       opacity: 0.7;
     }
@@ -199,7 +201,6 @@
 
   circle {
     stroke-width: 2;
-    stroke-dasharray: 2;
     stroke-dasharray: 2;
   }
 }
@@ -310,11 +311,11 @@
     margin-bottom: 48px;
     justify-content: space-between;
 
-  img {
-    width: 94px;
-    height: 94px;
+    img {
+      width: 94px;
+      height: 94px;
+    }
   }
-}
 
   .form-profile__legend--transport {
     order: 1;
@@ -389,10 +390,6 @@
     margin-bottom: -60px;
   }
 
-  .form-profile__photo {
-    display: block;
-  }
-
   .form-profile__level-text {
     border-top: 1px solid #ffffff;
   }
@@ -422,6 +419,7 @@
 
   .form-profile__level-wrapper {
     margin-top: 42px;
+
     p {
       color: #ffffff;
       opacity: 1;
@@ -437,6 +435,7 @@
   }
 
   .form-profile__photo {
+    display: block;
     padding-top: 15px;
     margin-top: -5px;
     height: 47px;

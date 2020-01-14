@@ -6,7 +6,7 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
           <source media="(min-width: 1439px)"
             srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
@@ -54,7 +54,7 @@
     <nav class="form-header__nav">
       <div class="page-header__menu-wrapper">
         <a class="page-header__nav-logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
         </a>
         <button class="page-header__close-menu">
           <svg width="19" height="19" fill="#cccccc">
@@ -122,6 +122,7 @@
             <span class="visually-hidden">instagram</span>
           </a>
         </li>
+      </ul>
     </nav>
   </header>
 
@@ -140,7 +141,8 @@
           <picture>
             <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-            <img class="form-profile__avatar" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x">
+            <img class="form-profile__avatar" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x"
+              alt="Аватар">
           </picture>
           <p class="form-profile__photo">Фото</p>
         </div>
@@ -154,16 +156,16 @@
         <p class="form-profile__legend form-profile__legend--transport">транспорт</p>
         <ul class="form-profile__list">
           <li class="form-profile__item form-profile__item--1 form-profile__item--active">
-            <img width="14" height="16" src="img/plane.svg">
+            <img width="14" height="16" src="img/plane.svg" alt="Самолет">
           </li>
           <li class="form-profile__item form-profile__item--2 form-profile__item--active">
-            <img width="13" height="16" src="img/bus.svg">
+            <img width="13" height="16" src="img/bus.svg" alt="Автобус">
           </li>
           <li class="form-profile__item form-profile__item--3">
-            <img width="19" height="17" src="img/bike.svg">
+            <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
           </li>
           <li class="form-profile__item form-profile__item--4 form-profile__item--active">
-            <img width="15" height="17" src="img/run.svg">
+            <img width="15" height="17" src="img/run.svg" alt="Пешком">
           </li>
         </ul>
       </div>
@@ -220,11 +222,11 @@
             </div>
             <div class="dates-stay__list-wrapper">
               <ul class="dates-stay__list">
-                <li class="dates-stay__item"><a href="#top" class="dates-stay__link"><span
+                <li class="dates-stay__item"><a href="form.html#top" class="dates-stay__link"><span
                       class="dates-stay__item--span">Даты</span></a></li>
-                <li class="dates-stay__item"><a href="#middle" class="dates-stay__link"><span
+                <li class="dates-stay__item"><a href="form.html#middle" class="dates-stay__link"><span
                       class="dates-stay__item--span">Маршрут</span></a></li>
-                <li class="dates-stay__item"><a href="#bottom" class="dates-stay__link"><span
+                <li class="dates-stay__item"><a href="form.html#bottom" class="dates-stay__link"><span
                       class="dates-stay__item--span">Развлечения</span></a></li>
               </ul>
             </div>
@@ -232,48 +234,44 @@
           <div class="dates-stay__form">
             <div class="dates-stay__div dates-stay__div-1">
               <label for="text-1" class="dates-stay__filter-wrapper">
-                <p class="dates-stay__filter">ищу попутчиков:</p>
-                <p class="dates-stay__filter dates-stay__filter--number">чел.</p>
+                <span class="dates-stay__filter">ищу попутчиков:</span>
+                <span class="dates-stay__filter dates-stay__filter--number">чел.</span>
               </label>
               <input class="dates-stay__range" type="text" id="text-1" value="2" name="number-of-people">
               <div class="dates-stay__range-wrapper">
                 <button class="dates-stay__button dates-stay__button--left">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                    <img width="14" height="2" src="img/qty-minus-mobile.svg">
+                    <img width="14" height="2" src="img/qty-minus-mobile.svg" alt="Уменьшить">
                   </picture>
-                  <span class="visually-hidden">Уменьшить</span>
                 </button>
                 <button class="dates-stay__button dates-stay__button--right">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                    <img width="14" height="14" src="img/qty-plus-mobile.svg">
+                    <img width="14" height="14" src="img/qty-plus-mobile.svg" alt="Увеличить">
                   </picture>
                 </button>
-                <span class="visually-hidden">Увеличить</span>
               </div>
             </div>
             <div class="dates-stay__div dates-stay__div-2">
               <label for="text-2" class="dates-stay__filter-wrapper">
-                <p class="dates-stay__filter">длительность:</p>
-                <p class="dates-stay__filter dates-stay__filter--number">дн.</p>
+                <span class="dates-stay__filter">длительность:</span>
+                <span class="dates-stay__filter dates-stay__filter--number">дн.</span>
               </label>
               <input class="dates-stay__range" type="text" value="2" id="text-2" name="duration">
               <div class="dates-stay__range-wrapper">
                 <button class="dates-stay__button dates-stay__button--left">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                    <img width="14" height="2" src="img/qty-minus-mobile.svg">
+                    <img width="14" height="2" src="img/qty-minus-mobile.svg" alt="Уменьшить">
                   </picture>
                 </button>
-                <span class="visually-hidden">Уменьшить</span>
                 <button class="dates-stay__button dates-stay__button--right">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                    <img width="14" height="14" src="img/qty-plus-mobile.svg">
+                    <img width="14" height="14" src="img/qty-plus-mobile.svg" alt="Увеличить">
                   </picture>
                 </button>
-                <span class="visually-hidden">Увеличить</span>
               </div>
             </div>
             <div class="dates-stay__input-wrapper">
@@ -446,7 +444,7 @@
               </tr>
             </table>
           </div>
-          <a href="#middle" class="dates-stay__table-button">
+          <a href="form.html#middle" class="dates-stay__table-button">
             <span>Следующий шаг</span>
             <svg width="10" height="14" fill="#1d2e5b">
               <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
@@ -470,8 +468,9 @@
               </li>
             </ul>
             <ul class="route__flag-list">
-              <li class="route__flag-item"><img src="img/flag-bosnia.svg" width="35" height="24"></li>
-              <li class="route__flag-item"><img src="img/flag-czech.svg" width="35" height="24"></li>
+              <li class="route__flag-item"><img src="img/flag-bosnia.svg" width="35" height="24"
+                  alt="Флаг Боснии и Герцеговины"></li>
+              <li class="route__flag-item"><img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии"></li>
             </ul>
           </div>
           <div class="route__choose-wrapper">
@@ -558,13 +557,13 @@
             </div>
           </div>
           <div class="route__button-wrapper">
-            <a href="#bottom" class="route__button-next">
+            <a href="form.html#bottom" class="route__button-next">
               <span>Следующий шаг</span>
               <svg width="10" height="14" fill="#1d2e5b">
                 <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
               </svg>
             </a>
-            <a href="#top" class="route__button-back">
+            <a href="form.html#top" class="route__button-back">
               <svg width="10" height="14" fill="#1d2e5b">
                 <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
               </svg>
@@ -584,7 +583,7 @@
           <div class="fun__country-bosnia">
             <div class="fun__country-wrapper">
               <p class="fun__country">Босния и Герцеговина</p>
-              <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24">
+              <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
             </div>
             <textarea name="bosnia" class="fun__action fun__action--bosnia" placeholder="План действий"></textarea>
             <p class="fun__error fun__error--bosnia">Это поле должно быть заполнено</p>
@@ -592,7 +591,7 @@
           <div class="fun__country-czech">
             <div class="fun__country-wrapper">
               <p class="fun__country">Чехия</p>
-              <img class="fun__flag" src="img/flag-czech.svg" width="35" height="24">
+              <img class="fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
             </div>
             <textarea class="fun__action fun__action--czech" placeholder="План действий"
               name="czech">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
@@ -605,7 +604,7 @@
                 <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
               </svg>
             </button>
-            <a href="#middle" class="fun__button-back">
+            <a href="form.html#middle" class="fun__button-back">
               <svg width="10" height="14" fill="#1d2e5b">
                 <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
               </svg>
@@ -668,23 +667,24 @@
       </ul>
     </section>
     <section class="page-header__scroll-menu">
+      <h2 class="visually-hidden">Всплывающее меню</h2>
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
       <ul class="page-header__scroll-nav-list">
         <li class="page-header__scroll-nav-item">
-          <a>О сервисе</a>
+          <a href="index.html">О сервисе</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Направления</a>
+          <a href="#">Направления</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Попутчики</a>
+          <a href="catalog.html">Попутчики</a>
         </li>
       </ul>
-      <a href="#start" class="page-header__toggle page-header__toggle--grey" type="button">
+      <a href="#start" class="page-header__toggle page-header__toggle--grey">
         <svg>
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
@@ -720,7 +720,7 @@
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
     </a>
     <ul class="main-footer__list">

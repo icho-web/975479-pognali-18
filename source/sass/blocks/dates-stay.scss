@@ -91,7 +91,7 @@
     width: 26px;
     height: 26px;
 
-    background-image: url(../img/tick.svg);
+    background-image: url("../img/tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px 10px;
@@ -114,7 +114,7 @@
 
 .dates-stay__input--temporarily {
   &:checked {
-    &+.dates-stay__label::after {
+    & + .dates-stay__label::after {
       visibility: visible;
     }
   }
@@ -490,7 +490,7 @@
         left: -2px;
         top: -2px;
 
-        width:calc(100% + 4px);
+        width: calc(100% + 4px);
         height: 74px;
 
         border: solid 4px #ff5c23;
@@ -512,7 +512,7 @@
         left: -2px;
         top: -2px;
 
-        width:calc(100% + 4px);
+        width: calc(100% + 4px);
         height: 74px;
 
         border: solid 4px #ff5c23;
@@ -580,6 +580,7 @@
     }
   }
 }
+
 @media (min-width: 1439px) {
   .dates-stay {
     padding: 96px 12.1% 105px 12.1%;
@@ -616,27 +617,11 @@
     margin-bottom: 16px;
   }
 
-  .dates-stay__list {
-    margin: 0;
-    padding: 0;
-  }
-
   .dates-stay__range-wrapper {
     left: 49.6%;
     position: absolute;
 
     width: 36%;
-  }
-
-  .dates-stay__item {
-    margin-bottom: 25px;
-
-    a {
-      font-size: 20px;
-      line-height: 0.69;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
   }
 
   .dates-stay__filter-wrapper {
@@ -655,7 +640,6 @@
     flex-wrap: wrap;
 
     border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
-
   }
 
   .dates-stay__tr--first {
@@ -664,15 +648,7 @@
       padding-left: 16px;
       padding-bottom: 15px;
     }
-
   }
-    .dates-stay__td {
-      p {
-        margin: 0;
-        padding-left: 9.2%;
-        margin-top: -23px;
-      }
-    }
 
   .dates-stay__companion-wrapper {
     padding-top: 50px;
@@ -732,6 +708,12 @@
     font-weight: normal;
     line-height: 1.67;
     letter-spacing: 1.8px;
+
+    p {
+      margin: 0;
+      padding-left: 9.2%;
+      margin-top: -23px;
+    }
   }
 
   .dates-stay__div-1 {
@@ -748,14 +730,25 @@
 
   .dates-stay__list {
     display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .dates-stay__item {
+    margin-bottom: 25px;
     width: auto;
+
+    a {
+      font-size: 20px;
+      line-height: 0.69;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
   }
 
   .dates-stay__item--span {
     visibility: visible;
+
     color: #000000;
   }
 

@@ -6,7 +6,7 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <picture>
           <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
@@ -61,7 +61,7 @@
     <nav class="page-header__nav page-header__nav--catalog">
       <div class="page-header__menu-wrapper">
         <a class="page-header__nav-logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
         </a>
         <button class="page-header__close-menu">
           <svg width="19" height="19" fill="#cccccc">
@@ -131,6 +131,7 @@
             <span class="visually-hidden">instagram</span>
           </a>
         </li>
+      </ul>
     </nav>
   </header>
   <main class="catalog-main">
@@ -249,50 +250,52 @@
               <th class="country-filter__th">К</th>
               <th class="country-filter__th">Л</th>
             </tr>
-            <td>
-              <p><a>Египет</a></p>
-            </td>
-            <td>
-              <p><a>Замбия</a></p>
-              <p><a>Зимбабве</a></p>
-            </td>
-            <td>
-              <p><a>Израиль</a></p>
-              <p><a>Индия</a></p>
-              <p><a>Индонезия</a></p>
-              <p><a>Иордания</a></p>
-              <p><a>Ирак</a></p>
-              <p><a>Иран</a></p>
-              <p><a>Ирландия</a></p>
-              <p><a>Исландия</a></p>
-              <p><a>Испания</a></p>
-              <p><a>Италия</a></p>
-            </td>
-            <td>
-              <p><a>Кабо-Верде</a></p>
-              <p><a>Казахстан</a></p>
-              <p><a>Камбоджа</a></p>
-              <p><a>Камерун</a></p>
-              <p><a>Канада</a></p>
-              <p><a>Катар</a></p>
-              <p><a>Кения</a></p>
-              <p><a>Кипр</a></p>
-              <p><a>Киргизия</a></p>
-              <p><a>Кирибати</a></p>
-              <p><a>Китай</a></p>
-              <p><a>Колумбия</a></p>
-            </td>
-            <td>
-              <p><a>Лаос</a></p>
-              <p><a>Латвия</a></p>
-              <p><a>Лесото</a></p>
-              <p><a>Либерия</a></p>
-              <p><a>Ливан</a></p>
-              <p><a>Ливия</a></p>
-              <p><a>Литва</a></p>
-              <p><a>Лихтенштейн</a></p>
-              <p><a>Люксембург</a></p>
-            </td>
+            <tr>
+              <td>
+                <p><a>Египет</a></p>
+              </td>
+              <td>
+                <p><a>Замбия</a></p>
+                <p><a>Зимбабве</a></p>
+              </td>
+              <td>
+                <p><a>Израиль</a></p>
+                <p><a>Индия</a></p>
+                <p><a>Индонезия</a></p>
+                <p><a>Иордания</a></p>
+                <p><a>Ирак</a></p>
+                <p><a>Иран</a></p>
+                <p><a>Ирландия</a></p>
+                <p><a>Исландия</a></p>
+                <p><a>Испания</a></p>
+                <p><a>Италия</a></p>
+              </td>
+              <td>
+                <p><a>Кабо-Верде</a></p>
+                <p><a>Казахстан</a></p>
+                <p><a>Камбоджа</a></p>
+                <p><a>Камерун</a></p>
+                <p><a>Канада</a></p>
+                <p><a>Катар</a></p>
+                <p><a>Кения</a></p>
+                <p><a>Кипр</a></p>
+                <p><a>Киргизия</a></p>
+                <p><a>Кирибати</a></p>
+                <p><a>Китай</a></p>
+                <p><a>Колумбия</a></p>
+              </td>
+              <td>
+                <p><a>Лаос</a></p>
+                <p><a>Латвия</a></p>
+                <p><a>Лесото</a></p>
+                <p><a>Либерия</a></p>
+                <p><a>Ливан</a></p>
+                <p><a>Ливия</a></p>
+                <p><a>Литва</a></p>
+                <p><a>Лихтенштейн</a></p>
+                <p><a>Люксембург</a></p>
+              </td>
+            </tr>
             <tr class="country-filter__tr">
               <th class="country-filter__th">М</th>
               <th class="country-filter__th">Н</th>
@@ -341,7 +344,7 @@
                 <p><a>Руанда</a></p>
                 <p><a>Румыния</a></p>
                 <p><a>Россия</a></p>
-                </ta>
+              </td>
             </tr>
             <tr class="country-filter__tr">
               <th class="country-filter__th">С</th>
@@ -350,47 +353,49 @@
               <th class="country-filter__th">Ф</th>
               <th class="country-filter__th">Х</th>
             </tr>
-            <td>
-              <p><a>Сальвадор</a></p>
-              <p><a>Самоа</a></p>
-              <p><a>Сан-Марино</a></p>
-              <p><a>Саудовская Аравия</a></p>
-              <p><a>Сейшелы</a></p>
-              <p><a>Сенегал</a></p>
-              <p><a>Сербия</a></p>
-              <p><a>Сингапур</a></p>
-              <p><a>Сирия</a></p>
-              <p><a>Словакия</a></p>
-              <p><a>Словения</a></p>
-              <p><a>США</a></p>
-            </td>
-            <td>
-              <p><a>Таджикистан</a></p>
-              <p><a>Таиланд</a></p>
-              <p><a>Танзания</a></p>
-              <p><a>Того</a></p>
-              <p><a>Тонга</a></p>
-              <p><a>Тринидад и Тобаго</a></p>
-              <p><a>Тувалу</a></p>
-              <p><a>Тунис</a></p>
-              <p><a>Туркмения</a></p>
-              <p><a>Турция</a></p>
-            </td>
-            <td>
-              <p><a>Уганда</a></p>
-              <p><a>Узбекистан</a></p>
-              <p><a>Украина</a></p>
-              <p><a>Уругвай</a></p>
-            </td>
-            <td>
-              <p><a>Фиджи</a></p>
-              <p><a>Филиппины</a></p>
-              <p><a>Финляндия</a></p>
-              <p><a>Франция</a></p>
-            </td>
-            <td>
-              <a>Хорватия</a>
-            </td>
+            <tr>
+              <td>
+                <p><a>Сальвадор</a></p>
+                <p><a>Самоа</a></p>
+                <p><a>Сан-Марино</a></p>
+                <p><a>Саудовская Аравия</a></p>
+                <p><a>Сейшелы</a></p>
+                <p><a>Сенегал</a></p>
+                <p><a>Сербия</a></p>
+                <p><a>Сингапур</a></p>
+                <p><a>Сирия</a></p>
+                <p><a>Словакия</a></p>
+                <p><a>Словения</a></p>
+                <p><a>США</a></p>
+              </td>
+              <td>
+                <p><a>Таджикистан</a></p>
+                <p><a>Таиланд</a></p>
+                <p><a>Танзания</a></p>
+                <p><a>Того</a></p>
+                <p><a>Тонга</a></p>
+                <p><a>Тринидад и Тобаго</a></p>
+                <p><a>Тувалу</a></p>
+                <p><a>Тунис</a></p>
+                <p><a>Туркмения</a></p>
+                <p><a>Турция</a></p>
+              </td>
+              <td>
+                <p><a>Уганда</a></p>
+                <p><a>Узбекистан</a></p>
+                <p><a>Украина</a></p>
+                <p><a>Уругвай</a></p>
+              </td>
+              <td>
+                <p><a>Фиджи</a></p>
+                <p><a>Филиппины</a></p>
+                <p><a>Финляндия</a></p>
+                <p><a>Франция</a></p>
+              </td>
+              <td>
+                <a>Хорватия</a>
+              </td>
+            </tr>
             <tr class="country-filter__tr">
               <th class="country-filter__th">Ч</th>
               <th class="country-filter__th">Ш</th>
@@ -398,32 +403,34 @@
               <th class="country-filter__th">Ю</th>
               <th class="country-filter__th">Я</th>
             </tr>
-            <td>
-              <p><a>Чад</a></p>
-              <p><a>Черногория</a></p>
-              <p><a>Чехия</a></p>
-              <p><a>Чили</a></p>
-            </td>
-            <td>
-              <p><a>Швейцария</a></p>
-              <p><a>Швеция</a></p>
-              <p><a>Шри-Ланка</a></p>
-            </td>
-            <td>
-              <p><a>Эквадор</a></p>
-              <p><a>Эритрея</a></p>
-              <p><a>Эсватини</a></p>
-              <p><a>Эстония</a></p>
-              <p><a>Эфиопия</a></p>
-            </td>
-            <td>
-              <p><a>ЮАР</a></p>
-              <p><a>Южный Судан</a></p>
-            </td>
-            <td>
-              <p><a href="">Ямайка</a></p>
-              <p><a href="">Япония</a></p>
-            </td>
+            <tr>
+              <td>
+                <p><a>Чад</a></p>
+                <p><a>Черногория</a></p>
+                <p><a>Чехия</a></p>
+                <p><a>Чили</a></p>
+              </td>
+              <td>
+                <p><a>Швейцария</a></p>
+                <p><a>Швеция</a></p>
+                <p><a>Шри-Ланка</a></p>
+              </td>
+              <td>
+                <p><a>Эквадор</a></p>
+                <p><a>Эритрея</a></p>
+                <p><a>Эсватини</a></p>
+                <p><a>Эстония</a></p>
+                <p><a>Эфиопия</a></p>
+              </td>
+              <td>
+                <p><a>ЮАР</a></p>
+                <p><a>Южный Судан</a></p>
+              </td>
+              <td>
+                <p><a href="">Ямайка</a></p>
+                <p><a href="">Япония</a></p>
+              </td>
+            </tr>
           </table>
           <ul class="country-filter__choose-list country-filter__choose-list--close">
             <li class="country-filter__choose-item">
@@ -564,26 +571,26 @@
             <ul class="transport__list">
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="plane" name="plane">
-                <label class="transport__item" class="filter__label-transport" for="plane">
-                  <img class="transport__item-img" width="14" height="16" src="img/plane.svg">
+                <label class="transport__item filter__label-transport" for="plane">
+                  <img class="transport__item-img" width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </label>
               </li>
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="bus" name="bus">
-                <label class="transport__item" class="filter__label-transport" for="bus">
-                  <img class="transport__item-img" width="13" height="16" src="img/bus.svg">
+                <label class="transport__item filter__label-transport" for="bus">
+                  <img class="transport__item-img" width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </label>
               </li>
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="bike" name="bike">
                 <label class="transport__item" for="bike">
-                  <img class="transport__item-img" width="19" height="17" src="img/bike.svg">
+                  <img class="transport__item-img" width="19" height="17" src="img/bike.svg" alt="Велосипед">
                 </label>
               </li>
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="run" name="run">
                 <label class="transport__item" for="run">
-                  <img class="transport__item-img" width="15" height="17" src="img/run.svg">
+                  <img class="transport__item-img" width="15" height="17" src="img/run.svg" alt="Пешком">
                 </label>
               </li>
             </ul>
@@ -621,7 +628,7 @@
               <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
               <img class="travel-companions__avatar" src="img/firsova-mobile@1x.jpg"
-                srcset="img/firsova-mobile@2x.jpg 2x">
+                srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
             </picture>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
@@ -644,15 +651,18 @@
                 <p class="travel-companions__legend">хочет посетить:</p>
                 <ul class="travel-companions__places">
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-sri-lanka.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-sri-lanka.svg" width="35" height="24"
+                      alt="Шри-Ланка">
                     <span class="travel-companions__location">Шри-ланка</span>
                   </li>
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-thailand.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-thailand.svg" width="35" height="24"
+                      alt="Таиланд">
                     <span class="travel-companions__location">Таиланд</span>
                   </li>
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-seychelles.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-seychelles.svg" width="35" height="24"
+                      alt="Сейшелы">
                     <span class="travel-companions__location">Сейшелы</span>
                   </li>
                 </ul>
@@ -664,16 +674,16 @@
               </div>
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="14" height="16" src="img/plane.svg">
+                  <img width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="13" height="16" src="img/bus.svg">
+                  <img width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="19" height="17" src="img/bike.svg">
+                  <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="15" height="17" src="img/run.svg">
+                  <img width="15" height="17" src="img/run.svg" alt="Пешком">
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
@@ -689,7 +699,8 @@
             <picture>
               <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-              <img class="travel-companions__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x">
+              <img class="travel-companions__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
+                alt="Петя Демин">
             </picture>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
@@ -711,11 +722,12 @@
                 <p class="travel-companions__legend">хочет посетить:</p>
                 <ul class="travel-companions__places">
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-belgium.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-belgium.svg" width="35" height="24"
+                      alt="Бельгия">
                     <span class="travel-companions__location">Бельгия</span>
                   </li>
                   <li class="travel-companions__place travel-companions__place--czech">
-                    <img class="travel-companions__flag" src="img/flag-czech.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
                     <span class="travel-companions__location">Чехия</span>
                   </li>
                 </ul>
@@ -727,16 +739,16 @@
               </div>
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="14" height="16" src="img/plane.svg">
+                  <img width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="13" height="16" src="img/bus.svg">
+                  <img width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="19" height="17" src="img/bike.svg">
+                  <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="15" height="17" src="img/run.svg">
+                  <img width="15" height="17" src="img/run.svg" alt="Пешком">
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
@@ -752,8 +764,8 @@
             <picture>
               <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-              <img class="travel-companions__avatar" src="img/smolov-mobile@1x.jpg"
-                srcset="img/smolov-mobile@2x.jpg 2x">
+              <img class="travel-companions__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
+                alt="Марк Смойлов">
             </picture>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
@@ -775,15 +787,17 @@
                 <p class="travel-companions__legend">хочет посетить:</p>
                 <ul class="travel-companions__places">
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-usa.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-usa.svg" width="35" height="24" alt="США">
                     <span class="travel-companions__location">США</span>
                   </li>
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-australia.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-australia.svg" width="35" height="24"
+                      alt="Австралия">
                     <span class="travel-companions__location">Австралия</span>
                   </li>
                   <li class="travel-companions__place travel-companions__place--dominica">
-                    <img class="travel-companions__flag" src="img/flag-dominica.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-dominica.svg" width="35" height="24"
+                      alt="Доминикана">
                     <span class="travel-companions__location">Доминикана</span>
                   </li>
                 </ul>
@@ -795,16 +809,16 @@
               </div>
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="14" height="16" src="img/plane.svg">
+                  <img width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="13" height="16" src="img/bus.svg">
+                  <img width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="19" height="17" src="img/bike.svg">
+                  <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="15" height="17" src="img/run.svg">
+                  <img width="15" height="17" src="img/run.svg" alt="Пешком">
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
@@ -822,7 +836,7 @@
                 srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
               <img class="travel-companions__avatar" src="img/rogovaya-mobile@1x.jpg"
-                srcset="img/rogovaya-mobile@2x.jpg 2x">
+                srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
             </picture>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
@@ -844,11 +858,13 @@
                 <p class="travel-companions__legend">хочет посетить:</p>
                 <ul class="travel-companions__places">
                   <li class="travel-companions__place">
-                    <img class="travel-companions__flag" src="img/flag-united-kingdom.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-united-kingdom.svg" width="35" height="24"
+                      alt="Великобритания">
                     <span class="travel-companions__location">Великобритания</span>
                   </li>
                   <li class="travel-companions__place travel-companions__place--germany">
-                    <img class="travel-companions__flag" src="img/flag-belgium.svg" width="35" height="24">
+                    <img class="travel-companions__flag" src="img/flag-belgium.svg" width="35" height="24"
+                      alt="Германия">
                     <span class="travel-companions__location">Германия</span>
                   </li>
                 </ul>
@@ -860,16 +876,16 @@
               </div>
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="14" height="16" src="img/plane.svg">
+                  <img width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
-                  <img width="13" height="16" src="img/bus.svg">
+                  <img width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="19" height="17" src="img/bike.svg">
+                  <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
                 </li>
                 <li class="travel-companions__country">
-                  <img width="15" height="17" src="img/run.svg">
+                  <img width="15" height="17" src="img/run.svg" alt="Пешком">
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
@@ -906,6 +922,7 @@
             <svg width="10" height="20" fill="#1d2e5b">
               <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
             </svg>
+          </button>
         </div>
       </section>
     </div>
@@ -977,23 +994,24 @@
       <button>Свернуть</button>
     </section>
     <section class="page-header__scroll-menu">
+      <h2 class="visually-hidden">Всплывающее меню</h2>
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
       <ul class="page-header__scroll-nav-list">
         <li class="page-header__scroll-nav-item">
-          <a>О сервисе</a>
+          <a href="index.html">О сервисе</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Направления</a>
+          <a href="form.html">Направления</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Попутчики</a>
+          <a href="#">Попутчики</a>
         </li>
       </ul>
-      <a href="#start" class="page-header__toggle page-header__toggle--grey" type="button">
+      <a href="catalog.html#start" class="page-header__toggle page-header__toggle--grey">
         <svg>
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
@@ -1028,7 +1046,7 @@
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
     </a>
     <ul class="main-footer__list">

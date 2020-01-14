@@ -10,18 +10,19 @@
   padding: 95px 8% 30px 7.6%;
 
   background: url("../img/rogovaya-back-mobile@1x.png") no-repeat -4% 337px,
-  url("../img/smolov-back-desktop@1x.png") no-repeat 86% 63px,
-  url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
-  #192144;
+    url("../img/smolov-back-desktop@1x.png") no-repeat 86% 63px,
+    url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+    #192144;
   border-radius: 0 0 30px 30px;
 
   @media (min-resolution: 1.5dppx) {
     background: url("../img/rogovaya-back-mobile@2x.png") no-repeat -4% 337px,
-    url("../img/smolov-back-desktop@2x.png") no-repeat 86% 63px,
-    url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
-    #192144;
-
-    background-size: 71px 71px, 143px 143px , 132px 132px;
+      url("../img/smolov-back-desktop@2x.png") no-repeat 86% 63px,
+      url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+      #192144;
+    background-size: 71px 71px,
+      143px 143px,
+      132px 132px;
   }
 }
 
@@ -78,23 +79,23 @@
 }
 
 .companions__flag--sri-lanka {
-  background-image: url(../img/flag-sri-lanka.svg);
+  background-image: url("../img/flag-sri-lanka.svg");
 }
 
 .companions__flag--thailand {
-  background-image: url(../img/flag-thailand.svg);
+  background-image: url("../img/flag-thailand.svg");
 }
 
 .companions__flag--seychelles {
-  background-image: url(../img/flag-seychelles.svg);
+  background-image: url("../img/flag-seychelles.svg");
 }
 
 .companions__flag--belgium {
-  background-image: url(../img/flag-belgium.svg);
+  background-image: url("../img/flag-belgium.svg");
 }
 
 .companions__flag--czech {
-  background-image: url(../img/flag-czech.svg);
+  background-image: url("../img/flag-czech.svg");
 }
 
 .companions__text-wrapper {
@@ -151,7 +152,7 @@
 }
 
 .companions__travel {
-  padding: 0px 75px;
+  padding: 0 75px;
   display: flex;
   justify-content: space-between;
 
@@ -201,7 +202,7 @@
   top: 17px;
   left: 17px;
 
-  svg{
+  svg {
     background-color: rgba($color: #000000, $alpha: 0.4);
     border-radius: 50%;
   }
@@ -249,18 +250,18 @@
     flex-direction: column;
 
     border-radius: 0 0 60px 60px;
-    background: url(../img/rogovaya-back-desktop@1x.png) no-repeat 85.6% 80px,
-    url(../img/smolov-back-desktop@1x.png) no-repeat 5.3% 472px,
-    url(../img/blue-back-mobile@1x.png) no-repeat 9% 105px,
-    #192144;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 85.6% 80px,
+      url("../img/smolov-back-desktop@1x.png") no-repeat 5.3% 472px,
+      url("../img/blue-back-mobile@1x.png") no-repeat 9% 105px,
+      #192144;
 
     background-size: 285px 285px, 143px 143px, 200px 200px;
 
     @media (min-resolution: 1.5dppx) {
-      background: url(../img/rogovaya-back-desktop@2x.png) no-repeat 85.6% 80px,
-      url(../img/smolov-back-desktop@2x.png) no-repeat 5.3% 472px,
-      url(../img/blue-back-mobile@1x.png) no-repeat 9% 105px,
-      #192144;
+      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 85.6% 80px,
+        url("../img/smolov-back-desktop@2x.png") no-repeat 5.3% 472px,
+        url("../img/blue-back-mobile@1x.png") no-repeat 9% 105px,
+        #192144;
       background-size: 285px 285px, 143px 143px, 200px 200px;
     }
   }
@@ -368,18 +369,18 @@
     padding-top: 185px;
     padding-bottom: 64px;
 
-    background: url(../img/rogovaya-back-desktop@1x.png) no-repeat 16.6% 410px,
-    url(../img/smolov-back-desktop@1x.png) no-repeat 42.3% 158px,
-    url(../img/blue-back-mobile@1x.png) no-repeat -10% 63px,
-    #192144;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 16.6% 410px,
+      url("../img/smolov-back-desktop@1x.png") no-repeat 42.3% 158px,
+      url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+      #192144;
 
     background-size: 285px 285px, 143px 143px, 200px 200px;
 
     @media (min-resolution: 1.5dppx) {
-      background: url(../img/rogovaya-back-desktop@2x.png) no-repeat 16.6% 410px,
-      url(../img/smolov-back-desktop@2x.png) no-repeat 42.3% 158px,
-      url(../img/blue-back-mobile@1x.png) no-repeat -10% 63px,
-      #192144;
+      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 16.6% 410px,
+        url("../img/smolov-back-desktop@2x.png") no-repeat 42.3% 158px,
+        url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+        #192144;
 
       background-size: 285px 285px, 143px 143px, 200px 200px;
     }

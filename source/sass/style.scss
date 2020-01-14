@@ -29,48 +29,7 @@
 @import "blocks/variables.scss";
 @import "blocks/catalog-main.scss";
 @import "blocks/tariffs-popup.scss";
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/bloggersans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 700;
-  font-style: bold;
-  src: url("../fonts/bloggersans-bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 700;
-  font-style: italic;
-  src: url("../fonts/bloggersans-bolditalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/bloggersans-light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 300;
-  font-style: italic;
-  src: url("../fonts/bloggersans-lightitalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "bloggersans";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/bloggersans-medium.woff") format("woff");
-}
+@import "blocks/fonts.scss";
 
 *,
 *::before,
@@ -160,7 +119,7 @@ body {
   border: solid 1px #f47e7e;
 }
 
-@media (min-width : 1439px) {
+@media (min-width: 1439px) {
   .modal-show {
     display: block;
   }

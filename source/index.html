@@ -6,10 +6,13 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header id="start" class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo-link">
@@ -17,7 +20,7 @@
           <source media="(min-width: 1439px)"
             srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
@@ -53,7 +56,6 @@
         </li>
       </ul>
     </nav>
-    </div>
     <nav class="page-header__nav">
       <div class="page-header__menu-wrapper">
         <a class="page-header__nav-logo" href="index.html">
@@ -61,7 +63,7 @@
             <source media="(min-width: 1439px)"
               srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
           </picture>
         </a>
         <button class="page-header__close-menu">
@@ -134,17 +136,18 @@
             <span class="visually-hidden">instagram</span>
           </a>
         </li>
-        </div>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="main-desc">
-      <h2 class="visually-hidden">Описание</h2>
+      <h2 class="visually-hidden">Отзыв</h2>
       <q class="main-desc__quote">Лучшее приложение, что я видел в жизни!</q>
       <cite class="main-desc__cite">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</cite>
     </section>
     <section class="description">
+      <h3 class="visually-hidden">Описание</h3>
       <ol class="description__list">
         <li class="description__item description__item--1">
           <p class="description__item--blue">Выберите направление</p>
@@ -201,7 +204,7 @@
                 width="270" height="110" alt="Таиланд">
             </picture>
             <div class="directions__card-wrapper">
-              <img class="directions__flag" src="img/flag-thailand.svg" width="35" height="24">
+              <img class="directions__flag" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Таиланда">
               <h3 class="directions__h3">Таиланд</h3>
               <div class="directions__number-wrapper">
                 <svg width="11" height="11" fill="#192144">
@@ -214,13 +217,12 @@
           </li>
           <li class="directions__item">
             <picture>
-              <source media="(min-width:768px)" srcset="./img/france-desktop@1x.jpg 1x, ./img/france-desktop@2x.jpg 2x"
-                sizes="100">
+              <source media="(min-width:768px)" srcset="./img/france-desktop@1x.jpg 1x, ./img/france-desktop@2x.jpg 2x">
               <img class="directions__img" src="./img/france-mobile@1x.jpg" srcset="./img/france-mobile@2x.jpg 2x"
                 width="270" height="110" alt="Франция">
             </picture>
             <div class="directions__card-wrapper">
-              <img class="directions__flag" src="img/flag-france.svg" width="35" height="24">
+              <img class="directions__flag" src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции">
               <h3 class="directions__h3">Франция</h3>
               <div class="directions__number-wrapper">
                 <svg width="11" height="11" fill="#192144">
@@ -238,7 +240,7 @@
                 height="110" alt="Чехия">
             </picture>
             <div class="directions__card-wrapper directions__card-wrapper--shadow">
-              <img class="directions__flag" src="img/flag-czech.svg" width="35" height="24">
+              <img class="directions__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг чехии">
               <h3 class="directions__h3">Чехия</h3>
               <div class="directions__number-wrapper">
                 <svg width="11" height="11" fill="#192144">
@@ -283,7 +285,7 @@
               <p class="companions__level-text">level</p>
             </div>
             <img class="companions__avatar" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x"
-              width="270" height="270">
+              width="270" height="270" alt="Таня Фирсова">
             <ul class="companions__flags">
               <li class="companions__flag companions__flag--sri-lanka"></li>
               <li class="companions__flag companions__flag--thailand"></li>
@@ -295,10 +297,10 @@
               #авокадо #смузи
             </p>
             <div class="companions__travel">
-              <img class="companions__travel--active" width="19" height="21" src="img/plane.svg">
-              <img width="17" height="21" src="img/bus.svg">
-              <img width="24" height="21" src="img/bike.svg">
-              <img width="20" height="21" src="img/run.svg">
+              <img class="companions__travel--active" width="19" height="21" src="img/plane.svg" alt="Самолет">
+              <img width="17" height="21" src="img/bus.svg" alt="Автобус">
+              <img width="24" height="21" src="img/bike.svg" alt="Велосипед">
+              <img width="20" height="21" src="img/run.svg" alt="Пешком">
             </div>
           </li>
           <li class="companions__item">
@@ -310,7 +312,7 @@
               <p class="companions__level-text">level</p>
             </div>
             <img class="companions__avatar" src="./img/demin-desktop@1x.jpg" srcset="./img/demin-desktop@2x.jpg 2x"
-              width="270" height="270">
+              width="270" height="270" alt="Петя Демин">
             <ul class="companions__flags">
               <li class="companions__flag companions__flag--belgium"></li>
               <li class="companions__flag companions__flag--czech"></li>
@@ -321,10 +323,10 @@
               #концерт #крафт
             </p>
             <div class="companions__travel">
-              <img class="companions__travel--active" width="19" height="21" src="img/plane.svg">
-              <img class="companions__travel--active" width="17" height="21" src="img/bus.svg">
-              <img width="24" height="21" src="img/bike.svg">
-              <img class="companions__travel--active" width="20" height="21" src="img/run.svg">
+              <img class="companions__travel--active" width="19" height="21" src="img/plane.svg" alt="Самолет">
+              <img class="companions__travel--active" width="17" height="21" src="img/bus.svg" alt="Автобус">
+              <img width="24" height="21" src="img/bike.svg" alt="Велосипед">
+              <img class="companions__travel--active" width="20" height="21" src="img/run.svg" alt="Пешком">
             </div>
           </li>
         </ul>
@@ -338,7 +340,8 @@
     </section>
     <section class="profile">
       <h2 class="profile__header">Добавьте свой профиль</h2>
-      <img class="profile__img" width="100" height="100" src="img/rates@1x.png" srcset="img/rates@2x.png 2x">
+      <img class="profile__img" width="100" height="100" src="img/rates@1x.png" srcset="img/rates@2x.png 2x"
+        alt="Стоимость">
       <ol class="profile__list">
         <li class="profile__item">
           <div class="profile__item-wrapper">
@@ -400,18 +403,18 @@
         Зарегистрируйтесь, это быстро и бесплатно!
         Уже зарегистрированы? Тогда скорее авторизуйтесь.
       </p>
-      <div class="registration__input-wrapper">
-        <input class="registration__input" type="email" placeholder="E-mail">
+      <form class="registration__input-wrapper">
+        <input class="registration__input" type="email" placeholder="E-mail" required>
         <label class="visually-hidden">e-mail</label>
-        <a class="registration__input-send">
+        <button class="registration__input-send">
           <p>
             Регистрация
           </p>
           <svg width="10" height="14" fill="#1d2e5b">
             <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
           </svg>
-        </a>
-      </div>
+        </button>
+      </form>
       <p class="registration__text registration__text--questions-1">
         Остались вопросы? Мы с радостью на них ответим!
       </p>
@@ -458,29 +461,31 @@
       </a>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <iframe class="map__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716352138!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574423533486!5m2!1sru!2sru"
-        frameborder="0" style="border:0;" allowfullscreen="">
+        style="border:0;" allowfullscreen="">
       </iframe>
     </section>
     <section class="page-header__scroll-menu">
+      <h2 class="visually-hidden">Всплывающее меню</h2>
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
       <ul class="page-header__scroll-nav-list">
         <li class="page-header__scroll-nav-item">
-          <a>О сервисе</a>
+          <a href="#">О сервисе</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Направления</a>
+          <a href="form.html">Направления</a>
         </li>
         <li class="page-header__scroll-nav-item">
-          <a>Попутчики</a>
+          <a href="catalog.html">Попутчики</a>
         </li>
       </ul>
-      <a href="#start" class="page-header__toggle page-header__toggle--grey" type="button">
+      <a href="#start" class="page-header__toggle page-header__toggle--grey">
         <svg width="22" height="11" fill="#cccccc">
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
@@ -516,7 +521,7 @@
       <picture>
         <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
     </a>
     <ul class="main-footer__list">

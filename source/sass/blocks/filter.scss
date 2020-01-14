@@ -38,10 +38,6 @@
   color: #161c35;
 }
 
-.filter__input {
-  visibility: hidden;
-}
-
 .filter__label {
   padding-left: 27px;
   position: relative;
@@ -65,7 +61,7 @@
     width: 18px;
     height: 18px;
 
-    background-image: url(../img/tick.svg);
+    background-image: url("../img/tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 9px 9px;
@@ -93,8 +89,10 @@
 }
 
 .filter__input {
+  visibility: hidden;
+
   &:checked {
-    &+.filter__label::after {
+    & + .filter__label::after {
       visibility: visible;
     }
   }

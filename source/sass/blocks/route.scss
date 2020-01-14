@@ -106,6 +106,7 @@
   &:active {
     background-color: #dfe3f0;
     border: solid 1px #dfe3f0;
+
     p {
       color: rgba(29, 46, 91, 0.3);
     }
@@ -138,7 +139,7 @@
     width: 14px;
     height: 14px;
 
-    background-image: url(../img/qty-plus-mobile.svg);
+    background-image: url("../img/qty-plus-mobile.svg");
     opacity: 0.2;
   }
 
@@ -226,7 +227,7 @@
   width: 100%;
   display: none;
 
-  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
 }
@@ -255,7 +256,6 @@
       height: calc(100% + 2px);
       border: solid 1px #959bb2;
     }
-
   }
 }
 
@@ -271,6 +271,7 @@
 .route__choose-item {
   font-size: 16px;
   line-height: 1.38;
+
   color: #444444;
   cursor: pointer;
 
@@ -285,6 +286,7 @@
 
 .route__link-wrapper {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -310,7 +312,7 @@
 
     border-radius: 50%;
     background-color: #edeff6;
-    background-image: url(../img/menu-close.svg);
+    background-image: url("../img/menu-close.svg");
     background-size: 9px 9px;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,13 +355,15 @@
 
   &::before {
     content: "";
-    content: "";
+
     position: absolute;
-    width: 46px;
-    height: 100%;
     top: 0;
     right: 0;
-    background: linear-gradient(to right,rgba(255,255,255,0) 0%,#fff 38%);
+
+    width: 46px;
+    height: 100%;
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 38%);
   }
 
   &::after {
@@ -371,7 +375,7 @@
     width: 5px;
     height: 10px;
 
-    background-image: url(../img/small-arrow.svg);
+    background-image: url("../img/small-arrow.svg");
     opacity: 0.4;
   }
 }
@@ -403,7 +407,7 @@
     cursor: pointer;
     border-radius: 50%;
     background-color: #edeff6;
-    background-image: url(../img/menu-close.svg);
+    background-image: url("../img/menu-close.svg");
     background-size: 9px 9px;
     background-repeat: no-repeat;
     background-position: center;
@@ -442,6 +446,7 @@
 
   &:hover {
     border: solid 1px #959bb2;
+
     &::before {
       opacity: 0.5;
     }
@@ -456,7 +461,7 @@
     width: 5px;
     height: 10px;
 
-    background-image: url(../img/small-arrow.svg);
+    background-image: url("../img/small-arrow.svg");
     opacity: 0.3;
   }
 
@@ -469,7 +474,7 @@
     width: 12px;
     height: 7px;
 
-    background-image: url(../img/dropdown-form.svg);
+    background-image: url("../img/dropdown-form.svg");
     background-repeat: no-repeat;
     opacity: 0.3;
   }
@@ -516,6 +521,7 @@
     height: 9px;
   }
 }
+
 .route-open {
   display: block;
 }
@@ -577,11 +583,11 @@
 
   .route__link-wrapper {
     &::before {
-    right: -35px;
-    top: 23px;
+      right: -35px;
+      top: 23px;
 
-    width: 15px;
-    height: 15px;
+      width: 15px;
+      height: 15px;
     }
   }
 
@@ -590,11 +596,6 @@
     margin-top: 34px;
     margin-left: 4.7%;
     margin-right: 17.4%;
-  }
-
-  .route__table-wrapper {
-    top: 70px;
-    min-height: 476px;
   }
 
   .route__add {
@@ -610,12 +611,12 @@
     }
 
     &::before {
-    right: -35px;
-    top: 27px;
-    width: 15px;
-    height: 15px;
+      right: -35px;
+      top: 27px;
+      width: 15px;
+      height: 15px;
 
-    background-color: #edeff6;;
+      background-color: #edeff6;
     }
   }
 
@@ -713,7 +714,7 @@
     }
 
     &::after {
-      right: 0px;
+      right: 0;
       top: 12px;
 
       background-color: transparent;
@@ -752,6 +753,8 @@
   }
 
   .route__table-wrapper {
+    top: 70px;
+    min-height: 476px;
     width: 153.7%;
   }
 
@@ -795,8 +798,6 @@
     border-color: #1d2e5b;
     color: #ffffff;
   }
-
-
 }
 
 @media (min-width: 1439px) {
