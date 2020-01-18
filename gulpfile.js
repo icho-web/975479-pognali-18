@@ -105,7 +105,7 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,

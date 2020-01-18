@@ -6,7 +6,7 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,8 +14,10 @@
     <div class="catalog-header__logo-wrapper">
       <a href="index.html" class="catalog-header__logo">
         <picture>
-          <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+          <source media="(min-width: 1439px)"
+            srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+          <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
           <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
         </picture>
       </a>
@@ -571,13 +573,13 @@
             <ul class="transport__list">
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="plane" name="plane">
-                <label class="transport__item filter__label-transport" for="plane">
+                <label class="transport__item" for="plane">
                   <img class="transport__item-img" width="14" height="16" src="img/plane.svg" alt="Самолет">
                 </label>
               </li>
               <li>
                 <input class="transport__item-input visually-hidden" type="checkbox" id="bus" name="bus">
-                <label class="transport__item filter__label-transport" for="bus">
+                <label class="transport__item" for="bus">
                   <img class="transport__item-img" width="13" height="16" src="img/bus.svg" alt="Автобус">
                 </label>
               </li>
@@ -625,8 +627,9 @@
         <ul class="travel-companions__cards">
           <li class="travel-companions__card">
             <picture>
-              <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+              <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+              <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
               <img class="travel-companions__avatar" src="img/firsova-mobile@1x.jpg"
                 srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
             </picture>
@@ -697,8 +700,9 @@
           </li>
           <li class="travel-companions__card">
             <picture>
-              <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+              <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+              <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
               <img class="travel-companions__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
                 alt="Петя Демин">
             </picture>
@@ -762,8 +766,9 @@
           </li>
           <li class="travel-companions__card">
             <picture>
-              <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+              <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+              <source srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
               <img class="travel-companions__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
                 alt="Марк Смойлов">
             </picture>
@@ -833,8 +838,9 @@
           <li class="travel-companions__card">
             <picture>
               <source media="(min-width: 1439px)"
-                srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+              <source srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
               <img class="travel-companions__avatar" src="img/rogovaya-mobile@1x.jpg"
                 srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
             </picture>
@@ -996,8 +1002,9 @@
     <section class="page-header__scroll-menu">
       <h2 class="visually-hidden">Всплывающее меню</h2>
       <picture>
-        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+        <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
         <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
       <ul class="page-header__scroll-nav-list">
@@ -1044,8 +1051,9 @@
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <a class="main-footer__logo">
       <picture>
-        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+        <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
         <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
       </picture>
     </a>
