@@ -658,6 +658,10 @@
   }
 
   .dates-stay__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
   }
 
@@ -784,12 +788,6 @@
   .dates-stay__button--right {
     bottom: -60px;
     right: 4.7%;
-  }
-
-  .dates-stay__list {
-    display: block;
-    margin: 0;
-    padding: 0;
   }
 
   .dates-stay__item {

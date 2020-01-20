@@ -627,7 +627,7 @@
       width: 20px;
       height: 20px;
 
-      background-image: url(../img/qty-plus.svg);
+      background-image: url("../img/qty-plus.svg");
     }
   }
 
@@ -789,6 +789,14 @@
     line-height: 0.9;
     letter-spacing: 2px;
 
+    &::before {
+      right: 26px;
+      top: 31px;
+
+      width: 17px;
+      height: 9px;
+    }
+
     &::after {
       display: none;
     }
@@ -808,16 +816,6 @@
     background-color: #1d2e5b;
     border-color: #1d2e5b;
     color: #ffffff;
-  }
-
-  .route__choose-link {
-    &::before {
-      right: 26px;
-      top: 31px;
-
-      width: 17px;
-      height: 9px;
-    }
   }
 }
 
@@ -853,10 +851,10 @@
       height: 24px;
 
       cursor: pointer;
-      opacity: .2;
+      opacity: 0.2;
       border-radius: 50%;
       background-color: #edeff6;
-      background-image: url(../img/menu-close.svg);
+      background-image: url("../img/menu-close.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -895,9 +893,9 @@
       height: 9px;
 
       background: none;
-      background-image: url(../img/dropdown-form.svg);
+      background-image: url("../img/dropdown-form.svg");
       background-repeat: no-repeat;
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 

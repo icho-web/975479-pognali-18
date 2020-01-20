@@ -54,7 +54,8 @@
   border-radius: 10px;
 
   &:hover {
-    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
     .companions__avatar {
       transform: scale(1.1);
     }
@@ -292,6 +293,7 @@
 
 .companions__travel-img {
   position: relative;
+
   &:hover {
     .tooltip {
       display: block;
@@ -317,10 +319,10 @@
 
     @media (min-resolution: 1.5dppx) {
       background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 84% 140px,
-      url("../img/smolov-back-desktop@2x.png") no-repeat 6.3% 487px,
-      url("../img/blue-back-mobile@1x.png") no-repeat 7% 140px,
-      #192144;
-    background-size: 285px 285px, 143px 143px, 213px 213px;
+        url("../img/smolov-back-desktop@2x.png") no-repeat 6.3% 487px,
+        url("../img/blue-back-mobile@1x.png") no-repeat 7% 140px,
+        #192144;
+      background-size: 285px 285px, 143px 143px, 213px 213px;
     }
   }
 

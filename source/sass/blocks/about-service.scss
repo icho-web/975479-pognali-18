@@ -27,8 +27,8 @@
 
   @media (min-resolution: 1.5dppx) {
     background: url("../img/about-mobile@2x.png") no-repeat 60% 0,
-    url("../img/blue-back-mobile@1x.png") no-repeat -5% 0,
-    #192144;
+      url("../img/blue-back-mobile@1x.png") no-repeat -5% 0,
+      #192144;
     background-size: 289px 353px, 122px 132px;
   }
 }
@@ -101,9 +101,9 @@
 
     @media (min-resolution: 1.5dppx) {
       background: url("../img/about-tablet@2x.png") no-repeat 107% 100px,
-      url("../img/blue-back-tablet@2x.png") no-repeat 50.4% 52px,
-      #192144;
-    background-size: 375px 548px, 688px 213px;
+        url("../img/blue-back-tablet@2x.png") no-repeat 50.4% 52px,
+        #192144;
+      background-size: 375px 548px, 688px 213px;
     }
   }
 
