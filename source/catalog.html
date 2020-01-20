@@ -6,7 +6,19 @@
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff" crossorigin>
 </head>
 
 <body>
@@ -52,7 +64,7 @@
       </ul>
     </div>
     <div class="catalog-header__companions-wrapper">
-      <p class="catalog-header__companions">Попутчики</p>
+      <p class="catalog-header__companions catalog-header__companions--active">Попутчики</p>
       <a class="catalog-header__main" href="index.html">
         <span>На главную</span>
         <svg width="32" height="16" fill="#ffffff">
@@ -608,8 +620,8 @@
             </div>
             <div class="level__wrapper">
               <div class="level__input-wrapper">
-                <input class="level__input" type="text" value="30">
-                <input class="level__input" type="text" value="100">
+                <input class="level__input" type="text" name="left-range" value="30">
+                <input class="level__input" type="text" name="right-range" value="100">
               </div>
               <div class="level__range-wrapper">
                 <div class="level__left-range"></div>
@@ -626,16 +638,18 @@
       <section class="travel-companions">
         <ul class="travel-companions__cards">
           <li class="travel-companions__card">
-            <picture>
-              <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-              <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
-              <img class="travel-companions__avatar" src="img/firsova-mobile@1x.jpg"
-                srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
-            </picture>
+            <div class="travel-companions__img-wrapper">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                <img class="travel-companions__avatar" src="img/firsova-mobile@1x.jpg"
+                  srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
+              </picture>
+            </div>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
-              <div class="travel-companions__heart">
+              <div class="travel-companions__heart travel-companions__heart--active">
                 <svg width="31" height="31">
                   <use xlink:href="img/sprite.svg#heart-active"></use>
                 </svg>
@@ -678,34 +692,40 @@
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="14" height="16" src="img/plane.svg" alt="Самолет">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="13" height="16" src="img/bus.svg" alt="Автобус">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="15" height="17" src="img/run.svg" alt="Пешком">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
-                <svg width="45" height="45">
-                  <use xlink:href="img/sprite.svg#level"></use>
+                <svg width="45" height="45" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="6"></circle>
                 </svg>
-                <p class="travel-companions__level-number">80</p>
+                <p class="travel-companions__level-number">99</p>
                 <p class="travel-companions__level-text">level</p>
               </div>
             </div>
           </li>
           <li class="travel-companions__card">
-            <picture>
-              <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-              <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-              <img class="travel-companions__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
-                alt="Петя Демин">
-            </picture>
+            <div class="travel-companions__img-wrapper">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                <img class="travel-companions__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
+                  alt="Петя Демин">
+              </picture>
+            </div>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
               <div class="travel-companions__heart">
@@ -744,20 +764,24 @@
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="14" height="16" src="img/plane.svg" alt="Самолет">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="13" height="16" src="img/bus.svg" alt="Автобус">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="15" height="17" src="img/run.svg" alt="Пешком">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
-                <svg width="45" height="45">
-                  <use xlink:href="img/sprite.svg#level"></use>
+                <svg width="45" height="45" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="72"></circle>
                 </svg>
                 <p class="travel-companions__level-number">80</p>
                 <p class="travel-companions__level-text">level</p>
@@ -765,13 +789,15 @@
             </div>
           </li>
           <li class="travel-companions__card">
-            <picture>
-              <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
-              <source srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-              <img class="travel-companions__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
-                alt="Марк Смойлов">
-            </picture>
+            <div class="travel-companions__img-wrapper">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                <source srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                <img class="travel-companions__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
+                  alt="Марк Смойлов">
+              </picture>
+            </div>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
               <div class="travel-companions__heart">
@@ -815,35 +841,41 @@
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="14" height="16" src="img/plane.svg" alt="Самолет">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="13" height="16" src="img/bus.svg" alt="Автобус">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="15" height="17" src="img/run.svg" alt="Пешком">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
-                <svg width="45" height="45">
-                  <use xlink:href="img/sprite.svg#level"></use>
+                <svg width="45" height="45" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="270"></circle>
                 </svg>
-                <p class="travel-companions__level-number">80</p>
+                <p class="travel-companions__level-number">25</p>
                 <p class="travel-companions__level-text">level</p>
               </div>
             </div>
           </li>
           <li class="travel-companions__card">
-            <picture>
-              <source media="(min-width: 1439px)"
-                srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-              <source srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-              <img class="travel-companions__avatar" src="img/rogovaya-mobile@1x.jpg"
-                srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
-            </picture>
+            <div class="travel-companions__img-wrapper">
+              <picture>
+                <source media="(min-width: 1439px)"
+                  srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                <source srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+                <img class="travel-companions__avatar" src="img/rogovaya-mobile@1x.jpg"
+                  srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
+              </picture>
+            </div>
             <div class="travel-companions__avatar-wrapper">
               <button class="travel-companions__button travel-companions__button--desctop">Позвать!</button>
               <div class="travel-companions__heart">
@@ -852,7 +884,7 @@
                 </svg>
               </div>
               <div class="travel-companions__header-wrapper">
-                <h3 class="travel-companions__header">Лариса Роговая</h3>
+                <h3 class="travel-companions__header travel-companions__header--active">Лариса Роговая</h3>
                 <span class="travel-companions__likes">23</span>
                 <p class="travel-companions__tag">
                   #образование #карьера #учеба #линкедин
@@ -883,22 +915,26 @@
               <ul class="travel-companions__countries">
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="14" height="16" src="img/plane.svg" alt="Самолет">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="travel-companions__country travel-companions__country--active">
                   <img width="13" height="16" src="img/bus.svg" alt="Автобус">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="travel-companions__country">
                   <img width="15" height="17" src="img/run.svg" alt="Пешком">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
               <div class="travel-companions__level-wrapper">
-                <svg width="45" height="45">
-                  <use xlink:href="img/sprite.svg#level"></use>
+                <svg width="45" height="45" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="180"></circle>
                 </svg>
-                <p class="travel-companions__level-number">80</p>
+                <p class="travel-companions__level-number">50</p>
                 <p class="travel-companions__level-text">level</p>
               </div>
             </div>
@@ -912,7 +948,7 @@
         </button>
         <div class="travel-companions__nav-buttons">
           <ul class="travel-companions__pages">
-            <li class="travel-companions__page"><a>1</a></li>
+            <li class="travel-companions__page travel-companions__page--active"><a>1</a></li>
             <li class="travel-companions__page"><a>2</a></li>
             <li class="travel-companions__page"><a>3</a></li>
             <li class="travel-companions__page"><a>4</a></li>
@@ -1001,12 +1037,14 @@
     </section>
     <section class="page-header__scroll-menu">
       <h2 class="visually-hidden">Всплывающее меню</h2>
-      <picture>
-        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-        <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
-      </picture>
+      <a href="index.html">
+        <picture>
+          <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
+        </picture>
+      </a>
       <ul class="page-header__scroll-nav-list">
         <li class="page-header__scroll-nav-item">
           <a href="index.html">О сервисе</a>
@@ -1026,14 +1064,14 @@
       </a>
       <ul class="page-header__scroll-list">
         <li class="page-header__scroll-item">
-          <a class="page-header__scroll-item--tel">
+          <a class="page-header__scroll-item--tel" href="tel:88005558628">
             <svg width="18" height="18" fill="#161c35">
               <use xlink:href="img/sprite.svg#topmenu-phone"></use>
             </svg>
           </a>
         </li>
         <li class="page-header__scroll-item">
-          <a class="page-header__scroll-item--mail">
+          <a class="page-header__scroll-item--mail" href="mailto:mail@htmlacademy.ru">
             <svg width="18" height="14" fill="#161c35">
               <use xlink:href="img/sprite.svg#topmenu-mail"></use>
             </svg>
@@ -1047,47 +1085,51 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="footer">
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
-    <a class="main-footer__logo">
-      <picture>
-        <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-        <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
-      </picture>
-    </a>
-    <ul class="main-footer__list">
-      <li>
-        <a class="main-footer__item main-footer__item--facebook">
-          <svg class="site-list__icon-comb" width="11" height="21" fill="#1d2e5b">
-            <use xlink:href="img/sprite.svg#facebook"></use>
-          </svg>
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a class="main-footer__item main-footer__item--vk">
-          <svg width="23" height="12" fill="#1d2e5b">
-            <use xlink:href="img/sprite.svg#vk"></use>
-          </svg>
-          <span class="visually-hidden">VK</span>
-        </a>
-      </li>
-      <li>
-        <a class="main-footer__item  main-footer__item--instagram">
-          <svg width="18" height="18" fill="#1d2e5b">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-    </ul>
-    <div class="main-footer__develop-wrapper">
-      <p class="main-footer__text">Разработано</p>
-      <svg width="27" height="34" fill="#192144">
-        <use xlink:href="img/sprite.svg#htmlacademy"></use>
-      </svg>
+    <!-- wrapper for ie11 -->
+    <div class="main-footer">
+      <a class="main-footer__logo">
+        <picture>
+          <source media="(min-width: 1439px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
+        </picture>
+      </a>
+      <ul class="main-footer__list">
+        <li>
+          <a class="main-footer__item main-footer__item--facebook">
+            <svg width="11" height="21" fill="#1d2e5b">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-footer__item main-footer__item--vk">
+            <svg width="23" height="12" fill="#1d2e5b">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+            <span class="visually-hidden">VK</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-footer__item  main-footer__item--instagram">
+            <svg width="18" height="18" fill="#1d2e5b">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__develop-wrapper">
+        <p class="main-footer__text">Разработано</p>
+        <svg width="27" height="34" fill="#192144">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </div>
     </div>
   </footer>
   <script src="js/open-index-popup.js"></script>

@@ -199,9 +199,9 @@
 .form-profile__level-wrapper {
   position: relative;
 
-  circle {
-    stroke-width: 2;
-    stroke-dasharray: 2;
+  svg {
+    transform: rotate(-90deg);
+    stroke-dasharray: 358;
   }
 }
 
@@ -341,9 +341,8 @@
 
   .form-profile__textarea {
     display: flex;
-    padding: 0 6.1%;
-    padding-top: 33px;
-    padding-bottom: 6px;
+    padding: 30px 6.1% 11px;
+    padding-left: 38px;
     width: auto;
     height: 94px;
 
@@ -468,7 +467,7 @@
   .form-profile__textarea-wrapper {
     margin: 0;
     margin-right: auto;
-    margin-top: 51px;
+    margin-top: 53px;
     width: 58.1%;
     order: -1;
   }

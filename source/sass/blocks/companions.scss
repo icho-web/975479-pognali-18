@@ -35,20 +35,33 @@
   list-style: none;
 }
 
+.companions__avatar-wrapper {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
 .companions__item {
+  margin: 0 auto;
   position: relative;
+  width: 270px;
   padding-bottom: 21px;
   margin-bottom: 10px;
-  min-height: 427px;
+  min-height: 428px;
 
   background-color: #ffffff;
   border-radius: 10px;
+
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+    .companions__avatar {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .companions__avatar {
-  width: 100%;
-  height: 100%;
-
   border-radius: 10px 10px 0 0;
 }
 
@@ -66,15 +79,24 @@
 
 .companions__flag {
   z-index: 1;
+
+  position: relative;
   width: 34px;
   height: 24px;
   margin-right: 17px;
+
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
   }
 }
 
@@ -128,6 +150,7 @@
 }
 
 .companions__h3 {
+  position: relative;
   margin-top: 7px;
   margin-bottom: 15px;
 
@@ -136,12 +159,35 @@
   line-height: 1;
 
   color: #1d2e5b;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    margin-left: -15px;
+    top: 7px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #f97676;
+    border-radius: 50%;
+  }
 }
 
 .companions__tag {
   margin: 0 auto;
   margin-bottom: 19px;
-  width: 175px;
+  width: 180px;
 
   font-size: 16px;
   line-height: 1.13;
@@ -199,12 +245,16 @@
 
 .companions__level-wrapper {
   position: absolute;
+  z-index: 1;
   top: 17px;
   left: 17px;
 
   svg {
     background-color: rgba($color: #000000, $alpha: 0.4);
     border-radius: 50%;
+    transform: rotate(-90deg);
+    stroke-dasharray: 358;
+    stroke-dashoffset: 30;
   }
 }
 
@@ -240,6 +290,15 @@
   color: #ffffff;
 }
 
+.companions__travel-img {
+  position: relative;
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .companions {
     @include text-padding-tablet();
@@ -250,19 +309,18 @@
     flex-direction: column;
 
     border-radius: 0 0 60px 60px;
-    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 85.6% 80px,
-      url("../img/smolov-back-desktop@1x.png") no-repeat 5.3% 472px,
-      url("../img/blue-back-mobile@1x.png") no-repeat 9% 105px,
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 84% 140px,
+      url("../img/smolov-back-desktop@1x.png") no-repeat 6.3% 487px,
+      url("../img/blue-back-mobile@1x.png") no-repeat 7% 140px,
       #192144;
-
-    background-size: 285px 285px, 143px 143px, 200px 200px;
+    background-size: 285px 285px, 143px 143px, 213px 213px;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 85.6% 80px,
-        url("../img/smolov-back-desktop@2x.png") no-repeat 5.3% 472px,
-        url("../img/blue-back-mobile@1x.png") no-repeat 9% 105px,
-        #192144;
-      background-size: 285px 285px, 143px 143px, 200px 200px;
+      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 84% 140px,
+      url("../img/smolov-back-desktop@2x.png") no-repeat 6.3% 487px,
+      url("../img/blue-back-mobile@1x.png") no-repeat 7% 140px,
+      #192144;
+    background-size: 285px 285px, 143px 143px, 213px 213px;
     }
   }
 
@@ -304,10 +362,11 @@
   }
 
   .companions__item {
-    padding-bottom: 29px;
+    width: 285px;
+    padding-bottom: 27px;
+    min-height: 483px;
     margin: 0;
     margin-right: 48px;
-    width: 46%;
 
     border-radius: 20px;
 
@@ -326,7 +385,14 @@
     font-size: 24px;
   }
 
+  .companions__avatar-wrapper {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+
   .companions__avatar {
+    width: 285px;
     height: 286px;
     border-radius: 20px 20px 0 0;
   }
@@ -349,7 +415,7 @@
 
   .companions__flags {
     margin-top: -17px;
-    margin-bottom: 13px;
+    margin-bottom: 19px;
   }
 
   .companions__travel {
@@ -367,22 +433,22 @@
     padding-right: 4%;
     padding-left: 9.1%;
     padding-top: 185px;
-    padding-bottom: 64px;
+    padding-bottom: 63px;
 
-    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 16.6% 410px,
-      url("../img/smolov-back-desktop@1x.png") no-repeat 42.3% 158px,
-      url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 16.6% 445px,
+      url("../img/smolov-back-desktop@1x.png") no-repeat 42.3% 193px,
+      url("../img/blue-back-desktop@1x.png") no-repeat 5% 128px,
       #192144;
 
-    background-size: 285px 285px, 143px 143px, 200px 200px;
+    background-size: 285px 285px, 143px 143px, 213px 213px;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 16.6% 410px,
-        url("../img/smolov-back-desktop@2x.png") no-repeat 42.3% 158px,
-        url("../img/blue-back-mobile@1x.png") no-repeat -10% 63px,
+      background: url("../img/rogovaya-back-desktop@2x.png") no-repeat 16.6% 445px,
+        url("../img/smolov-back-desktop@2x.png") no-repeat 42.3% 193px,
+        url("../img/blue-back-desktop@2x.png") no-repeat 5% 128px,
         #192144;
 
-      background-size: 285px 285px, 143px 143px, 200px 200px;
+      background-size: 285px 285px, 143px 143px, 213px 213px;
     }
   }
 

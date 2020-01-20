@@ -119,6 +119,56 @@ body {
   border: solid 1px #f47e7e;
 }
 
+.input-error {
+  background-color: #ffefef;
+  border-color: #ffefef;
+
+  &::placeholder {
+    color: #ff0000;
+  }
+}
+
+.crutch {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+
+  display: none;
+  padding: 10px 25px;
+  white-space: nowrap;
+
+  border-radius: 4px;
+  background-color: #101d41;
+  color: #ffffff;
+
+  transform: translateX(-50%);
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #101d41;
+  }
+}
+
+@media (min-width: 768px) {
+  .crutch {
+    display: block;
+  }
+
+  .crutch-2 {
+    display: none;
+  }
+}
+
 @media (min-width: 1439px) {
   .modal-show {
     display: block;

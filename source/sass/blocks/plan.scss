@@ -23,6 +23,8 @@
 
 .plan__list {
   padding: 0;
+  display: flex;
+  flex-direction: column;
 
   list-style: none;
 }
@@ -32,6 +34,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  width: 100%;
 
   background-color: #ffffff;
   border-radius: 10px;
@@ -140,7 +143,6 @@
   }
 
   .plan__item {
-    width: auto;
     padding: 39px 4.4% 15px 5.9%;
   }
 

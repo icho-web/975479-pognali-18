@@ -112,6 +112,7 @@
 
   .hobby__list {
     display: flex;
+    overflow: visible;
     max-height: none;
     flex-grow: 1;
   }

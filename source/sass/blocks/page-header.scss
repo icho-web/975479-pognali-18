@@ -29,12 +29,12 @@
 
 .page-header {
   margin: 0 auto;
-  padding-top: 27px;
   min-height: 478px;
   display: flex;
   flex-direction: column;
 
   @include block-padding-mobile();
+  padding-top: 27px;
 
   color: white;
 
@@ -126,6 +126,14 @@
 
 .page-header__tel-wrapper {
   display: flex;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__icon {
@@ -451,14 +459,27 @@
 
   .page-header__scroll-item--autorization {
     padding: 12px 29px 12px 27px;
+
     font-size: 20px;
     line-height: 1.5;
-    border-radius: 25px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+
     background-color: #ffd74b;
     color: #161c35;
+    cursor: pointer;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+    }
   }
 
   .page-header__toggle {
@@ -572,6 +593,16 @@
 
     background-color: #ff8d30;
     border-radius: 50%;
+
+    &:hover {
+      background-color: #f26926;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   .page-header__scroll-item--mail {
@@ -583,6 +614,16 @@
 
     background-color: #ffbd30;
     border-radius: 50%;
+
+    &:hover {
+      background-color: #ff8d30;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   .page-header__scroll-nav-list {
@@ -625,6 +666,14 @@
     a {
       text-align: left;
       padding: 0 4px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 

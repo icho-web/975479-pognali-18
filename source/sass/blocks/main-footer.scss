@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-footer {
   position: relative;
   z-index: 2;
@@ -51,8 +56,8 @@
 }
 
 .main-footer__logo {
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-bottom: 32px;
 }
 
@@ -76,6 +81,18 @@
   }
 }
 
+.main-footer__link {
+  display: flex;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 768px) {
   .main-footer {
     display: flex;
@@ -95,6 +112,7 @@
   .main-footer__develop-wrapper {
     height: 34px;
     padding-top: 0;
+    border: 0;
   }
 
   .main-footer__list {
@@ -109,6 +127,7 @@
 
   .main-footer__text {
     margin-right: 24px;
+    padding-bottom: 9px;
 
     font-size: 20px;
 

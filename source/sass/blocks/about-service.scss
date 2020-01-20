@@ -19,13 +19,17 @@
   @include text-padding-mobile();
 
   color: #ffffff;
-  background: url("../img/about-mobile@1x.png") no-repeat 60% 0, #192144;
+  background: url("../img/about-mobile@1x.png") no-repeat 60% 0,
+    url("../img/blue-back-mobile@1x.png") no-repeat -5% 0,
+    #192144;
+  background-size: 289px 353px, 122px 132px;
   border-radius: 0 0 30px 30px;
 
   @media (min-resolution: 1.5dppx) {
-    background: url("../img/about-mobile@2x.png") no-repeat 93% 45px,
-      #192144;
-    background-size: contain;
+    background: url("../img/about-mobile@2x.png") no-repeat 60% 0,
+    url("../img/blue-back-mobile@1x.png") no-repeat -5% 0,
+    #192144;
+    background-size: 289px 353px, 122px 132px;
   }
 }
 
@@ -45,12 +49,14 @@
   margin-bottom: 18px;
 
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.38;
 }
 
 .about-service__text--bold {
   display: block;
   margin: 0;
+  font-weight: bold;
 }
 
 .about-service__button {
@@ -88,13 +94,16 @@
     @include text-padding-tablet();
 
     border-radius: 0 0 60px 60px;
-    background: url("../img/about-tablet@1x.png") no-repeat 107% 105px,
+    background: url("../img/about-tablet@1x.png") no-repeat 107% 100px,
+      url("../img/blue-back-tablet@2x.png") no-repeat 50.4% 52px,
       #192144;
+    background-size: 375px 548px, 688px 213px;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/about-tablet@2x.png") no-repeat 107% 105px,
-        #192144;
-      background-size: contain;
+      background: url("../img/about-tablet@2x.png") no-repeat 107% 100px,
+      url("../img/blue-back-tablet@2x.png") no-repeat 50.4% 52px,
+      #192144;
+    background-size: 375px 548px, 688px 213px;
     }
   }
 
@@ -148,12 +157,15 @@
     padding: 183px 9.1% 163px 9.1%;
 
     background: url("../img/about-desktop@1x.png") no-repeat 93% 140px,
+      url("../img/blue-back-desktop@2x.png") no-repeat 5% 126px,
       #192144;
+    background-size: 630px 665px, 213px 213px;
 
     @media (min-resolution: 1.5dppx) {
       background: url("../img/about-desktop@2x.png") no-repeat 93% 140px,
+        url("../img/blue-back-desktop@2x.png") no-repeat 5% 126px,
         #192144;
-      background-size: 630px 665px;
+      background-size: 630px 665px, 213px 213px;
     }
   }
 

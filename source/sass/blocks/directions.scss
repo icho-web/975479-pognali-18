@@ -171,11 +171,11 @@
 
     border-radius: 0 0 60px 60px;
 
-    background: url("../img/flags-back@1x.png") no-repeat 92% 104px,
+    background: url("../img/flags-back@1x.png") no-repeat 92% 140px,
       #edeff6;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/flags-back@2x.png") no-repeat 92% 104px,
+      background: url("../img/flags-back@2x.png") no-repeat 92% 140px,
         #edeff6;
       background-size: 289px 575px;
     }
@@ -249,6 +249,7 @@
   }
 
   .directions__img {
+    width: 186px;
     margin-bottom: -5px;
     border-radius: 0 20px 20px 0;
     height: 140px;
@@ -290,11 +291,11 @@
 @media (min-width: 1439px) {
   .directions {
     padding: 221px 8.2vw 61px 9.2vw;
-    background: url("../img/flags-back@1x.png") no-repeat 95% 114px,
+    background: url("../img/flags-back@1x.png") no-repeat 95% 148px,
       #edeff6;
 
     @media (min-resolution: 1.5dppx) {
-      background: url("../img/flags-back@2x.png") no-repeat 95% 114px,
+      background: url("../img/flags-back@2x.png") no-repeat 95% 148px,
         #edeff6;
       background-size: 289px 575px;
     }

@@ -23,6 +23,10 @@
   background-color: white;
   border-radius: 20px;
 
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -55,17 +59,57 @@
   width: 31px;
   height: 31px;
 
+  cursor: pointer;
   border-radius: 50%;
-  background-color: #f9eaea;
+
+  &:hover {
+    background-color: #e2e5f2;
+
+    svg {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.1;
+    }
+  }
 
   svg {
     width: 13px;
     height: 11px;
+    fill: #192144;
+    opacity: 0.3;
+  }
+}
+
+.travel-companions__heart--active {
+  background-color: #f9eaea;
+
+  svg {
     fill: #f02323;
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
+    background-color: #f9d8d8;
+    svg {
+      opacity: 1;
+      fill: #f02323;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
 .travel-companions__header {
+  position: relative;
   width: 100px;
   margin: 0;
   margin-bottom: 8px;
@@ -75,6 +119,34 @@
   line-height: 1;
 
   color: #1d2e5b;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 11px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: #f97676;
+  }
+}
+
+.travel-companions__header--active {
+  &::after {
+    background-color: #81e31e;
+  }
 }
 
 .travel-companions__likes {
@@ -198,6 +270,7 @@
 
 .travel-companions__country {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 33px;
@@ -205,6 +278,12 @@
 
   background-color: #edeff6;
   border-radius: 50%;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
 
   img {
     opacity: 0.3;
@@ -277,6 +356,15 @@
   color: #1d2e5b;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   span {
     margin-left: 15px;
@@ -295,6 +383,15 @@
 
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travel-companions__nav-button--left {
@@ -322,6 +419,11 @@
   position: absolute;
   right: -5px;
   bottom: -8px;
+
+  svg {
+    transform: rotate(-90deg);
+    stroke-dasharray: 358;
+  }
 }
 
 .travel-companions__level-number {
@@ -356,6 +458,12 @@
     margin-bottom: 42px;
   }
 
+  .travel-companions__img-wrapper {
+    position: absolute;
+    left: 35px;
+    top: 20px;
+  }
+
   .travel-companions__card {
     padding: 31px 3.7% 17px 4.8%;
     margin-bottom: 39px;
@@ -372,6 +480,16 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 1;
+
+    &::after {
+      right: auto;
+      top: 13px;
+
+      margin-left: 22px;
+
+      width: 7px;
+      height: 7px;
+    }
   }
 
   .travel-companions__header-wrapper {
@@ -385,6 +503,7 @@
     min-height: 48px;
     margin-bottom: 57px;
     padding-left: 4px;
+    padding-right: 21px;
 
     font-size: 20px;
     line-height: 1.2;
@@ -400,10 +519,6 @@
   }
 
   .travel-companions__avatar {
-    position: absolute;
-    top: 35px;
-    left: 5.1%;
-
     margin-left: 0;
     width: 190px;
     height: 190px;
@@ -472,7 +587,7 @@
   .travel-companions__heart {
     order: 1;
     margin: 0;
-    margin-left: 369px;
+    margin-left: 370px;
     width: 50px;
     height: 50px;
 
@@ -557,7 +672,13 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ffd74b;
+    cursor: pointer;
+
+    &:hover {
+      a {
+        color: rgba(22, 28, 53, 0.6);
+      }
+    }
 
     a {
       display: block;
@@ -566,6 +687,10 @@
       line-height: 1.5;
       color: #161c35;
     }
+  }
+
+  .travel-companions__page--active {
+    background-color: #ffd74b;
   }
 
   .travel-companions__level-progress {
@@ -613,8 +738,21 @@
     padding: 0;
   }
 
+  .travel-companions__img-wrapper {
+    overflow: hidden;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+
   .travel-companions__header {
     margin-bottom: 18px;
+
+    &::after {
+      right: auto;
+      left: -25px;
+      margin-left: 0;
+    }
   }
 
   .travel-companions__header-wrapper {
@@ -625,11 +763,23 @@
     margin-bottom: 62px;
   }
 
+  .travel-companions__img-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
   .travel-companions__card {
     width: 100%;
     margin-bottom: 29px;
     padding: 33px 4.6% 4px 3.7%;
     flex-direction: row;
+
+    &:hover {
+      .travel-companions__avatar {
+        transform: scale(1.1);
+      }
+    }
   }
 
   .travel-companions__ul-wrapper {
@@ -716,5 +866,9 @@
   .travel-companions__level-wrapper {
     top: 149px;
     right: 5.4%;
+  }
+
+  .travel-companions__tag {
+    padding-right: 25px;
   }
 }
