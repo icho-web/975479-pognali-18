@@ -99,7 +99,11 @@
 }
 
 .filter__input {
-  visibility: hidden;
+  &:focus {
+    & + .filter__label {
+      font-weight: bold;
+    }
+  }
 
   &:checked {
     & + .filter__label::after {
@@ -170,6 +174,6 @@
   }
 
   .filter__button-submit {
-    padding: 10px 48px 10px 51px;
+    padding: 10px 55px 10px 51px;
   }
 }

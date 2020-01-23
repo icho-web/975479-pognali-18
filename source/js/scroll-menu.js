@@ -1,10 +1,10 @@
-var scrollMenu = document.querySelector(".page-header__scroll-menu");
+var scrollMenu = document.querySelector(".page-header__scroll-wrapper");
 
 window.onscroll = function () {
-  if (window.pageYOffset > 150) {
-    scrollMenu.classList.add("scroll-menu-open");
+  if (window.pageYOffset > 568) {
+    scrollMenu.classList.add("page-header__scroll--active");
   }
-  else if (window.pageYOffset < 150) {
-    scrollMenu.classList.remove("scroll-menu-open");
+  else if (window.pageYOffset < 568) {
+    scrollMenu.classList.remove("page-header__scroll--active");
   }
 };

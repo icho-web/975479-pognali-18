@@ -212,9 +212,13 @@
 
 @media (min-width: 1439px) {
   .plan {
-    padding: 46px 4% 132px 8.6%;
+    padding: 46px 0 107px 0;
     border-radius: 60px 60px 0 0;
     margin-bottom: -60px;
+
+    .container {
+      padding-left: 124px;
+    }
   }
 
   .plan__header {
@@ -255,7 +259,7 @@
   }
 
   .plan__item-wrapper {
-    width: 50.4%;
+    width: 50%;
     margin: 0;
     padding: 0;
     border: 0;

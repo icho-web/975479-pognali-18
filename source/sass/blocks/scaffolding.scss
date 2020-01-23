@@ -1,0 +1,159 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  font-size: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: -25px;
+}
+
+.modal-show {
+  display: none;
+}
+
+.modal-open {
+  display: block;
+}
+
+.scroll-menu-open {
+  display: flex;
+}
+
+.modal-close {
+  display: none;
+}
+
+.filter__open {
+  max-height: 1000px;
+  transition: 2s;
+  visibility: visible;
+}
+
+.dropdown__rotate {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
+.textarea-error {
+  border: solid 1px #f47e7e;
+}
+
+.input-error {
+  background-color: #ffefef;
+  border-color: #ffefef;
+
+  &::placeholder {
+    color: #ff0000;
+  }
+}
+
+.crutch {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+
+  display: none;
+  padding: 10px 25px;
+  white-space: nowrap;
+
+  border-radius: 4px;
+  background-color: #101d41;
+  color: #ffffff;
+
+  transform: translateX(-50%);
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #101d41;
+  }
+}
+
+.socials__text {
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .crutch {
+    display: block;
+  }
+
+  .crutch-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1439px) {
+  .modal-show {
+    display: block;
+  }
+
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}

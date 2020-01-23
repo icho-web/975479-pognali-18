@@ -14,7 +14,13 @@ var levelLink = document.querySelector(".level__header-dropdown");
 var levelHeader = document.querySelector(".level__header");
 var levelPopup = document.querySelector(".level__wrapper");
 var transportItem = document.querySelectorAll(".transport__item");
-var transportItemImg = document.querySelectorAll(".transport__item-img")
+var transportInput = document.querySelectorAll(".transport__item-input");
+
+hobbyPopup.classList.remove("hobby__list--open");
+musicPopup.classList.remove("music__list--open");
+foodPopup.classList.remove("food__list--open");
+transportPopup.classList.remove("transport__list--open");
+levelPopup.classList.remove("level__wrapper--open");
 
 hobbyLink.addEventListener("click", function (evt) {
   hobbyPopup.classList.toggle("filter__open");

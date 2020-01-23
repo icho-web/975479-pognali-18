@@ -126,12 +126,15 @@
 
 @media (min-width: 1439px) {
   .tariffs-popup {
-    left: 24.4%;
-    width: 51.8%;
+    padding: 33px 122px 0;
+    left: 50%;
+    margin-left: -373px;
+    width: 746px;
   }
 
   .tariffs-popup__close {
-    width: 143.9%;
-    margin-left: -21.8%;
+    width: 746px;
+    margin-left: -122px;
+    padding: 0;
   }
 }

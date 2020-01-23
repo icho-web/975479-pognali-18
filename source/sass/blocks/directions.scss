@@ -290,14 +290,24 @@
 
 @media (min-width: 1439px) {
   .directions {
-    padding: 221px 8.2vw 61px 9.2vw;
-    background: url("../img/flags-back@1x.png") no-repeat 95% 148px,
-      #edeff6;
+    padding: 0;
 
-    @media (min-resolution: 1.5dppx) {
-      background: url("../img/flags-back@2x.png") no-repeat 95% 148px,
+    background: #edeff6;
+
+    .container {
+      padding-top: 221px;
+      padding-bottom: 61px;
+      padding-left: 132px;
+
+      border-radius: 0 0 60px 60px;
+      background: url("../img/flags-back@1x.png") no-repeat 95% 148px,
         #edeff6;
-      background-size: 289px 575px;
+
+      @media (min-resolution: 1.5dppx) {
+        background: url("../img/flags-back@2x.png") no-repeat 95% 148px,
+          #edeff6;
+        background-size: 289px 575px;
+      }
     }
   }
 
@@ -306,15 +316,15 @@
   }
 
   .directions__link {
-    margin: -119px 0 79px 51vw;
+    margin: -119px 0 79px 734px;
     padding: 29px 35px 27px 32px;
-    width: 18.9vw;
+    width: 272px;
   }
 
   .directions__list {
-    width: 38.8vw;
+    width: 559px;
     order: -1;
-    margin-right: 11.9vw;
+    margin-right: 171px;
   }
 
   .directions__card-wrapper {
@@ -329,7 +339,7 @@
   .directions__text-wrapper {
     padding-top: 2px;
     order: 2;
-    width: 24vw;
+    width: 342px;
   }
 
   .directions__text--desc {

@@ -7,654 +7,655 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
-  <header id="start" class="catalog-header">
-    <div class="catalog-header__logo-wrapper">
-      <a href="index.html" class="catalog-header__logo">
-        <picture>
-          <source media="(min-width: 1439px)"
-            srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
-          <source media="(min-width: 320px)" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
-          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
-        </picture>
-      </a>
-      <button class="page-header__toggle" type="button">
-        <svg width="25" height="11" fill="#ffffff">
-          <use xlink:href="img/sprite.svg#menu"></use>
-        </svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+  <header id="start" class="page-header page-header--form">
+    <div class="page-header__scroll-wrapper page-header__scroll-wrapper--form page-header--form-menu">
+      <div class="container">
+        <div class="page-header__wrapper page-header__wrapper--form">
+          <a class="page-header__logo-link page-header__blue-logo"><span class="visually-hidden">Логотип</span></a>
+          <button class="page-header__toggle page-header__toggle--close visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="page-header__list page-header__list--form page-header__list--close">
+            <li class="page-header__item">
+              <a class="page-header__item-phone">
+                <svg width="18" height="18" fill="#161c35">
+                  <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+                </svg>
+                <span class="visually-hidden">Позвонить нам</span>
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__item-mail">
+                <svg width="18" height="14" fill="#161c35">
+                  <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                </svg>
+                <span class="visually-hidden">Написать нам</span>
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__item-link">
+                <span>Авторизация</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="page-header__nav-list page-header__modal-open">
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="index.html">
+                <span class="page-header__nav-span" data-hover="О сервисе">О сервисе</span>
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">
+                <span class="page-header__nav-span" data-hover="Направления">Направления</span>
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="catalog.html">
+                <span class="page-header__nav-span" data-hover="Попутчики">Попутчики</span>
+              </a>
+            </li>
+          </ul>
+          <a class="page-header__nav-autorization page-header__nav-autorization--open">Авторизация</a>
+        </div>
+        <div class="page-header__contacts-wrapper page-header__modal-open">
+          <div class="page-header__tel-wrapper">
+            <a class="page-header__icon">
+              <svg width="18" height="18" fill="#ffd74b">
+                <use xlink:href="img/sprite.svg#contacts-phone"></use>
+              </svg>
+            </a>
+            <a class="page-header__tel" href="tel:88005558628">8 800 555-86-28</a>
+          </div>
+          <div class="page-header__tel-wrapper">
+            <a class="page-header__icon">
+              <svg width="18" height="13" fill="#ffd74b">
+                <use xlink:href="img/sprite.svg#contacts-mail"></use>
+              </svg>
+            </a>
+            <a class="page-header__email page-header__email--link"
+              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+        </div>
+        <ul class="page-header__socials-list page-header__modal-flex">
+          <li>
+            <a class="page-header__item page-header__item--facebook">
+              <svg width="11" height="21" fill="#cccccc">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="page-header__item page-header__item--vk">
+              <svg width="23" height="12" fill="#cccccc">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">vk</span>
+            </a>
+          </li>
+          <li>
+            <a class="page-header__item page-header__item--instagram">
+              <svg width="18" height="18" fill="#cccccc">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-header__form-wrapper page-header__modal-close"><h2 class="page-header__form">Направления</h2></div>
+      </div>
     </div>
-    <ul class="main-nav__list main-nav__list--form">
-      <li class="main-nav__item">
-        <a class="main-nav__item--phone">
-          <svg width="18" height="18" fill="#161c35">
-            <use xlink:href="img/sprite.svg#topmenu-phone"></use>
-          </svg>
-          <span class="visually-hidden">Позвонить нам</span>
-        </a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__item--mail">
-          <svg width="18" height="14" fill="#161c35">
-            <use xlink:href="img/sprite.svg#topmenu-mail"></use>
-          </svg>
-          <span class="visually-hidden">Написать нам</span>
-        </a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__item--link main-nav__item--form-link">
-          <span>Авторизация</span>
-        </a>
-      </li>
-    </ul>
-    <p class="catalog-header__companions">Направления</p>
-    <nav class="form-header__nav">
-      <div class="page-header__menu-wrapper">
-        <a class="page-header__nav-logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
-        </a>
-        <button class="page-header__close-menu">
-          <svg width="19" height="19" fill="#cccccc">
-            <use xlink:href="img/sprite.svg#menu-close"></use>
-          </svg>
-        </button>
-      </div>
-      <ul class="page-header__nav-list page-header__nav-list--form">
-        <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="index.html">
-            <span class="page-header__nav-span" data-hover="О сервисе">О сервисе</span>
-          </a>
-        </li>
-        <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="form.html">
-            <span class="page-header__nav-span" data-hover="Направления">Направления</span>
-          </a>
-        </li>
-        <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="catalog.html">
-            <span class="page-header__nav-span" data-hover="Попутчики">Попутчики</span>
-          </a>
-        </li>
-      </ul>
-      <a class="page-header__link catalog-header__link">Авторизация</a>
-      <div class="page-header__tel-wrapper">
-        <a class="page-header__icon">
-          <svg width="18" height="18" fill="#ffd74b">
-            <use xlink:href="img/sprite.svg#contacts-phone"></use>
-          </svg>
-        </a>
-        <a class="page-header__tel" href="tel:88005558628">8 800 555-86-28</a>
-      </div>
-      <div class="page-header__tel-wrapper">
-        <a class="page-header__icon">
-          <svg width="18" height="13" fill="#ffd74b">
-            <use xlink:href="img/sprite.svg#contacts-mail"></use>
-          </svg>
-        </a>
-        <a class="page-header__email registration__email--link"
-          href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </div>
-      <ul class="page-header__list">
-        <li>
-          <a class="page-header__item page-header__item--facebook">
-            <svg width="11" height="21" fill="#cccccc">
-              <use xlink:href="img/sprite.svg#facebook"></use>
-            </svg>
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-        <li>
-          <a class="page-header__item page-header__item--vk">
-            <svg width="23" height="12" fill="#cccccc">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-            <span class="visually-hidden">vk</span>
-          </a>
-        </li>
-        <li>
-          <a class="page-header__item page-header__item--instagram">
-            <svg width="18" height="18" fill="#cccccc">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="form-main">
-    <section class="form-profile">
-      <h2 class="visually-hidden">Профиль</h2>
-      <div class="form-profile__avatar-wrapper">
-        <div class="form-profile__level-wrapper">
-          <svg width="60" height="60" viewBox="0 0 120 120">
-            <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dashoffset="72"></circle>
-          </svg>
-          <p class="form-profile__level-number">80</p>
-          <p class="form-profile__level-text">level</p>
-        </div>
-        <div class="form-profile__picture">
-          <picture>
-            <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-            <source media="(min-width: 320px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-            <img class="form-profile__avatar" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x"
-              alt="Аватар">
-          </picture>
-          <p class="form-profile__photo">Фото</p>
-        </div>
-      </div>
-      <a class="form-profile__change-photo">Сменить фото</a>
-      <div class="form-profile__textarea-wrapper">
-        <p class="form-profile__legend form-profile__legend--tag">Тэги</p>
-        <textarea class="form-profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
-      </div>
-      <div class="form-profile__transport-wrapper">
-        <p class="form-profile__legend form-profile__legend--transport">транспорт</p>
-        <ul class="form-profile__list">
-          <li class="form-profile__item form-profile__item--1 form-profile__item--active">
-            <img width="14" height="16" src="img/plane.svg" alt="Самолет">
-          </li>
-          <li class="form-profile__item form-profile__item--2 form-profile__item--active">
-            <img width="13" height="16" src="img/bus.svg" alt="Автобус">
-          </li>
-          <li class="form-profile__item form-profile__item--3">
-            <img width="19" height="17" src="img/bike.svg" alt="Велосипед">
-          </li>
-          <li class="form-profile__item form-profile__item--4 form-profile__item--active">
-            <img width="15" height="17" src="img/run.svg" alt="Пешком">
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="plan">
-      <h2 class="plan__header">Мои планы:</h2>
-      <ol class="plan__list">
-        <li class="plan__item">
-          <div class="plan__item-header-wrapper">
-            <p class="plan__item-number">1.</p>
-            <h3 class="plan__h3">Франция, Италия</h3>
-          </div>
-          <div class="plan__item-wrapper">
-            <p class="plan__text">3 попутчика</p>
-            <div class="plan__time-wrapper">
-              <time class="plan__time" datetime="2020-03-26">26 мар</time>
-              —
-              <time class="plan__time" datetime="2020-03-29">29 мар</time>
+    <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+      <section class="form-profile">
+        <div class="container">
+          <h2 class="visually-hidden">Профиль</h2>
+          <div class="form-profile__avatar-wrapper">
+            <div class="form-profile__level-wrapper">
+              <svg width="100" height="100" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dashoffset="72">
+                </circle>
+              </svg>
+              <p class="form-profile__level-number">80</p>
+              <p class="form-profile__level-text">level</p>
             </div>
-            <button class="plan__button">Изменить</button>
-          </div>
-        </li>
-        <li class="plan__item">
-          <div class="plan__item-header-wrapper">
-            <p class="plan__item-number">2.</p>
-            <h3 class="plan__h3">Таиланд, Индонезия</h3>
-          </div>
-          <div class="plan__item-wrapper">
-            <p class="plan__text">1 попутчик</p>
-            <div class="plan__time-wrapper">
-              <time class="plan__time" datetime="2020-07-01">1 июл</time>
-              —
-              <time class="plan__time" datetime="2020-07-15">15 июл</time>
-            </div>
-            <button class="plan__button">Изменить</button>
-          </div>
-        </li>
-      </ol>
-    </section>
-    <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-      <section class="add-plan">
-        <div class="add-plan__wrapper">
-          <h2 class="add-plan__header">Добавить план:</h2>
-          <ul class="add-plan__list">
-            <li class="add-plan__item add-plan__item--active"></li>
-            <li class="add-plan__item"></li>
-            <li class="add-plan__item"></li>
-          </ul>
-        </div>
-        <section id="top" class="dates-stay">
-          <div class="dates-stay__header-wrapper">
-            <div class="dates-stay__intro-wrapper">
-              <div class="dates-stay__step-wrapper">
-                <p class="dates-stay__intro">Шаг 1.</p>
-                <h3 class="dates-stay__h3">Даты пребывания</h3>
-              </div>
-              <p class="dates-stay__text">
-                Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее
-                предполагаемую длительность.
-              </p>
-            </div>
-            <div class="dates-stay__list-wrapper">
-              <ul class="dates-stay__list">
-                <li class="dates-stay__item"><a class="dates-stay__link dates-stay__link--active"><span
-                      class="dates-stay__item--span">Даты</span></a></li>
-                <li class="dates-stay__item"><a href="form.html#middle" class="dates-stay__link"><span
-                      class="dates-stay__item--span">Маршрут</span></a></li>
-                <li class="dates-stay__item"><a href="form.html#bottom" class="dates-stay__link"><span
-                      class="dates-stay__item--span">Развлечения</span></a></li>
-              </ul>
+            <div class="form-profile__picture">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <img class="form-profile__avatar" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x"
+                  alt="Аватар">
+              </picture>
+              <p class="form-profile__photo">Фото</p>
             </div>
           </div>
-          <div class="dates-stay__form">
-            <div class="dates-stay__div dates-stay__div-1">
-              <label for="text-1" class="dates-stay__filter-wrapper">
-                <span class="dates-stay__filter">ищу попутчиков:</span>
-                <span class="dates-stay__filter dates-stay__filter--number">чел.</span>
-              </label>
-              <input class="dates-stay__range" type="text" id="text-1" value="2" name="number-of-people">
-              <div class="dates-stay__range-wrapper">
-                <button class="dates-stay__button dates-stay__button--left" type="button">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                    <img width="14" height="2" src="img/qty-minus-mobile.svg" alt="Уменьшить">
-                  </picture>
-                </button>
-                <button class="dates-stay__button dates-stay__button--right" type="button">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                    <img width="14" height="14" src="img/qty-plus-mobile.svg" alt="Увеличить">
-                  </picture>
-                </button>
-              </div>
-            </div>
-            <div class="dates-stay__div dates-stay__div-2">
-              <label for="text-2" class="dates-stay__filter-wrapper">
-                <span class="dates-stay__filter">длительность:</span>
-                <span class="dates-stay__filter dates-stay__filter--number">дн.</span>
-              </label>
-              <input class="dates-stay__range" type="text" value="2" id="text-2" name="duration">
-              <div class="dates-stay__range-wrapper">
-                <button class="dates-stay__button dates-stay__button--left" type="button">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                    <img width="14" height="2" src="img/qty-minus-mobile.svg" alt="Уменьшить">
-                  </picture>
-                </button>
-                <button class="dates-stay__button dates-stay__button--right" type="button">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                    <img width="14" height="14" src="img/qty-plus-mobile.svg" alt="Увеличить">
-                  </picture>
-                </button>
-              </div>
-            </div>
-            <div class="dates-stay__input-wrapper">
-              <input class="dates-stay__input--temporarily visually-hidden" type="checkbox" id="date__checkbox"
-                name="children">
-              <label for="date__checkbox" class="dates-stay__label">Можно с детьми</label>
-            </div>
+          <a class="form-profile__change-photo">Сменить фото</a>
+          <div class="form-profile__textarea-wrapper">
+            <p class="form-profile__legend form-profile__legend--tag">Тэги</p>
+            <textarea class="form-profile__textarea" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
-          <div>
-            <div class="dates-stay__date-wrapper">
-              <a class="dates-stay__date-button dates-stay__date-button--left">
-                <svg width="9" height="17">
-                  <use xlink:href="img/sprite.svg#month-arrow-left"></use>
-                </svg>
-              </a>
-              <p class="dates-stay__date">Март 2019</p>
-              <a class="dates-stay__date-button dates-stay__date-button--right">
-                <svg width="9" height="17">
-                  <use xlink:href="img/sprite.svg#month-arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <table class="dates-stay__table">
-              <tr class="dates-stay__tr dates-stay__tr--first">
-                <th class="dates-stay__th">П<span class="dates-stay__tablet">н</span></th>
-                <th class="dates-stay__th">В<span class="dates-stay__tablet">т</span></th>
-                <th class="dates-stay__th">С<span class="dates-stay__tablet">р</span></th>
-                <th class="dates-stay__th">Ч<span class="dates-stay__tablet">т</span></th>
-                <th class="dates-stay__th">П<span class="dates-stay__tablet">т</span></th>
-                <th class="dates-stay__th red">С<span class="dates-stay__tablet">б</span></th>
-                <th class="dates-stay__th red">В<span class="dates-stay__tablet">с</span></th>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td">
-                  <p>23</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>24</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>25</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>26</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>27</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>28</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>1</p>
-                </td>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td">
-                  <p>2</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>3</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>4</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>5</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>6</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>7</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>8</p>
-                </td>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td">
-                  <p>9 </p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>10</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>11</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>12</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>13</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>14</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>15</p>
-                </td>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td">
-                  <p>16</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>17</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>18</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>19</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>20</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>21</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>22</p>
-                </td>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td">
-                  <p>23</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>24</p>
-                </td>
-                <td class="dates-stay__td">
-                  <p>25</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-chosen dates-stay__td-chosen--in">
-                  <p>26</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-chosen">
-                  <p>27</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-chosen dates-stay__td-chosen--out">
-                  <p>28</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>29</p>
-                </td>
-              </tr>
-              <tr class="dates-stay__tr">
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>30</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>31</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>1</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>2</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>3</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>4</p>
-                </td>
-                <td class="dates-stay__td dates-stay__td-day">
-                  <p>5</p>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <a href="form.html#middle" class="dates-stay__table-button">
-            <span>Следующий шаг</span>
-            <svg width="10" height="14" fill="#1d2e5b">
-              <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
-            </svg>
-          </a>
-        </section>
-        <section id="middle" class="route">
-          <div class="route__wrapper">
-            <div class="route__text-wrapper">
-              <div class="route__step-wrapper">
-                <p class="route__intro">Шаг 2.</p>
-                <h3 class="route__header">Маршрут</h3>
-              </div>
-              <p class="route__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
-                несколько.
-              </p>
-            </div>
-            <ul class="dates-stay__list dates-stay__list--2">
-              <li class="dates-stay__item"><a class="dates-stay__link" href="form.html#top"><span
-                    class="dates-stay__item--span">Даты</span></a></li>
-              <li class="dates-stay__item"><a href="form.html#middle"
-                  class="dates-stay__link dates-stay__link--active"><span
-                    class="dates-stay__item--span">Маршрут</span></a></li>
-              <li class="dates-stay__item">
-                <a href="form.html#bottom" class="dates-stay__link">
-                  <span class="dates-stay__item--span">Развлечения</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="route__list-wrapper">
-            <ul class="route__list">
-              <li class="route__item">
-                <p>Босния и Герцеговина</p>
-              </li>
-              <li class="route__item">
-                <p>Чехия</p>
-              </li>
-            </ul>
-            <ul class="route__flag-list">
-              <li class="route__flag-item"><img src="img/flag-bosnia.svg" width="35" height="24"
-                  alt="Флаг Боснии и Герцеговины"></li>
-              <li class="route__flag-item"><img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии"></li>
-            </ul>
-          </div>
-          <div class="route__choose-wrapper">
-            <div class="route__choose">
-              <div class="route__link-wrapper">
-                <a class="route__choose-link">Выберите страну</a>
-                <button class="route__choose-close">
-                  <svg width="8" height="8" fill="#ffffff">
-                    <use xlink:href="img/sprite.svg#filter-close"></use>
+          <div class="form-profile__transport-wrapper">
+            <p class="form-profile__legend form-profile__legend--transport">транспорт</p>
+            <ul class="form-profile__list">
+              <li>
+                <label class="form-profile__item" for="plane">
+                  <input class="form-profile-transport-input visually-hidden" type="checkbox" id="plane" name="plane">
+                  <svg class="form-profile__svg form-profile__svg--1" width="14" height="16" fill="#cccccc">
+                    <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
-                </button>
+                </label>
+              </li>
+              <li>
+                <label class="form-profile__item form-profile__item--2" for="bus">
+                  <input class="form-profile-transport-input visually-hidden" type="checkbox" id="bus" name="bus">
+                  <svg class="form-profile__svg form-profile__svg--2" width="13" height="16" fill="#cccccc">
+                    <use xlink:href="img/sprite.svg#bus"></use>
+                  </svg>
+                </label>
+              </li>
+              <li>
+                <label class="form-profile__item" for="bike">
+                  <input class="form-profile-transport-input visually-hidden" type="checkbox" id="bike" name="bike">
+                  <svg class="form-profile__svg form-profile__svg--3" width="19" height="17" fill="#cccccc">
+                    <use xlink:href="img/sprite.svg#bike"></use>
+                  </svg>
+                </label>
+              </li>
+              <li>
+                <label class="form-profile__item" for="run">
+                  <input class="form-profile-transport-input visually-hidden" type="checkbox" id="run" name="run">
+                  <svg class="form-profile__svg form-profile__svg--4" width="15" height="17" fill="#cccccc">
+                    <use xlink:href="img/sprite.svg#run"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="plan">
+        <div class="container">
+          <h2 class="plan__header">Мои планы:</h2>
+          <ol class="plan__list">
+            <li class="plan__item">
+              <div class="plan__item-header-wrapper">
+                <p class="plan__item-number">1.</p>
+                <h3 class="plan__h3">Франция, Италия</h3>
               </div>
-              <div class="route__table-wrapper">
-                <table class="route__table">
-                  <tr class="route__tr">
-                    <td class="route__td route__td--active">А</td>
-                    <td class="route__td">Б</td>
-                    <td class="route__td">В</td>
-                    <td class="route__td">Г</td>
-                    <td class="route__td">Д</td>
-                  </tr>
-                  <tr class="route__tr">
-                    <td class="route__td">Е</td>
-                    <td class="route__td">З</td>
-                    <td class="route__td">И</td>
-                    <td class="route__td">К</td>
-                    <td class="route__td">Л</td>
-                  </tr>
-                  <tr class="route__tr">
-                    <td class="route__td">М</td>
-                    <td class="route__td">Н</td>
-                    <td class="route__td">О</td>
-                    <td class="route__td">П</td>
-                    <td class="route__td">Р</td>
-                  </tr>
-                  <tr class="route__tr">
-                    <td class="route__td">С</td>
-                    <td class="route__td">Т</td>
-                    <td class="route__td">У</td>
-                    <td class="route__td">Ф</td>
-                    <td class="route__td">Х</td>
-                  </tr>
-                  <tr class="route__tr">
-                    <td class="route__td">Ч</td>
-                    <td class="route__td">Ш</td>
-                    <td class="route__td">Э</td>
-                    <td class="route__td">Ю</td>
-                    <td class="route__td">Я</td>
-                  </tr>
-                </table>
-                <ul class="route__choose-list">
-                  <li class="route__choose-item">
-                    <a>Афганистан</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Албания</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Алжир</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Андорра</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Аргентина</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Армения</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Австралия</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Австрия</a>
-                  </li>
-                  <li class="route__choose-item">
-                    <a>Азербайджан</a>
-                  </li>
+              <div class="plan__item-wrapper">
+                <p class="plan__text">3 попутчика</p>
+                <div class="plan__time-wrapper">
+                  <time class="plan__time" datetime="2020-03-26">26 мар</time>
+                  —
+                  <time class="plan__time" datetime="2020-03-29">29 мар</time>
+                </div>
+                <a class="plan__button">Изменить</a>
+              </div>
+            </li>
+            <li class="plan__item">
+              <div class="plan__item-header-wrapper">
+                <p class="plan__item-number">2.</p>
+                <h3 class="plan__h3">Таиланд, Индонезия</h3>
+              </div>
+              <div class="plan__item-wrapper">
+                <p class="plan__text">1 попутчик</p>
+                <div class="plan__time-wrapper">
+                  <time class="plan__time" datetime="2020-07-01">1 июл</time>
+                  —
+                  <time class="plan__time" datetime="2020-07-15">15 июл</time>
+                </div>
+                <a class="plan__button">Изменить</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="add-plan">
+        <div class="container">
+          <div class="add-plan__wrapper">
+            <h2 class="add-plan__header">Добавить план:</h2>
+            <ul class="add-plan__list">
+              <li class="add-plan__item add-plan__item--active"></li>
+              <li class="add-plan__item"></li>
+              <li class="add-plan__item"></li>
+            </ul>
+          </div>
+          <section id="top" class="dates-stay">
+            <div class="dates-stay__header-wrapper">
+              <div class="dates-stay__intro-wrapper">
+                <div class="dates-stay__step-wrapper">
+                  <p class="dates-stay__intro">Шаг 1.</p>
+                  <h3 class="dates-stay__h3">Даты пребывания</h3>
+                </div>
+                <p class="dates-stay__text">
+                  Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее
+                  предполагаемую длительность.
+                </p>
+              </div>
+              <div class="dates-stay__list-wrapper">
+                <ul class="dates-stay__list">
+                  <li class="dates-stay__item"><a class="dates-stay__link dates-stay__link--active"><span
+                        class="dates-stay__item--span">Даты</span></a></li>
+                  <li class="dates-stay__item"><a href="form.html#middle" class="dates-stay__link"><span
+                        class="dates-stay__item--span">Маршрут</span></a></li>
+                  <li class="dates-stay__item"><a href="form.html#bottom" class="dates-stay__link"><span
+                        class="dates-stay__item--span">Развлечения</span></a></li>
                 </ul>
               </div>
             </div>
-            <div class="route__add">
-              <p>Добавить страну</p>
+            <div class="dates-stay__form">
+              <div class="dates-stay__div dates-stay__div-1">
+                <label for="text-1" class="dates-stay__filter-wrapper">
+                  <span class="dates-stay__filter">ищу попутчиков:</span>
+                  <span class="dates-stay__filter dates-stay__filter--number">чел.</span>
+                </label>
+                <input class="dates-stay__range" type="text" id="text-1" value="2" name="number-of-people">
+                <div class="dates-stay__range-wrapper">
+                  <button class="dates-stay__button dates-stay__button--left" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <button class="dates-stay__button dates-stay__button--right" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="dates-stay__div dates-stay__div-2">
+                <label for="text-2" class="dates-stay__filter-wrapper">
+                  <span class="dates-stay__filter">длительность:</span>
+                  <span class="dates-stay__filter dates-stay__filter--number">дн.</span>
+                </label>
+                <input class="dates-stay__range" type="text" value="2" id="text-2" name="duration">
+                <div class="dates-stay__range-wrapper">
+                  <button class="dates-stay__button dates-stay__button--left" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <button class="dates-stay__button dates-stay__button--right" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="dates-stay__input-wrapper">
+                <input class="dates-stay__input--temporarily visually-hidden" type="checkbox" id="date__checkbox"
+                  name="children">
+                <label for="date__checkbox" class="dates-stay__label">Можно с детьми</label>
+              </div>
             </div>
-          </div>
-          <div class="route__button-wrapper">
-            <a href="form.html#bottom" class="route__button-next">
+            <div>
+              <div class="dates-stay__date-wrapper">
+                <a class="dates-stay__date-button dates-stay__date-button--left">
+                  <svg width="9" height="17">
+                    <use xlink:href="img/sprite.svg#month-arrow-left"></use>
+                  </svg>
+                </a>
+                <p class="dates-stay__date">Март 2019</p>
+                <a class="dates-stay__date-button dates-stay__date-button--right">
+                  <svg width="9" height="17">
+                    <use xlink:href="img/sprite.svg#month-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <table class="dates-stay__table">
+                <tr class="dates-stay__tr dates-stay__tr--first">
+                  <th class="dates-stay__th">П<span class="dates-stay__tablet">н</span></th>
+                  <th class="dates-stay__th">В<span class="dates-stay__tablet">т</span></th>
+                  <th class="dates-stay__th">С<span class="dates-stay__tablet">р</span></th>
+                  <th class="dates-stay__th">Ч<span class="dates-stay__tablet">т</span></th>
+                  <th class="dates-stay__th">П<span class="dates-stay__tablet">т</span></th>
+                  <th class="dates-stay__th red">С<span class="dates-stay__tablet">б</span></th>
+                  <th class="dates-stay__th red">В<span class="dates-stay__tablet">с</span></th>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td">
+                    <p>23</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>24</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>25</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>26</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>27</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>28</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>1</p>
+                  </td>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td">
+                    <p>2</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>3</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>4</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>5</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>6</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>7</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>8</p>
+                  </td>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td">
+                    <p>9 </p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>10</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>11</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>12</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>13</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>14</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>15</p>
+                  </td>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td">
+                    <p>16</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>17</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>18</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>19</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>20</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>21</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>22</p>
+                  </td>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td">
+                    <p>23</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>24</p>
+                  </td>
+                  <td class="dates-stay__td">
+                    <p>25</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-chosen dates-stay__td-chosen--in">
+                    <p>26</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-chosen">
+                    <p>27</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-chosen dates-stay__td-chosen--out">
+                    <p>28</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>29</p>
+                  </td>
+                </tr>
+                <tr class="dates-stay__tr">
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>30</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>31</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>1</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>2</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>3</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>4</p>
+                  </td>
+                  <td class="dates-stay__td dates-stay__td-day">
+                    <p>5</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <a href="form.html#middle" class="dates-stay__table-button">
               <span>Следующий шаг</span>
               <svg width="10" height="14" fill="#1d2e5b">
                 <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
               </svg>
             </a>
-            <a href="form.html#top" class="route__button-back">
-              <svg width="10" height="14" fill="#1d2e5b">
-                <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
-              </svg>
-              <span>На шаг назад</span>
-            </a>
-          </div>
-        </section>
-        <section id="bottom" class="fun">
-          <div class="fun__wrapper">
-            <div class="fun__text-wrapper">
-              <div class="fun__step-wrapper">
-                <p class="fun__intro">Шаг 3.</p>
-                <h3 class="fun__header">Развлечения</h3>
+          </section>
+          <section id="middle" class="route">
+            <div class="route__wrapper">
+              <div class="route__text-wrapper">
+                <div class="route__step-wrapper">
+                  <p class="route__intro">Шаг 2.</p>
+                  <h3 class="route__header">Маршрут</h3>
+                </div>
+                <p class="route__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
+                  несколько.
+                </p>
               </div>
-              <p class="fun__text">
-                Наконец, расскажите о своих планах времяпровождения.
-                Можно писать в свободной форме и ставить тэги.
-              </p>
+              <ul class="dates-stay__list dates-stay__list--2">
+                <li class="dates-stay__item"><a class="dates-stay__link" href="form.html#top"><span
+                      class="dates-stay__item--span">Даты</span></a></li>
+                <li class="dates-stay__item"><a href="form.html#middle"
+                    class="dates-stay__link dates-stay__link--active"><span
+                      class="dates-stay__item--span">Маршрут</span></a></li>
+                <li class="dates-stay__item">
+                  <a href="form.html#bottom" class="dates-stay__link">
+                    <span class="dates-stay__item--span">Развлечения</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="dates-stay__list dates-stay__list--2">
-              <li class="dates-stay__item"><a class="dates-stay__link" href="form.html#top"><span
-                    class="dates-stay__item--span">Даты</span></a></li>
-              <li class="dates-stay__item"><a href="form.html#middle"
-                  class="dates-stay__link"><span
-                    class="dates-stay__item--span">Маршрут</span></a></li>
-              <li class="dates-stay__item">
-                <a href="form.html#bottom" class="dates-stay__link dates-stay__link--active">
-                  <span class="dates-stay__item--span">Развлечения</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="fun__country-bosnia">
-            <div class="fun__country-wrapper">
-              <p class="fun__country">Босния и Герцеговина</p>
-              <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+            <div class="route__list-wrapper">
+              <ul class="route__list">
+                <li class="route__item">
+                  <p class="route__item-text">Босния и Герцеговина</p>
+                </li>
+                <li class="route__item">
+                  <p class="route__item-text">Чехия</p>
+                </li>
+              </ul>
+              <ul class="route__flag-list">
+                <li class="route__flag-item"><img src="img/flag-bosnia.svg" width="35" height="24"
+                    alt="Флаг Боснии и Герцеговины"></li>
+                <li class="route__flag-item"><img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии"></li>
+              </ul>
             </div>
-            <textarea name="bosnia" class="fun__action fun__action--bosnia" placeholder="План действий"></textarea>
-            <p class="fun__error fun__error--bosnia">Это поле должно быть заполнено</p>
-          </div>
-          <div class="fun__country-czech">
-            <div class="fun__country-wrapper">
-              <p class="fun__country">Чехия</p>
-              <img class="fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+            <div class="route__choose-wrapper">
+              <div class="route__choose">
+                <div class="route__link-wrapper">
+                  <a href="countries.html" class="route__choose-link">Выберите страну</a>
+                  <button class="route__choose-close">
+                    <svg width="8" height="8" fill="#ffffff">
+                      <use xlink:href="img/sprite.svg#filter-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="route__table-wrapper">
+                  <table class="route__table">
+                    <tr class="route__tr">
+                      <td class="route__td route__td--active">А</td>
+                      <td class="route__td">Б</td>
+                      <td class="route__td">В</td>
+                      <td class="route__td">Г</td>
+                      <td class="route__td">Д</td>
+                    </tr>
+                    <tr class="route__tr">
+                      <td class="route__td">Е</td>
+                      <td class="route__td">З</td>
+                      <td class="route__td">И</td>
+                      <td class="route__td">К</td>
+                      <td class="route__td">Л</td>
+                    </tr>
+                    <tr class="route__tr">
+                      <td class="route__td">М</td>
+                      <td class="route__td">Н</td>
+                      <td class="route__td">О</td>
+                      <td class="route__td">П</td>
+                      <td class="route__td">Р</td>
+                    </tr>
+                    <tr class="route__tr">
+                      <td class="route__td">С</td>
+                      <td class="route__td">Т</td>
+                      <td class="route__td">У</td>
+                      <td class="route__td">Ф</td>
+                      <td class="route__td">Х</td>
+                    </tr>
+                    <tr class="route__tr">
+                      <td class="route__td">Ч</td>
+                      <td class="route__td">Ш</td>
+                      <td class="route__td">Э</td>
+                      <td class="route__td">Ю</td>
+                      <td class="route__td">Я</td>
+                    </tr>
+                  </table>
+                  <ul class="route__choose-list">
+                    <li class="route__choose-item">
+                      <a>Афганистан</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Албания</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Алжир</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Андорра</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Аргентина</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Армения</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Австралия</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Австрия</a>
+                    </li>
+                    <li class="route__choose-item">
+                      <a>Азербайджан</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="route__add">
+                <p>Добавить страну</p>
+              </div>
             </div>
-            <textarea class="fun__action fun__action--czech" placeholder="План действий"
-              name="czech">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            <p class="fun__error fun__error--czech">Это поле должно быть заполнено</p>
-          </div>
-          <div class="fun__button-wrapper">
-            <button class="fun__button-send" type="submit">
-              <span>Отправить</span>
-              <svg width="10" height="14" fill="#1d2e5b">
-                <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
-              </svg>
-            </button>
-            <a href="form.html#middle" class="fun__button-back">
-              <svg width="10" height="14" fill="#1d2e5b">
-                <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
-              </svg>
-              <span>На шаг назад</span>
-            </a>
-          </div>
-        </section>
+            <div class="route__button-wrapper">
+              <a href="form.html#bottom" class="route__button-next">
+                <span>Следующий шаг</span>
+                <svg width="10" height="14" fill="#1d2e5b">
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+                </svg>
+              </a>
+              <a href="form.html#top" class="route__button-back">
+                <svg width="10" height="14" fill="#1d2e5b">
+                  <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
+                </svg>
+                <span>На шаг назад</span>
+              </a>
+            </div>
+          </section>
+          <section id="bottom" class="fun">
+            <div class="fun__wrapper">
+              <div class="fun__text-wrapper">
+                <div class="fun__step-wrapper">
+                  <p class="fun__intro">Шаг 3.</p>
+                  <h3 class="fun__header">Развлечения</h3>
+                </div>
+                <p class="fun__text">
+                  Наконец, расскажите о своих планах времяпровождения.
+                  Можно писать в свободной форме и ставить тэги.
+                </p>
+              </div>
+              <ul class="dates-stay__list dates-stay__list--2">
+                <li class="dates-stay__item"><a class="dates-stay__link" href="form.html#top"><span
+                      class="dates-stay__item--span">Даты</span></a></li>
+                <li class="dates-stay__item"><a href="form.html#middle" class="dates-stay__link"><span
+                      class="dates-stay__item--span">Маршрут</span></a></li>
+                <li class="dates-stay__item">
+                  <a href="form.html#bottom" class="dates-stay__link dates-stay__link--active">
+                    <span class="dates-stay__item--span">Развлечения</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="fun__country-bosnia">
+              <div class="fun__country-wrapper">
+                <p class="fun__country">Босния и Герцеговина</p>
+                <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+              </div>
+              <textarea name="bosnia" class="fun__action fun__action--bosnia" placeholder="План действий"></textarea>
+              <p class="fun__error fun__error--bosnia">Это поле должно быть заполнено</p>
+            </div>
+            <div class="fun__country-czech">
+              <div class="fun__country-wrapper">
+                <p class="fun__country">Чехия</p>
+                <img class="fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+              </div>
+              <textarea class="fun__action fun__action--czech" placeholder="План действий"
+                name="czech">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <p class="fun__error fun__error--czech">Это поле должно быть заполнено</p>
+            </div>
+            <div class="fun__button-wrapper">
+              <button class="fun__button-send" type="submit">
+                <span>Отправить</span>
+                <svg width="10" height="14" fill="#1d2e5b">
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+                </svg>
+              </button>
+              <a href="form.html#middle" class="fun__button-back">
+                <svg width="10" height="14" fill="#1d2e5b">
+                  <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
+                </svg>
+                <span>На шаг назад</span>
+              </a>
+            </div>
+          </section>
+        </div>
       </section>
     </form>
     <section class="route-popup visually-hidden">
@@ -709,101 +710,59 @@
         <li class="route-popup__country">Азербайджан</li>
       </ul>
     </section>
-    <section class="page-header__scroll-menu">
-      <h2 class="visually-hidden">Всплывающее меню</h2>
-      <a href="index.html">
-        <picture>
-          <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source media="(min-width: 320px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
-        </picture>
-      </a>
-      <ul class="page-header__scroll-nav-list">
-        <li class="page-header__scroll-nav-item">
-          <a href="index.html">О сервисе</a>
-        </li>
-        <li class="page-header__scroll-nav-item">
-          <a href="#">Направления</a>
-        </li>
-        <li class="page-header__scroll-nav-item">
-          <a href="catalog.html">Попутчики</a>
-        </li>
-      </ul>
-      <a href="#start" class="page-header__toggle page-header__toggle--grey">
-        <svg>
-          <use xlink:href="img/sprite.svg#menu"></use>
-        </svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </a>
-      <ul class="page-header__scroll-list">
-        <li class="page-header__scroll-item">
-          <a class="page-header__scroll-item--tel" href="tel:88005558628">
-            <svg width="18" height="18" fill="#161c35">
-              <use xlink:href="img/sprite.svg#topmenu-phone"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-header__scroll-item">
-          <a class="page-header__scroll-item--mail" href="mailto:mail@htmlacademy.ru">
-            <svg width="18" height="14" fill="#161c35">
-              <use xlink:href="img/sprite.svg#topmenu-mail"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-header__scroll-item">
-          <a class="page-header__scroll-item--autorization">
-            Авторизация
-          </a>
-        </li>
-      </ul>
-    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="main-footer">
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <!-- wrapper for ie11 -->
-    <div class="main-footer">
-      <a class="main-footer__logo">
-        <picture>
-          <source media="(min-width: 1439px)"
-            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source media="(min-width: 320px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
-        </picture>
-      </a>
-      <ul class="main-footer__list">
-        <li>
-          <a class="main-footer__item main-footer__item--facebook">
-            <svg width="11" height="21" fill="#1d2e5b">
-              <use xlink:href="img/sprite.svg#facebook"></use>
+    <div class="main-footer__wrapper">
+      <div class="container">
+        <a class="main-footer__logo">
+          <picture>
+            <source media="(min-width: 1439px)"
+              srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 320px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1439px)"
+              srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="main-footer__list">
+          <li>
+            <a class="main-footer__item main-footer__item--facebook">
+              <svg width="11" height="21" fill="#1d2e5b">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="main-footer__item main-footer__item--vk">
+              <svg width="23" height="12" fill="#1d2e5b">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li>
+            <a class="main-footer__item  main-footer__item--instagram">
+              <svg width="18" height="18" fill="#1d2e5b">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__develop-wrapper">
+          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="main-footer__text">Разработано</p>
+            <svg width="27" height="34" fill="#192144">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
-            <span class="visually-hidden">Facebook</span>
           </a>
-        </li>
-        <li>
-          <a class="main-footer__item main-footer__item--vk">
-            <svg width="23" height="12" fill="#1d2e5b">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-            <span class="visually-hidden">VK</span>
-          </a>
-        </li>
-        <li>
-          <a class="main-footer__item  main-footer__item--instagram">
-            <svg width="18" height="18" fill="#1d2e5b">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__develop-wrapper">
-        <p class="main-footer__text">Разработано</p>
-        <svg width="27" height="34" fill="#192144">
-          <use xlink:href="img/sprite.svg#htmlacademy"></use>
-        </svg>
+        </div>
       </div>
     </div>
   </footer>
@@ -812,7 +771,10 @@
   <script src="js/route-popup.js"></script>
   <script src="js/form-validation.js"></script>
   <script src="js/svg4everybody.min.js"></script>
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" async></script>
   <script>svg4everybody();</script>
+
 </body>
 
 </html>

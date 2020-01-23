@@ -144,9 +144,18 @@
   border-radius: 4px;
   border: solid 1px #cbced9;
   resize: none;
+  color: #444444;
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+
+  &:focus {
+    border: solid 1px #161c35;
   }
 }
 
@@ -408,7 +417,7 @@
 @media (min-width: 1439px) {
   .fun {
     padding: 96px 12.3% 105px 12.1%;
-    margin-bottom: 102px;
+    margin-bottom: 127px;
 
     border-radius: 60px;
   }

@@ -59,6 +59,9 @@
   width: 31px;
   height: 31px;
 
+  border: 0;
+  background-color: #edeff6;
+
   cursor: pointer;
   border-radius: 50%;
 
@@ -242,7 +245,46 @@
   width: 26px;
   height: 18px;
   margin-right: 13px;
+
+  background-size: contain;
 }
+
+.travel-companions__flag--sri-lanka {
+  background-image: url("../img/flag-sri-lanka.svg");
+}
+
+.travel-companions__flag--thailand {
+  background-image: url("../img/flag-thailand.svg");
+}
+
+.travel-companions__flag--seychelles {
+  background-image: url("../img/flag-seychelles.svg");
+}
+
+.travel-companions__flag--belgium {
+  background-image: url("../img/flag-belgium.svg");
+}
+
+.travel-companions__flag--czech {
+  background-image: url("../img/flag-czech.svg");
+}
+
+.travel-companions__flag--usa {
+  background-image: url("../img/flag-usa.svg");
+}
+
+.travel-companions__flag--australia {
+  background-image: url("../img/flag-australia.svg");
+}
+
+.travel-companions__flag--dominica {
+  background-image: url("../img/flag-dominica.svg");
+}
+
+.travel-companions__flag--uk {
+  background-image: url("../img/flag-united-kingdom.svg");
+}
+
 
 .travel-companions__location {
   height: 18px;
@@ -381,6 +423,9 @@
 .travel-companions__nav-button {
   width: 50%;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: #ffffff;
   border: none;
@@ -769,7 +814,7 @@
 
   .travel-companions__card {
     width: 100%;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     padding: 33px 4.6% 4px 3.7%;
     flex-direction: row;
 
@@ -855,10 +900,6 @@
     left: 0;
     top: 0;
     border-radius: 20px 0 0 20px;
-  }
-
-  .filter__button-submit {
-    padding: 10px 55px 10px 51px;
   }
 
   .travel-companions__level-wrapper {

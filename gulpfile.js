@@ -24,19 +24,13 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml())
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -53,23 +47,6 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("clean", function () {

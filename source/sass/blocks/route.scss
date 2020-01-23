@@ -253,9 +253,15 @@
       top: -1px;
 
       width: calc(100% + 2px);
-      height: calc(100% + 2px);
+      height: 42px;
       border: solid 1px #959bb2;
     }
+  }
+
+  &:active {
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
+    color: #ffffff;
   }
 }
 
@@ -377,6 +383,22 @@
 
     background-image: url("../img/small-arrow.svg");
     opacity: 0.4;
+  }
+}
+
+.route__item-text {
+  &::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 16px;
+
+    width: 12px;
+    height: 7px;
+
+    background-image: url("../img/dropdown-form.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
   }
 }
 
@@ -522,7 +544,7 @@
   }
 }
 
-.route-open {
+.route__open {
   display: block;
 }
 
@@ -589,6 +611,10 @@
 
       width: 15px;
       height: 15px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
@@ -672,7 +698,7 @@
     }
   }
 
-  .route-open {
+  .route__open {
     display: flex;
   }
 
@@ -694,6 +720,16 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  .route__item-text {
+    &::after {
+      right: 25px;
+      top: 30px;
+
+      width: 19px;
+      height: 9px;
     }
   }
 
@@ -778,6 +814,12 @@
     font-weight: 500;
 
     color: #1d2e5b;
+
+    &:hover {
+      &::before {
+        height: 70px;
+      }
+    }
   }
 
   .route__choose-link {
@@ -935,6 +977,11 @@
 
   .route__table-wrapper {
     width: 100%;
+    min-height: 495px;
+  }
+
+  .route__td {
+    border-radius: 4px;
   }
 
   .route__wrapper {

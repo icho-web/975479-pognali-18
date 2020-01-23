@@ -20,6 +20,11 @@
 
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .profile__header-wrapper {
@@ -90,11 +95,11 @@
   background-color: #ffd74b;
 }
 
-.profile__item--desc {
+.profile__item-desc {
   margin: 0;
 }
 
-.profile__item--price {
+.profile__item-price {
   margin: 0;
 }
 
@@ -205,14 +210,14 @@
     font-size: 28px;
   }
 
-  .profile__item--desc {
+  .profile__item-desc {
     width: 70%;
     display: block;
 
     font-size: 28px;
   }
 
-  .profile__item--price {
+  .profile__item-price {
     display: block;
     margin-left: auto;
 
@@ -249,7 +254,16 @@
 
 @media (min-width: 1439px) {
   .profile {
-    padding: 163px 9.2% 165px 9.2%;
+    padding: 0;
+
+    .container {
+      padding-top: 163px;
+      padding-bottom: 165px;
+      padding-left: 132px;
+      padding-right: 132px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .profile__header {
@@ -257,7 +271,7 @@
     margin-bottom: 121px;
   }
 
-  .profile__item--desc {
+  .profile__item-desc {
     margin-right: auto;
     margin-bottom: 7px;
   }
@@ -291,7 +305,7 @@
     margin-right: 0;
   }
 
-  .profile__item--price {
+  .profile__item-price {
     padding-bottom: 4px;
   }
 }

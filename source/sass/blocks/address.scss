@@ -131,9 +131,13 @@
 
 @media (min-width: 1439px) {
   .address {
-    display: flex;
-    padding: 114px 9.2% 56px 19.7%;
-    min-height: 200px;
+    padding: 0;
+
+    .container {
+      display: flex;
+      padding: 114px 132px 56px 282px;
+      min-height: 200px;
+    }
   }
 
   .address__wrapper {

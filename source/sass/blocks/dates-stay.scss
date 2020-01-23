@@ -122,10 +122,17 @@
 
 .dates-stay__button {
   position: absolute;
-  border: none;
+
+  width: 14px;
+  height: 14px;
+  padding: 0;
+
+  background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
+  border: none;
   cursor: pointer;
-  opacity: 0.2;
+  opacity: 0.3;
 
   &:hover {
     opacity: 0.4;
@@ -134,23 +141,20 @@
   &:active {
     opacity: 0.1;
   }
-
-  svg {
-    margin: auto;
-    opacity: 0.3;
-    width: 14px;
-    height: 14px;
-  }
 }
 
 .dates-stay__button--left {
-  left: 4%;
-  bottom: 14px;
+  left: 6.7%;
+  bottom: 13px;
+
+  background-image: url("../img/qty-minus-mobile.svg");
 }
 
 .dates-stay__button--right {
-  right: 4%;
-  bottom: 8px;
+  right: 6.7%;
+  bottom: 13px;
+
+  background-image: url("../img/qty-plus-mobile.svg");
 }
 
 .dates-stay__filter--number {
@@ -188,6 +192,10 @@
 
   &:focus {
     border: solid 1px #161c35;
+
+    & + .dates-stay__range-wrapper {
+      visibility: hidden;
+    }
   }
 }
 
@@ -442,10 +450,8 @@
   }
 
   .dates-stay__button {
-    img {
-      width: 20px;
-      height: 40px;
-    }
+    width: 20px;
+    height: 20px;
   }
 
   .dates-stay__div {
@@ -606,13 +612,17 @@
   }
 
   .dates-stay__button--left {
-    left: 3.4%;
-    bottom: 10px;
+    left: 4.5%;
+    bottom: 25px;
+
+    background-image: url("../img/qty-minus.svg");
   }
 
   .dates-stay__button--right {
-    right: 2.7%;
-    bottom: 10px;
+    right: 3.6%;
+    bottom: 25px;
+
+    background-image: url("../img/qty-plus.svg");
   }
 
   .dates-stay__date-button {
@@ -782,12 +792,13 @@
   }
 
   .dates-stay__button--left {
-    bottom: -61px;
+    bottom: -45px;
+    left: 6.5%;
   }
 
   .dates-stay__button--right {
-    bottom: -60px;
-    right: 4.7%;
+    bottom: -45px;
+    right: 8.7%;
   }
 
   .dates-stay__item {

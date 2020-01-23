@@ -33,7 +33,7 @@
   margin-left: auto;
 }
 
-.description__item--blue {
+.description__item-blue {
   margin: 0;
   padding-right: 30px;
 
@@ -86,7 +86,7 @@
     font-size: 24px;
   }
 
-  .description__item--blue {
+  .description__item-blue {
     padding: 0;
     margin-bottom: 10px;
   }
@@ -140,8 +140,8 @@
     z-index: 11;
 
     margin-bottom: -95px;
-    padding-left: 4.3%;
-    padding-right: 4.2%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .description__list {
@@ -155,7 +155,7 @@
     padding: 29px 3.8% 29px 2.5%;
   }
 
-  .description__item--blue {
+  .description__item-blue {
     margin-right: auto;
     padding-right: 29%;
     margin-bottom: 0;

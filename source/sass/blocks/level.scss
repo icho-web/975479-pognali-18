@@ -141,6 +141,8 @@
   transform: rotate(0);
   transition: 0.3s;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
 
   &:hover {
     opacity: 0.6;
@@ -155,7 +157,13 @@
   position: relative;
   max-height: 0;
   overflow: hidden;
+  visibility: hidden;
   transition: 1s;
+}
+
+.level__wrapper--open {
+  visibility: visible;
+  max-height: none;
 }
 
 @media (min-width: 768px) {
@@ -174,6 +182,7 @@
     width: 79.3%;
     align-items: center;
     overflow: visible;
+    visibility: visible;
     max-height: none;
   }
 
@@ -258,6 +267,7 @@
     margin-top: 10px;
     flex-direction: column;
     overflow: hidden;
+    visibility: hidden;
     max-height: 0;
   }
 
@@ -278,7 +288,7 @@
 
   .level__input-wrapper {
     order: 0;
-    width: auto;
+    width: 100%;
     margin-bottom: 36px;
 
     &::before {
@@ -300,5 +310,10 @@
 
   .level__header-dropdown {
     display: flex;
+  }
+
+  .level__wrapper--open {
+    visibility: visible;
+    max-height: none;
   }
 }
